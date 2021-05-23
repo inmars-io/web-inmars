@@ -1,6 +1,6 @@
 import { LitElement } from 'lit-element';
-import { colorFundations } from '../styles/fundations';
+import { colorFundations, fontFundations } from '../styles/fundations';
 
 export class MarsElement extends LitElement {
-  static styles = [colorFundations];
+  static styles = [colorFundations, fontFundations];
 }

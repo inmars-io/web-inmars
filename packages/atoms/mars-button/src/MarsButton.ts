@@ -29,7 +29,6 @@ export class MarsButton extends MarsElement {
   render() {
     return html`<button
       class=${classMap({
-        'mars-button': true,
         [this.marsColor]: this.marsColor,
         [this.variant]: this.variant,
       })}
