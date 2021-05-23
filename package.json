@@ -13,7 +13,7 @@
     "eslint": "^7.23.0",
     "eslint-config-prettier": "^7.2.0",
     "husky": "^4.3.8",
-    "lerna": "^3.22.1",
+    "lerna": "^4.0.0",
     "lint-staged": "^10.5.4",
     "prettier": "^2.2.1",
     "rimraf": "^3.0.2",
@@ -30,12 +30,14 @@
     "storybook:build": "tsc && build-storybook",
     "build": "rimraf dist && tsc && rollup -c rollup.config.js",
     "start:build": "npm run build && web-dev-server --root-dir dist --app-index index.html --open --compatibility none",
-    "start": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds\""
+    "start": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds\"",
+    "clean": "rimraf node_modules && rimraf yarn.lock && lerna clean",
+    "bootstrap": "yarn install && lerna bootstrap"
   },
   "name": "web-inmars",
   "version": "0.0.0",
   "description": "Webcomponent web-inmars following open-wc recommendations",
-  "author": "web-inmars",
+  "author": "Mars Gotta",
   "license": "MIT",
   "dependencies": {
     "lit-element": "^2.4.0",
@@ -79,5 +81,8 @@
       "eslint --fix",
       "prettier --write"
     ]
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/MarsGotta/web-inmars.git",
+  "private": false
 }

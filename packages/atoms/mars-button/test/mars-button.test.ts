@@ -8,18 +8,12 @@ describe('MarsButton', () => {
     const el = await fixture<MarsButton>(html`<mars-button></mars-button>`);
 
     expect(el.title).to.equal('Hey there');
-    expect(el.counter).to.equal(5);
-  });
-
-  it('increases the counter on button click', async () => {
-    const el = await fixture<MarsButton>(html`<mars-button></mars-button>`);
-    el.shadowRoot!.querySelector('button')!.click();
-
-    expect(el.counter).to.equal(6);
   });
 
   it('can override the title via attribute', async () => {
-    const el = await fixture<MarsButton>(html`<mars-button title="attribute title"></mars-button>`);
+    const el = await fixture<MarsButton>(
+      html`<mars-button title="attribute title"></mars-button>`
+    );
 
     expect(el.title).to.equal('attribute title');
   });

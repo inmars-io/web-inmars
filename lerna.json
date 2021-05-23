@@ -1,7 +1,8 @@
 {
   "packages": [
     "packages/atoms/*",
-    "packages/core/*"
+    "packages/core"
   ],
+  "npmClient": "yarn",
   "version": "0.0.0"
 }

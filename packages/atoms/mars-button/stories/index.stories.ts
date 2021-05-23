@@ -1,13 +1,27 @@
 import { html, TemplateResult } from 'lit-html';
+
 import '../mars-button.js';
 
 export default {
   title: 'MarsButton',
   component: 'mars-button',
   argTypes: {
-    title: { control: 'text' },
-    counter: { control: 'number' },
+    onClick: { action: 'clicked' },
+    value: { control: 'text' },
+    variant: {
+      control: {
+        type: 'select',
+        options: ['secondary', 'border-line'],
+      },
+    },
+    color: { control: 'color' },
     textColor: { control: 'color' },
+    marsColor: {
+      control: {
+        type: 'select',
+        options: ['coral', 'indigo'],
+      },
+    },
   },
 };
 
@@ -18,43 +32,69 @@ interface Story<T> {
 }
 
 interface ArgTypes {
-  title?: string;
-  counter?: number;
+  value?: string;
+  variant?: string;
+  marsColor?: string;
+  color?: string;
   textColor?: string;
   slot?: TemplateResult;
+  onClick: any;
 }
 
 const Template: Story<ArgTypes> = ({
-  title = 'Hello world',
-  counter = 5,
-  textColor,
+  value = 'Hello world',
   slot,
-}: ArgTypes) => html`
-  <mars-button
-    style="--mars-button-text-color: ${textColor || 'black'}"
-    .title=${title}
-    .counter=${counter}
-  >
-    ${slot}
-  </mars-button>
-`;
+  color = '',
+  variant = '',
+  marsColor = '',
+  textColor = '',
+  onClick,
+}: ArgTypes) => {
+  return html`
+    <mars-button
+      .value=${value}
+      .color=${color}
+      mars-color=${marsColor}
+      text-color=${textColor}
+      .variant=${variant}
+      @on-click=${onClick}
+      >${slot}</mars-button
+    >
+  `;
+};
 
 export const Regular = Template.bind({});
 
-export const CustomTitle = Template.bind({});
-CustomTitle.args = {
-  title: 'My title',
+export const CustomValue = Template.bind({});
+
+CustomValue.args = {
+  value: 'My value',
 };
 
-export const CustomCounter = Template.bind({});
-CustomCounter.args = {
-  counter: 123456,
+export const ButtonVariant = Template.bind({});
+
+ButtonVariant.args = {
+  variant: '',
+};
+
+export const MarsColor = Template.bind({});
+
+MarsColor.args = {
+  marsColor: 'indigo',
+};
+
+export const SelectColor = Template.bind({});
+
+SelectColor.args = {
+  color: 'red',
+  textColor: 'white',
 };
 
 export const SlottedContent = Template.bind({});
 SlottedContent.args = {
-  slot: html`<p>Slotted content</p>`,
+  slot: html`<span>Slotted content</span>`,
 };
+
 SlottedContent.argTypes = {
   slot: { table: { disable: true } },
 };
