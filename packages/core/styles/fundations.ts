@@ -1,201 +1,127 @@
-import { css } from 'lit-element';
-import { calcRemMixin } from './mixins'
+import TOKENS from './tokens';
 
-export const colorFundations = css`
-  :host {
-    --color-indigo-100: #DBCFEC;
-    --color-indigo-200: #BBA3DB;
-    --color-indigo-300: #9F7FCD;
-    --color-indigo-400: #7648B7;
-    --color-indigo-500: #5F3993;
-    --color-indigo-600: #472B6E;
-    --color-indigo-700: #2F1D49;
-    --color-indigo-800: #1F1331;
-    --color-indigo-900: #0C0712;
-    --color-crimson-100: #FCE9E8;
-    --color-crimson-200: #F7BEBB;
-    --color-crimson-300: #F1928D;
-    --color-crimson-400: #EC665F;
-    --color-crimson-500: #E6362D;
-    --color-crimson-600: #CD2118;
-    --color-crimson-700: #A01A13;
-    --color-crimson-800: #72130E;
-    --color-crimson-900: #440B08;
-    --color-coral-100: #FADCD1;
-    --color-coral-200: #F5B9A3;
-    --color-coral-300: #F09575;
-    --color-coral-400: #EB7247;
-    --color-coral-500: #E7531E;
-    --color-coral-600: #B83F14;
-    --color-coral-700: #8A2F0F;
-    --color-coral-800: #5C200A;
-    --color-coral-900: #2E1005;
-    --color-orcher-100: #FDEACE;
-    --color-orcher-200: #FBD59D;
-    --color-orcher-300: #FAC16B;
-    --color-orcher-400: #F8AC3A;
-    --color-orcher-500: #F29408;
-    --color-orcher-600: #C57907;
-    --color-orcher-700: #945B05;
-    --color-orcher-800: #633D03;
-    --color-orcher-900: #321F01;
-    --color-yellow-100: #FFFDE6;
-    --color-yellow-200: #FEF8B3;
-    --color-yellow-300: #FEF59A;
-    --color-yellow-400: #FDF068;
-    --color-yellow-500: #FDEB38;
-    --color-yellow-600: #E3CF02;
-    --color-yellow-700: #B1A102;
-    --color-yellow-800: #7E7301;
-    --color-yellow-900: #4C4501;
-    --color-cobalt-100: #D0F1FB;
-    --color-cobalt-200: #A1E3F7;
-    --color-cobalt-300: #71D5F4;
-    --color-cobalt-400: #42C7F0;
-    --color-cobalt-500: #11A7D5;
-    --color-cobalt-600: #0D82A6;
-    --color-cobalt-700: #095C75;
-    --color-cobalt-800: #053847;
-    --color-cobalt-900: #032630;
-    --color-fucshia-100: #FBD0E7;
-    --color-fucshia-200: #F8A0CE;
-    --color-fucshia-300: #F570B5;
-    --color-fucshia-400: #F2409C;
-    --color-fucshia-500: #E30F7C;
-    --color-fucshia-600: #BF0D69;
-    --color-fucshia-700: #8F0A4F;
-    --color-fucshia-800: #600635;
-    --color-fucshia-900: #30031B;
-    --color-gray-100: #F9FAFB;
-    --color-gray-200: #EBEDEF;
-    --color-gray-300: #E0E3E6;
-    --color-gray-400: #CCD1D7;
-    --color-gray-500: #BCBEC0;
-    --color-gray-600: #93969A;
-    --color-gray-700: #65696C;
-    --color-gray-800: #404244;
-    --color-gray-900: #191A1A;
-    --color-primary-100: var(--color-indigo-100);
-    --color-primary-200: var(--color-indigo-200);
-    --color-primary-300: var(--color-indigo-300);
-    --color-primary-400: var(--color-indigo-400);
-    --color-primary-500: var(--color-indigo-500);
-    --color-primary-600: var(--color-indigo-600);
-    --color-primary-700: var(--color-indigo-700);
-    --color-primary-800: var(--color-indigo-800);
-    --color-primary-900: var(--color-indigo-900);
-    --color-secondary-100: var(--color-crimson-100);
-    --color-secondary-200: var(--color-crimson-200);
-    --color-secondary-300: var(--color-crimson-300);
-    --color-secondary-400: var(--color-crimson-400);
-    --color-secondary-500: var(--color-crimson-500);
-    --color-secondary-600: var(--color-crimson-600);
-    --color-secondary-700: var(--color-crimson-700);
-    --color-secondary-800: var(--color-crimson-800);
-    --color-secondary-900: var(--color-crimson-900);
-    --color-tertiary-100: var(--color-coral-100);
-    --color-tertiary-200: var(--color-coral-200);
-    --color-tertiary-300: var(--color-coral-300);
-    --color-tertiary-400: var(--color-coral-400);
-    --color-tertiary-500: var(--color-coral-500);
-    --color-tertiary-600: var(--color-coral-600);
-    --color-tertiary-700: var(--color-coral-700);
-    --color-tertiary-800: var(--color-coral-800);
-    --color-tertiary-900: var(--color-coral-900);
-    --color-text-base: var(--color-gray-200);
-    --color-text-title: var(--color-gray-400);
-  }
-`;
-export const fontFundations = css`
-  :host {
-    --font-primary: 'Quicksand', sans-serif;
-    --font-secondary: 'Montserrat', sans-serif;
-    --font-mono: 'Roboto Mono', monospace;
-    --font-size-mobile-4xs: ${calcRemMixin(8)};
-    --font-size-mobile-3xs: ${calcRemMixin(10)};
-    --font-size-mobile-2xs: ${calcRemMixin(12)};
-    --font-size-mobile-xs: ${calcRemMixin(14)};
-    --font-size-mobile-sm: ${calcRemMixin(16)};
-    --font-size-mobile-base: ${calcRemMixin(18)};
-    --font-size-mobile-md: ${calcRemMixin(20)};
-    --font-size-mobile-lg: ${calcRemMixin(24)};
-    --font-size-mobile-xl: ${calcRemMixin(28)};
-    --font-size-mobile-2xl: ${calcRemMixin(32)};
-    --font-size-mobile-3xl: ${calcRemMixin(36)};
-    --font-size-mobile-4xl: ${calcRemMixin(40)};
-    --font-size-mobile-5xl: ${calcRemMixin(44)};
-    --font-size-mobile-6xl: ${calcRemMixin(48)};
-    --font-size-mobile-7xl: ${calcRemMixin(52)};
-    --font-size-desktop-4xs: ${calcRemMixin(8)};
-    --font-size-desktop-3xs: ${calcRemMixin(10)};
-    --font-size-desktop-2xs: ${calcRemMixin(12)};
-    --font-size-desktop-xs: ${calcRemMixin(14)};
-    --font-size-desktop-sm: ${calcRemMixin(16)};
-    --font-size-desktop-base: ${calcRemMixin(18)};
-    --font-size-desktop-md: ${calcRemMixin(20)};
-    --font-size-desktop-lg: ${calcRemMixin(24)};
-    --font-size-desktop-xl: ${calcRemMixin(28)};
-    --font-size-desktop-2xl: ${calcRemMixin(32)};
-    --font-size-desktop-3xl: ${calcRemMixin(36)};
-    --font-size-desktop-4xl: ${calcRemMixin(40)};
-    --font-size-desktop-5xl: ${calcRemMixin(44)};
-    --font-size-desktop-6xl: ${calcRemMixin(48)};
-    --font-size-desktop-7xl: ${calcRemMixin(52)};
-    --font-weight-2xs: 100;
-    --font-weight-xs: 200;
-    --font-weight-sm: 300;
-    --font-weight-base: 400;
-    --font-weight-md: 500;
-    --font-weight-lg: 600;
-    --font-weight-xl: 700;
-    --font-spacing-xs: -0.04em;
-    --font-spacing-sm: -0.02em;
-    --font-spacing-base: 0em;
-    --font-spacing-md: 0.02em;
-    --font-spacing-lg: 0.04em;
-    --font-spacing-xl: 0.06em;
-    --font-lineheight-2xs: 1;
-    --font-lineheight-xs: 1.1;
-    --font-lineheight-sm: 1.3;
-    --font-lineheight-base: 1.4;
-    --font-lineheight-md: 1.5;
-    --font-lineheight-lg: 2;
-    --font-lineheight-xl: 2.4;
-  }
-`
+const selectVariables = <T extends object, U extends keyof T>(
+  types: any[],
+  tokens: T,
+  name: string
+) => {
+  let styleTempl: any = '';
+  types.forEach((type: U) => {
+    if (tokens[type]) styleTempl += `--${name}-${type}: ${tokens[type]};`;
+  });
 
-export const gridFundations = css`
-  :host {
-    --grid-bp-xs: ${calcRemMixin(320)};
-    --grid-bp-sm: ${calcRemMixin(480)};
-    --grid-bp-md: ${calcRemMixin(768)};
-    --grid-bp-lg: ${calcRemMixin(1024)};
-    --grid-bp-xl: ${calcRemMixin(1200)};
-    --grid-bp-2xl: ${calcRemMixin(1400)};
-    --container-width-sm: ${calcRemMixin(420)};
-    --container-width-md: ${calcRemMixin(720)};
-    --container-width-lg: ${calcRemMixin(960)};
-    --container-width-xl: ${calcRemMixin(1120)};
-    --container-width-2xl: ${calcRemMixin(1240)};
-    --grid-cols-desktop: 12;
-    --grid-cols-tablet: 8;
-    --grid-cols-mobile: 4;
-    --grid-cols-desktop: var(--grid-cols-desktop);
-    --grid-gutter-width: 1.5rem;
-    --spacer-6xs: ${calcRemMixin(1)};
-    --spacer-5xs: ${calcRemMixin(2)};
-    --spacer-4xs: ${calcRemMixin(4)};
-    --spacer-3xs: ${calcRemMixin(8)};
-    --spacer-2xs: ${calcRemMixin(12)};
-    --spacer-xs: ${calcRemMixin(14)};
-    --spacer-sm: ${calcRemMixin(16)};
-    --spacer-md: ${calcRemMixin(18)};
-    --spacer-lg: ${calcRemMixin(20)};
-    --spacer-xl: ${calcRemMixin(24)};
-    --spacer-2xl: ${calcRemMixin(28)};
-    --spacer-3xl: ${calcRemMixin(32)};
-    --spacer-4xl: ${calcRemMixin(36)};
-    --spacer-5xl: ${calcRemMixin(40)};
-    --spacer-6xl: ${calcRemMixin(46)};
-  }
-`;
+  return styleTempl;
+};
+
+export const colorIndigo = (types: any[]) => {
+  return selectVariables(types, TOKENS.COLOR_INDIGO, 'color-indigo');
+};
+
+export const colorCrimson = (types: any[]) => {
+  return selectVariables(types, TOKENS.COLOR_CRIMSON, 'color-crimson');
+};
+
+export const colorCoral = (types: any[]) => {
+  return selectVariables(types, TOKENS.COLOR_CORAL, 'color-coral');
+};
+
+export const colorOrcher = (types: any[]) => {
+  return selectVariables(types, TOKENS.COLOR_ORCHER, 'color-orcher');
+};
+
+export const colorYellow = (types: any[]) => {
+  return selectVariables(types, TOKENS.COLOR_YELLOW, 'color-yellow');
+};
+
+export const colorCobalt = (types: any[]) => {
+  return selectVariables(types, TOKENS.COLOR_COBALT, 'color-cobalt');
+};
+
+export const colorFucshia = (types: any[]) => {
+  return selectVariables(types, TOKENS.COLOR_FUCSHIA, 'color-fucshia');
+};
+
+export const colorGray = (types: any[]) => {
+  return selectVariables(types, TOKENS.COLOR_GRAY, 'color-gray');
+};
+
+export const colorPrimary = (types: any[]) => {
+  return selectVariables(types, TOKENS.COLOR_PRIMARY, 'color-primary');
+};
+
+export const colorSecondary = (types: any[]) => {
+  return selectVariables(types, TOKENS.COLOR_SECONDARY, 'color-secondary');
+};
+
+export const colorTertiary = (types: any[]) => {
+  return selectVariables(types, TOKENS.COLOR_TERTIARY, 'color-tertiary');
+};
+
+export const colorText = (types: any[]) => {
+  return selectVariables(types, TOKENS.COLOR_TEXT, 'color-text');
+};
+
+export const fontFamily = (types: any[]) => {
+  return selectVariables(types, TOKENS.FONT_FAMILY, 'font-family');
+};
+
+export const fontSizeMobile = (types: any[]) => {
+  return selectVariables(types, TOKENS.FONT_SIZE_MOBILE, 'font-size-mobile');
+};
+
+export const fontSizeDesktop = (types: any[]) => {
+  return selectVariables(types, TOKENS.FONT_SIZE_DESKTOP, 'font-size-desktop');
+};
+
+export const fontWeight = (types: any[]) => {
+  return selectVariables(types, TOKENS.FONT_WEIGHT, 'font-weight');
+};
+
+export const fontSpacing = (types: any[]) => {
+  return selectVariables(types, TOKENS.FONT_SPACING, 'font-spacing');
+};
+
+export const fontLineheight = (types: any[]) => {
+  return selectVariables(types, TOKENS.FONT_LINEHEIGHT, 'font-lineheight');
+};
+
+export const gridBreackpoints = (types: any[]) => {
+  return selectVariables(types, TOKENS.GRID_BREACKPOINTS, 'grid-breackpoints');
+};
+
+export const gridContainerWidth = (types: any[]) => {
+  return selectVariables(types, TOKENS.GRID_CONTAINER_WIDTH, 'container-width');
+};
+
+export const gridColumns = (types: any[]) => {
+  return selectVariables(types, TOKENS.GRID_COLUMS, 'grid-cols');
+};
+
+export const gridGutter = (types: any[]) => {
+  return selectVariables(types, TOKENS.GRID_GUTTER, 'grid-gutter');
+};
+
+export const gridSpacer = (types: any[]) => {
+  return selectVariables(types, TOKENS.GRID_SPACER, 'grid-spacer');
+};
+export const colorMarsBase = (types: any[]) => {
+  return `${colorIndigo(types)}
+  ${colorCrimson(types)}
+  ${colorCoral(types)}`;
+};
+
+export const colorPrimaries = (types: any[]) => {
+  return `${colorPrimary(types)}
+  ${colorSecondary(types)}
+  ${colorTertiary(types)}`;
+};
+
+export const colorFundations = (types: any[]) => {
+  return `${colorPrimaries(types)}
+  ${colorText(types)}`;
+};
+
+export const fontFundations = (types: any[]) => {
+  return `${fontFamily(types)}
+  ${fontSizeMobile(types)}`;
+};

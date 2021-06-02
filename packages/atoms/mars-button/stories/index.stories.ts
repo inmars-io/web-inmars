@@ -1,4 +1,6 @@
-import { html, TemplateResult } from 'lit-html';
+import { html } from 'lit-element';
+import { tagsFont, TemplateResult } from '@web-inmars/core';
+import { unsafeHTML } from 'lit-html/directives/unsafe-html.js';
 
 import '../mars-button.js';
 
@@ -11,15 +13,7 @@ export default {
     variant: {
       control: {
         type: 'select',
-        options: ['secondary', 'border-line'],
-      },
-    },
-    color: { control: 'color' },
-    textColor: { control: 'color' },
-    marsColor: {
-      control: {
-        type: 'select',
-        options: ['coral', 'indigo'],
+        options: ['primary', 'secondary', 'tertiary', 'outline'],
       },
     },
   },
@@ -34,9 +28,6 @@ interface Story<T> {
 interface ArgTypes {
   value?: string;
   variant?: string;
-  marsColor?: string;
-  color?: string;
-  textColor?: string;
   slot?: TemplateResult;
   onClick: any;
 }
@@ -44,20 +35,12 @@ interface ArgTypes {
 const Template: Story<ArgTypes> = ({
   value = 'Hello world',
   slot,
-  color = '',
   variant = '',
-  marsColor = '',
-  textColor = '',
   onClick,
 }: ArgTypes) => {
   return html`
-    <mars-button
-      .value=${value}
-      .color=${color}
-      mars-color=${marsColor}
-      text-color=${textColor}
-      .variant=${variant}
-      @on-click=${onClick}
+    ${unsafeHTML(tagsFont)}
+    <mars-button .value=${value} variant=${variant} @on-click=${onClick}
       >${slot}</mars-button
     >
   `;
@@ -69,25 +52,6 @@ export const CustomValue = Template.bind({});
 
 CustomValue.args = {
   value: 'My value',
-};
-
-export const ButtonVariant = Template.bind({});
-
-ButtonVariant.args = {
-  variant: '',
-};
-
-export const MarsColor = Template.bind({});
-
-MarsColor.args = {
-  marsColor: 'indigo',
-};
-
-export const SelectColor = Template.bind({});
-
-SelectColor.args = {
-  color: 'red',
-  textColor: 'white',
 };
 
 export const SlottedContent = Template.bind({});
