@@ -1,6 +1,6 @@
 {
   "name": "@web-inmars/button",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Webcomponent mars-button following open-wc recommendations",
   "author": "mars-button",
   "license": "MIT",

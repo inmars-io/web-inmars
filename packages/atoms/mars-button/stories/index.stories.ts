@@ -10,6 +10,8 @@ export default {
   argTypes: {
     onClick: { action: 'clicked' },
     value: { control: 'text' },
+    disabled: { control: 'boolean' },
+    type: { control: 'text' },
     variant: {
       control: {
         type: 'select',
@@ -30,6 +32,8 @@ interface ArgTypes {
   variant?: string;
   slot?: TemplateResult;
   onClick: any;
+  disabled?: boolean;
+  type?: string;
 }
 
 const Template: Story<ArgTypes> = ({
@@ -37,10 +41,17 @@ const Template: Story<ArgTypes> = ({
   slot,
   variant = '',
   onClick,
+  disabled,
+  type = '',
 }: ArgTypes) => {
   return html`
     ${unsafeHTML(tagsFont)}
-    <mars-button .value=${value} variant=${variant} @on-click=${onClick}
+    <mars-button
+      .value=${value}
+      variant=${variant}
+      @on-click=${onClick}
+      ?disabled=${disabled}
+      type=${type}
       >${slot}</mars-button
     >
   `;

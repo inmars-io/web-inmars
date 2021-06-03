@@ -9,7 +9,17 @@ export class MarsButton extends MarsElement {
 
   @property({ type: String }) variant = '';
 
+  @property({ type: String }) type = 'button';
+
+  @property({ type: Boolean }) disabled = false;
+
   __click(event: any) {
+    if (this.disabled) {
+      event.preventDefault();
+      event.stopPropagation();
+      event.stopImmediatePropagation();
+      return;
+    }
     let newEvent = new CustomEvent('on-click', {
       detail: { event },
     });
@@ -17,7 +27,12 @@ export class MarsButton extends MarsElement {
   }
 
   render() {
-    return html` <button part="button" @click=${this.__click}>
+    return html` <button
+      part="button"
+      .type=${this.type}
+      ?disabled=${this.disabled}
+      @click=${this.__click}
+    >
       <slot> ${this.value} </slot>
     </button>`;
   }

@@ -48,22 +48,27 @@ export const styles = css`
     color: var(--button-color);
   }
 
-  button:hover,
+  button:hover:not([disabled]),
   :host([variant*='outline']) button:hover {
     background-color: var(--button-color-hover);
     color: var(--button-color-text);
     transition: all 0.35s ease;
   }
 
-  button:active,
+  button:active:not([disabled]),
   :host([variant*='outline']) button:active {
     transform: translate(1px, 1px);
     color: var(--button-color-text);
     background-color: var(--button-color-active);
   }
 
-  button:focus-visible {
+  button:focus-visible:not([disabled]) {
     box-shadow: var(--button-color-focus) 0px 0px 0px 5px;
     outline: none;
+  }
+
+  button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
   }
 `;
