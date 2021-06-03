@@ -49,14 +49,14 @@ export const styles = css`
   }
 
   button:hover:not([disabled]),
-  :host([variant*='outline']) button:hover {
+  :host([variant*='outline']) button:hover:not([disabled]) {
     background-color: var(--button-color-hover);
     color: var(--button-color-text);
     transition: all 0.35s ease;
   }
 
   button:active:not([disabled]),
-  :host([variant*='outline']) button:active {
+  :host([variant*='outline']) button:active:not([disabled]) {
     transform: translate(1px, 1px);
     color: var(--button-color-text);
     background-color: var(--button-color-active);
