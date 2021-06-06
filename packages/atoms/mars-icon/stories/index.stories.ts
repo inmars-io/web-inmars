@@ -5,9 +5,16 @@ export default {
   title: 'MarsIcon',
   component: 'mars-icon',
   argTypes: {
-    title: { control: 'text' },
-    counter: { control: 'number' },
-    textColor: { control: 'color' },
+    type: { type: 'select', options: ['solid', 'regular', 'brands'] },
+    name: { control: 'text' },
+    width: { control: 'text' },
+    height: { control: 'text' },
+    variant: {
+      control: {
+        type: 'select',
+        options: ['primary', 'secondary', 'tertiary'],
+      },
+    },
   },
 };
 
@@ -18,43 +25,28 @@ interface Story<T> {
 }
 
 interface ArgTypes {
-  title?: string;
-  counter?: number;
-  textColor?: string;
-  slot?: TemplateResult;
+  type?: string;
+  name?: string;
+  width?: string;
+  height?: string;
+  variant?: string;
 }
 
 const Template: Story<ArgTypes> = ({
-  title = 'Hello world',
-  counter = 5,
-  textColor,
-  slot,
+  type = 'solid',
+  name = 'ad',
+  width = '36',
+  height = '',
+  variant = '',
 }: ArgTypes) => html`
   <mars-icon
-    style="--mars-icon-text-color: ${textColor || 'black'}"
-    .title=${title}
-    .counter=${counter}
+    .type=${type}
+    .name=${name}
+    .width=${width}
+    .height=${height}
+    variant=${variant}
   >
-    ${slot}
   </mars-icon>
 `;
 
 export const Regular = Template.bind({});
-
-export const CustomTitle = Template.bind({});
-CustomTitle.args = {
-  title: 'My title',
-};
-
-export const CustomCounter = Template.bind({});
-CustomCounter.args = {
-  counter: 123456,
-};
-
-export const SlottedContent = Template.bind({});
-SlottedContent.args = {
-  slot: html`<p>Slotted content</p>`,
-};
-SlottedContent.argTypes = {
-  slot: { table: { disable: true } },
-};

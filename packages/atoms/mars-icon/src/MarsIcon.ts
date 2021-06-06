@@ -1,26 +1,31 @@
-import { html, css, LitElement, property } from 'lit-element';
-
-export class MarsIcon extends LitElement {
-  static styles = css`
-    :host {
-      display: block;
-      padding: 25px;
-      color: var(--mars-icon-text-color, #000);
-    }
-  `;
-
-  @property({ type: String }) title = 'Hey there';
-
-  @property({ type: Number }) counter = 5;
-
-  __increment() {
-    this.counter += 1;
+import { svg, property, MarsElement } from '@web-inmars/core';
+import { selectIcon } from '@web-inmars/mars-awesome';
+import { styles } from './MarsIcon.styles';
+export class MarsIcon extends MarsElement {
+  static get styles() {
+    return [...super.styles, styles];
   }
 
+  @property({ type: String }) type = '';
+
+  @property({ type: String }) name = '';
+
+  @property({ type: String }) width = '';
+
+  @property({ type: String }) height = '';
+
+  @property({ type: String, attribute: true }) variant = '';
+
   render() {
-    return html`
-      <h2>${this.title} Nr. ${this.counter}!</h2>
-      <button @click=${this.__increment}>increment</button>
-    `;
+    const icon: { path: any; viewBox: any } =
+      selectIcon(this.name, this.type) || '';
+    return (
+      icon &&
+      svg`
+      <svg part="svg" xmlns="http://www.w3.org/2000/svg" viewBox=${icon?.viewBox} width=${this.width} height=${this.height}>
+        <path part="path" d=${icon?.path}>
+      </svg>
+    `
+    );
   }
 }

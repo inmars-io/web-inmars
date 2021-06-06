@@ -1,4 +1,4 @@
-export { html, css, property, TemplateResult } from 'lit-element';
+export { svg, html, css, property, TemplateResult } from 'lit-element';
 export { classMap } from 'lit-html/directives/class-map';
 export { styleMap } from 'lit-html/directives/style-map';
 export { unsafeHTML } from 'lit-html/directives/unsafe-html.js';
