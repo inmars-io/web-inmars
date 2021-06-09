@@ -5,9 +5,21 @@ export default {
   title: 'MarsInput',
   component: 'mars-input',
   argTypes: {
-    title: { control: 'text' },
-    counter: { control: 'number' },
-    textColor: { control: 'color' },
+    onChage: { action: 'changed' },
+    value: { control: 'text' },
+    name: { control: 'text' },
+    placeholder: { control: 'text' },
+    disabled: { control: 'boolean' },
+    showCaption: { control: 'boolean' },
+    caption: { control: 'text' },
+    label: { control: 'text' },
+    type: { control: 'text' },
+    variant: {
+      control: {
+        type: 'select',
+        options: ['primary', 'secondary', 'tertiary'],
+      },
+    },
   },
 };
 
@@ -18,43 +30,43 @@ interface Story<T> {
 }
 
 interface ArgTypes {
-  title?: string;
-  counter?: number;
-  textColor?: string;
-  slot?: TemplateResult;
+  name?: string;
+  placeholder?: string;
+  value?: string;
+  variant?: string;
+  onClick: any;
+  disabled?: boolean;
+  showCaption?: boolean;
+  type?: string;
+  caption?: string;
+  label?: string;
 }
 
 const Template: Story<ArgTypes> = ({
-  title = 'Hello world',
-  counter = 5,
-  textColor,
-  slot,
+  value = '',
+  name = '',
+  placeholder = 'Write something...',
+  variant = '',
+  onClick,
+  disabled,
+  type = '',
+  caption = '',
+  label = 'This is a label',
+  showCaption = false,
 }: ArgTypes) => html`
   <mars-input
-    style="--mars-input-text-color: ${textColor || 'black'}"
-    .title=${title}
-    .counter=${counter}
+    .value=${value}
+    .name=${name}
+    .placeholder=${placeholder}
+    .caption=${caption}
+    .label=${label}
+    variant=${variant}
+    @on-click=${onClick}
+    ?disabled=${disabled}
+    ?show-caption=${showCaption}
+    type=${type}
   >
-    ${slot}
   </mars-input>
 `;
 
 export const Regular = Template.bind({});
-
-export const CustomTitle = Template.bind({});
-CustomTitle.args = {
-  title: 'My title',
-};
-
-export const CustomCounter = Template.bind({});
-CustomCounter.args = {
-  counter: 123456,
-};
-
-export const SlottedContent = Template.bind({});
-SlottedContent.args = {
-  slot: html`<p>Slotted content</p>`,
-};
-SlottedContent.argTypes = {
-  slot: { table: { disable: true } },
-};

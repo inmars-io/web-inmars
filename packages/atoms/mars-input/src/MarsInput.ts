@@ -1,26 +1,79 @@
-import { html, css, LitElement, property } from 'lit-element';
+import {
+  html,
+  property,
+  MarsElement,
+  unsafeCSS,
+  css,
+  colorGray,
+  fontFundations,
+} from '@web-inmars/core';
+import { styles } from './MarsInput.styles';
+export class MarsInput extends MarsElement {
+  static get styles() {
+    return [
+      ...super.styles,
+      css`
+        :host {
+          ${unsafeCSS(colorGray([200, 300, 400, 600, 700, 800]))};
+          ${unsafeCSS(fontFundations(['xs']))};
+        }
+      `,
+      styles,
+    ];
+  }
 
-export class MarsInput extends LitElement {
-  static styles = css`
-    :host {
-      display: block;
-      padding: 25px;
-      color: var(--mars-input-text-color, #000);
+  @property({ type: String }) value = '';
+
+  @property({ type: String }) name = '';
+
+  @property({ type: String }) for = '';
+
+  @property({ type: String }) variant = '';
+
+  @property({ type: String }) type = 'text';
+
+  @property({ type: String }) placeholder = '';
+
+  @property({ type: String }) caption = '';
+
+  @property({ type: String }) label = '';
+
+  @property({ type: Boolean }) disabled = false;
+
+  @property({ type: Boolean, attribute: 'show-caption' }) showCaption = false;
+
+  __change(event: any) {
+    if (this.disabled) {
+      event.preventDefault();
+      event.stopPropagation();
+      event.stopImmediatePropagation();
+      return;
     }
-  `;
+    let newEvent = new CustomEvent('on-change', {
+      detail: { event },
+    });
+    this.dispatchEvent(newEvent);
+  }
 
-  @property({ type: String }) title = 'Hey there';
+  __renderLabel() {
+    return this.label && html`<label for=${this.for}>${this.label}</label>`;
+  }
 
-  @property({ type: Number }) counter = 5;
-
-  __increment() {
-    this.counter += 1;
+  __renderCaption() {
+    return this.showCaption && this.caption
+      ? html`<span>${this.caption}</span>`
+      : '';
   }
 
   render() {
-    return html`
-      <h2>${this.title} Nr. ${this.counter}!</h2>
-      <button @click=${this.__increment}>increment</button>
-    `;
+    return html` <input
+        .value=${this.value}
+        .type=${this.type}
+        .name=${this.name}
+        .placeholder=${this.label}
+        ?disabled=${this.disabled}
+        @change=${this.__change}
+      />
+      ${this.__renderLabel()} ${this.__renderCaption()}`;
   }
 }
