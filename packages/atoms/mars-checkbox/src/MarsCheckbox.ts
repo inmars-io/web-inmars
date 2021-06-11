@@ -26,11 +26,11 @@ export class MarsCheckbox extends MarsElement {
 
   @property({ type: String }) variant = '';
 
-  @property({ type: String }) for = '';
+  @property({ type: String }) id = '';
 
   @property({ type: String }) name = '';
 
-  @property({ type: String }) label = 'este es el value';
+  @property({ type: String }) label = '';
 
   @property({ type: String }) caption = '';
 
@@ -52,17 +52,13 @@ export class MarsCheckbox extends MarsElement {
     });
     this.dispatchEvent(newEvent);
   }
-
-  __renderLabel(forLabel: string, label: string) {
-    return (
-      this.label && html`<label part="label" for=${forLabel}>${label}</label>`
-    );
-  }
-
   __renderCaption(showCaption: boolean, caption: string) {
-    return showCaption && caption
-      ? html`<span part="caption">${this.caption}</span>`
-      : '';
+    return (
+      (showCaption &&
+        caption &&
+        html`<span part="caption">${this.caption}</span>`) ||
+      ''
+    );
   }
 
   render() {
@@ -74,19 +70,26 @@ export class MarsCheckbox extends MarsElement {
       caption,
       disabled,
       showCaption,
+      id,
       __change,
     } = this;
+    debugger;
     return html`
-      <input
-        part="checkbox"
-        type="checkbox"
-        .name=${name}
-        ?checked=${checked}
-        .value=${value}
-        ?disabled=${disabled}
-        @change=${__change}
-      />
-      ${this.__renderLabel(this.for, label)}
+      <label for=${id}>
+        <input
+          id=${id}
+          part="checkbox"
+          type="checkbox"
+          name=${name}
+          ?checked=${checked}
+          value=${value}
+          ?disabled=${disabled}
+          @change=${__change}
+        />
+        <span part="label"
+          >${this.children.length ? this.children : this.label}</span
+        >
+      </label>
       ${this.__renderCaption(showCaption, caption)}
     `;
   }

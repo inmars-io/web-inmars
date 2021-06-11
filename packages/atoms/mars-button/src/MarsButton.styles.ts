@@ -62,7 +62,8 @@ export const styles = css`
     background-color: var(--button-color-active);
   }
 
-  button:focus-visible:not([disabled]) {
+  button:focus-visible:not([disabled]),
+  button:active:not([disabled]) {
     box-shadow: var(--button-color-focus) 0px 0px 0px 5px;
     outline: none;
   }

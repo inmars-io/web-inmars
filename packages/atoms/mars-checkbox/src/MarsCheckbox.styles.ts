@@ -104,7 +104,8 @@ export const styles = css`
   }
 
   /* Accessibility */
-  [part='checkbox']:focus-visible:before {
+  [part='checkbox']:focus-visible:before,
+  [part='checkbox']:active:before {
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1),
       0px 0px 0px 5px var(--checkbox-color-focus);
   }
