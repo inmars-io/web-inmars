@@ -1,8 +1,8 @@
 {
-  "name": "mars-radio",
+  "name": "@web-inmars/radio-button",
   "version": "0.0.0",
-  "description": "Webcomponent mars-radio following open-wc recommendations",
-  "author": "mars-radio",
+  "description": "Webcomponent mars-radio-button following open-wc recommendations",
+  "author": "Mars Gotta",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.js",

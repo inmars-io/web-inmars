@@ -1,7 +1,7 @@
 import { html, fixture, expect } from '@open-wc/testing';
 
-import { MarsRadio } from '../src/MarsRadio.js';
-import '../mars-radio.js';
+import { MarsRadio } from '../src/MarsRadioButton.js';
+import '../mars-radio-button.js';
 
 describe('MarsRadio', () => {
   it('has a default title "Hey there" and counter 5', async () => {
@@ -19,7 +19,9 @@ describe('MarsRadio', () => {
   });
 
   it('can override the title via attribute', async () => {
-    const el = await fixture<MarsRadio>(html`<mars-radio title="attribute title"></mars-radio>`);
+    const el = await fixture<MarsRadio>(
+      html`<mars-radio title="attribute title"></mars-radio>`
+    );
 
     expect(el.title).to.equal('attribute title');
   });

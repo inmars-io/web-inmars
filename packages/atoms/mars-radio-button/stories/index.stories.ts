@@ -1,9 +1,9 @@
 import { html, TemplateResult } from 'lit-html';
-import '../mars-radio.js';
+import '../mars-radio-button.js';
 
 export default {
-  title: 'MarsRadio',
-  component: 'mars-radio',
+  title: 'MarsRadioButton',
+  component: 'mars-radio-button',
   argTypes: {
     title: { control: 'text' },
     counter: { control: 'number' },
@@ -30,13 +30,13 @@ const Template: Story<ArgTypes> = ({
   textColor,
   slot,
 }: ArgTypes) => html`
-  <mars-radio
-    style="--mars-radio-text-color: ${textColor || 'black'}"
+  <mars-radio-button
+    style="--mars-radio-button-text-color: ${textColor || 'black'}"
     .title=${title}
     .counter=${counter}
   >
     ${slot}
-  </mars-radio>
+  </mars-radio-button>
 `;
 
 export const Regular = Template.bind({});
