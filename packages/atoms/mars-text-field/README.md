@@ -1,19 +1,19 @@
-# \<mars-input>
+# \<mars-text-field>
 
 This webcomponent follows the [open-wc](https://github.com/open-wc/open-wc) recommendation.
 
 ## Installation
 ```bash
-npm i mars-input
+npm i mars-text-field
 ```
 
 ## Usage
 ```html
 <script type="module">
-  import 'mars-input/mars-input.js';
+  import 'mars-text-field/mars-text-field.js';
 </script>
 
-<mars-input></mars-input>
+<mars-text-field></mars-text-field>
 ```
 
 ## Linting with ESLint, Prettier, and Types

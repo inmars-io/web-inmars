@@ -1,7 +1,7 @@
 {
-  "name": "@web-inmars/input",
+  "name": "@web-inmars/text-field",
   "version": "0.0.1",
-  "description": "Webcomponent mars-input following open-wc recommendations",
+  "description": "Webcomponent mars-text-field following open-wc recommendations",
   "author": "Mars Gotta",
   "license": "MIT",
   "main": "dist/index.js",

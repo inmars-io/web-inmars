@@ -1,8 +1,8 @@
 {
-  "name": "mars-checkbox",
-  "version": "0.0.0",
+  "name": "@web-inmars/checkbox",
+  "version": "0.0.1",
   "description": "Webcomponent mars-checkbox following open-wc recommendations",
-  "author": "mars-checkbox",
+  "author": "Mars Gotta",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -19,7 +19,8 @@
   },
   "dependencies": {
     "lit-html": "^1.3.0",
-    "lit-element": "^2.4.0"
+    "lit-element": "^2.4.0",
+    "@web-inmars/core": "^0.0.1"
   },
   "devDependencies": {
     "@web/dev-server": "^0.1.10",

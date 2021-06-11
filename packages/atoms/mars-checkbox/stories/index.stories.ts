@@ -5,9 +5,20 @@ export default {
   title: 'MarsCheckbox',
   component: 'mars-checkbox',
   argTypes: {
-    title: { control: 'text' },
-    counter: { control: 'number' },
-    textColor: { control: 'color' },
+    onChage: { action: 'changed' },
+    value: { control: 'text' },
+    name: { control: 'text' },
+    checked: { control: 'boolean' },
+    disabled: { control: 'boolean' },
+    showCaption: { control: 'boolean' },
+    caption: { control: 'text' },
+    label: { control: 'text' },
+    variant: {
+      control: {
+        type: 'select',
+        options: ['primary', 'secondary', 'tertiary'],
+      },
+    },
   },
 };
 
@@ -18,43 +29,40 @@ interface Story<T> {
 }
 
 interface ArgTypes {
-  title?: string;
-  counter?: number;
-  textColor?: string;
-  slot?: TemplateResult;
+  name?: string;
+  checked?: boolean;
+  value?: string;
+  variant?: string;
+  onClick: any;
+  disabled?: boolean;
+  showCaption?: boolean;
+  caption?: string;
+  label?: string;
 }
 
 const Template: Story<ArgTypes> = ({
-  title = 'Hello world',
-  counter = 5,
-  textColor,
-  slot,
+  value = '',
+  name = '',
+  checked = false,
+  variant = '',
+  onClick,
+  disabled,
+  caption = '',
+  label = 'This is a label',
+  showCaption = false,
 }: ArgTypes) => html`
   <mars-checkbox
-    style="--mars-checkbox-text-color: ${textColor || 'black'}"
-    .title=${title}
-    .counter=${counter}
+    .value=${value}
+    .name=${name}
+    .checked=${checked}
+    .caption=${caption}
+    .label=${label}
+    variant=${variant}
+    @on-click=${onClick}
+    ?disabled=${disabled}
+    ?show-caption=${showCaption}
   >
-    ${slot}
   </mars-checkbox>
 `;
 
 export const Regular = Template.bind({});
-
-export const CustomTitle = Template.bind({});
-CustomTitle.args = {
-  title: 'My title',
-};
-
-export const CustomCounter = Template.bind({});
-CustomCounter.args = {
-  counter: 123456,
-};
-
-export const SlottedContent = Template.bind({});
-SlottedContent.args = {
-  slot: html`<p>Slotted content</p>`,
-};
-SlottedContent.argTypes = {
-  slot: { table: { disable: true } },
-};
