@@ -1,3 +1,3 @@
-import { MarsRadio } from './src/MarsRadioButton.js';
+import { MarsRadioButton } from './src/MarsRadioButton.js';
 
-window.customElements.define('mars-radio', MarsRadio);
+window.customElements.define('mars-radio-button', MarsRadioButton);

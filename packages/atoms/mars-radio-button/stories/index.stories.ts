@@ -5,9 +5,21 @@ export default {
   title: 'MarsRadioButton',
   component: 'mars-radio-button',
   argTypes: {
-    title: { control: 'text' },
-    counter: { control: 'number' },
-    textColor: { control: 'color' },
+    onChage: { action: 'changed' },
+    value: { control: 'text' },
+    name: { control: 'text' },
+    checked: { control: 'boolean' },
+    disabled: { control: 'boolean' },
+    showCaption: { control: 'boolean' },
+    caption: { control: 'text' },
+    label: { control: 'text' },
+    id: { control: 'text' },
+    variant: {
+      control: {
+        type: 'select',
+        options: ['primary', 'secondary', 'tertiary'],
+      },
+    },
   },
 };
 
@@ -18,43 +30,60 @@ interface Story<T> {
 }
 
 interface ArgTypes {
-  title?: string;
-  counter?: number;
-  textColor?: string;
+  name?: string;
+  checked?: boolean;
+  value?: string;
+  variant?: string;
+  onClick: any;
+  disabled?: boolean;
+  showCaption?: boolean;
+  caption?: string;
+  label?: string;
+  id?: string;
   slot?: TemplateResult;
 }
 
 const Template: Story<ArgTypes> = ({
-  title = 'Hello world',
-  counter = 5,
-  textColor,
   slot,
+  value = '',
+  name = '',
+  checked = false,
+  variant = '',
+  onClick,
+  disabled,
+  caption = '',
+  id = 'regularLabel',
+  label = 'This is a label',
+  showCaption = false,
 }: ArgTypes) => html`
   <mars-radio-button
-    style="--mars-radio-button-text-color: ${textColor || 'black'}"
-    .title=${title}
-    .counter=${counter}
+    .value=${value}
+    .name=${name}
+    .checked=${checked}
+    .caption=${caption}
+    .label=${label}
+    .id=${id}
+    variant=${variant}
+    @on-click=${onClick}
+    ?disabled=${disabled}
+    ?show-caption=${showCaption}
   >
     ${slot}
   </mars-radio-button>
 `;
 
 export const Regular = Template.bind({});
+export const CustomValue = Template.bind({});
 
-export const CustomTitle = Template.bind({});
-CustomTitle.args = {
-  title: 'My title',
-};
-
-export const CustomCounter = Template.bind({});
-CustomCounter.args = {
-  counter: 123456,
+CustomValue.args = {
+  label: 'My value',
 };
 
 export const SlottedContent = Template.bind({});
 SlottedContent.args = {
-  slot: html`<p>Slotted content</p>`,
+  slot: html`<span>Slotted content</span>`,
 };
+
 SlottedContent.argTypes = {
   slot: { table: { disable: true } },
 };

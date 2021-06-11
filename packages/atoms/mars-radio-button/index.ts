@@ -1,1 +1,1 @@
-export { MarsRadio } from './src/MarsRadioButton.js';
+export { MarsRadioButton } from './src/MarsRadioButton.js';

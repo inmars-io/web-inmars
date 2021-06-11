@@ -56,13 +56,14 @@ export class MarsCheckbox extends MarsElement {
     return (
       (showCaption &&
         caption &&
-        html`<span part="caption">${this.caption}</span>`) ||
+        html`<span part="caption">${caption}</span>`) ||
       ''
     );
   }
 
   render() {
     const {
+      children,
       name,
       checked,
       value,
@@ -85,9 +86,7 @@ export class MarsCheckbox extends MarsElement {
           ?disabled=${disabled}
           @change=${__change}
         />
-        <span part="label"
-          >${this.children.length ? this.children : this.label}</span
-        >
+        <span part="label">${children.length ? children : label}</span>
       </label>
       ${this.__renderCaption(showCaption, caption)}
     `;
