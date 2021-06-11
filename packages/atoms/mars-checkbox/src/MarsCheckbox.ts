@@ -73,7 +73,6 @@ export class MarsCheckbox extends MarsElement {
       id,
       __change,
     } = this;
-    debugger;
     return html`
       <label for=${id}>
         <input
