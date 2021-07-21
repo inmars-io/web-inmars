@@ -5,5 +5,6 @@
     "packages/core"
   ],
   "npmClient": "yarn",
-  "version": "0.0.0"
+  "version": "independent",
+  "useWorkspaces": true
 }

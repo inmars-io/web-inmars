@@ -21,6 +21,11 @@
     "tslib": "^2.1.0",
     "typescript": "^4.2.3"
   },
+  "workspaces": [
+    "packages/atoms/*",
+    "packages/utilities/*",
+    "packages/core"
+  ],
   "scripts": {
     "lint": "eslint --ext .ts,.html . --ignore-path .gitignore && prettier \"**/*.ts\" --check --ignore-path .gitignore",
     "format": "eslint --ext .ts,.html . --fix --ignore-path .gitignore && prettier \"**/*.ts\" --write --ignore-path .gitignore",
@@ -35,13 +40,15 @@
     "bootstrap": "yarn install && lerna bootstrap"
   },
   "name": "web-inmars",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Webcomponent web-inmars following open-wc recommendations",
-  "author": "Mars Gotta",
+  "author": "Mars Gotta <me@marsgotta.com> (http://www.marsgotta.com)",
   "license": "MIT",
   "dependencies": {
     "lit-element": "^2.4.0",
-    "lit-html": "^1.3.0"
+    "lit-html": "^1.3.0",
+    "@web-inmars/core": "^0.0.1",
+    "@web-inmars/mars-awesome": "^0.0.1"
   },
   "eslintConfig": {
     "parser": "@typescript-eslint/parser",
@@ -84,5 +91,5 @@
   },
   "main": "index.js",
   "repository": "https://github.com/MarsGotta/web-inmars.git",
-  "private": false
+  "private": true
 }

@@ -2,7 +2,7 @@
 	"name": "@web-inmars/icon",
 	"version": "0.1.0",
 	"description": "Webcomponent mars icon width font awesome",
-	"author": "Mars Gotta",
+	"author": "Mars Gotta <me@marsgotta.com> (http://www.marsgotta.com)",
 	"license": "MIT",
 	"main": "dist/index.js",
 	"module": "dist/index.js",
