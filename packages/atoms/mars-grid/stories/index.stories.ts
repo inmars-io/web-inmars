@@ -5,9 +5,19 @@ export default {
   title: 'MarsGrid',
   component: 'mars-grid',
   argTypes: {
-    title: { control: 'text' },
-    counter: { control: 'number' },
-    textColor: { control: 'color' },
+    inline: { control: 'boolean' },
+    gridTemplate: { control: 'text' },
+    gap: { control: 'text' },
+    grid: { control: 'text' },
+    justifyItems: { control: 'text' },
+    alignItems: { control: 'text' },
+    placeItems: { control: 'text' },
+    justifyContent: { control: 'text' },
+    alignContent: { control: 'text' },
+    placeContent: { control: 'text' },
+    gridAutoFlow: { control: 'text' },
+    containerSize: { control: 'text' },
+    gridSize: { control: 'text' },
   },
 };
 
@@ -18,43 +28,63 @@ interface Story<T> {
 }
 
 interface ArgTypes {
-  title?: string;
-  counter?: number;
-  textColor?: string;
+  inline?: boolean;
   slot?: TemplateResult;
+  gridTemplate?: string;
+  gap?: string;
+  grid?: string;
+  justifyItems?: string;
+  alignItems?: string;
+  placeItems?: string;
+  justifyContent?: string;
+  alignContent?: string;
+  placeContent?: string;
+  gridAutoFlow?: string;
+  containerSize?: string;
+  gridSize?: string;
 }
 
 const Template: Story<ArgTypes> = ({
-  title = 'Hello world',
-  counter = 5,
-  textColor,
+  inline = false,
+  gridTemplate = '',
+  gap = '',
+  grid = '',
+  justifyItems = '',
+  alignItems = '',
+  placeItems = '',
+  justifyContent = '',
+  alignContent = '',
+  placeContent = '',
+  gridAutoFlow = '',
+  containerSize = '',
+  gridSize = '',
   slot,
 }: ArgTypes) => html`
   <mars-grid
-    style="--mars-grid-text-color: ${textColor || 'black'}"
-    .title=${title}
-    .counter=${counter}
+    ?inline=${inline}
+    grid=${grid}
+    gap=${gap}
+    grid-template=${gridTemplate}
+    justify-items=${justifyItems}
+    align-items=${alignItems}
+    place-items=${placeItems}
+    justify-content=${justifyContent}
+    align-content=${alignContent}
+    place-content=${placeContent}
+    grid-auto-flow=${gridAutoFlow}
+    grid-size=${gridSize}
+    container-size=${containerSize}
   >
     ${slot}
   </mars-grid>
 `;
 
 export const Regular = Template.bind({});
-
-export const CustomTitle = Template.bind({});
-CustomTitle.args = {
-  title: 'My title',
-};
-
-export const CustomCounter = Template.bind({});
-CustomCounter.args = {
-  counter: 123456,
-};
-
-export const SlottedContent = Template.bind({});
-SlottedContent.args = {
-  slot: html`<p>Slotted content</p>`,
-};
-SlottedContent.argTypes = {
-  slot: { table: { disable: true } },
+Regular.args = {
+  slot: html`<div grid-area="footer">Content 1</div>
+    <div>Content 2</div>
+    <div>Content 3</div>
+    <div>Content 4</div>
+    <div>Content 5</div>
+    <div>Content 6</div>`,
 };
