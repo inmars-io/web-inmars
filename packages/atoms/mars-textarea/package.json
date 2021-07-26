@@ -1,8 +1,8 @@
 {
-  "name": "mars-textarea",
+  "name": "@web-inmars/mars-textarea",
   "version": "0.0.1",
   "description": "Webcomponent mars-textarea following open-wc recommendations",
-  "author": "mars-textarea",
+	"author": "Mars Gotta <me@marsgotta.com> (http://www.marsgotta.com)",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.js",
