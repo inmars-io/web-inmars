@@ -15,7 +15,8 @@ export const styles = css`
     --input-font-size-label: var(--font-size-mobile-sm);
     font-family: var(--input-family-font);
     display: grid;
-    width: fit-content;
+    min-height: 46px;
+    min-width: 200px;
     grid-template-areas: 'input';
     box-sizing: border-box;
     font-weight: 300;
@@ -33,8 +34,6 @@ export const styles = css`
     grid-area: input;
     box-sizing: border-box;
     padding: 12px 18px 12px 18px;
-    min-height: 46px;
-    min-width: 200px;
     font-weight: 300;
   }
 

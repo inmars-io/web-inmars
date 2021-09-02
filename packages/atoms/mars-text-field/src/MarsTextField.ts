@@ -49,8 +49,11 @@ export class MarsTextField extends MarsElement {
       event.stopImmediatePropagation();
       return;
     }
-    let newEvent = new CustomEvent('on-change', {
-      detail: { event },
+    this.value = event?.target?.value;
+    let newEvent = new CustomEvent('on-input', {
+      detail: { event, value: this.value },
+      bubbles: true,
+      composed: true,
     });
     this.dispatchEvent(newEvent);
   }
@@ -67,12 +70,13 @@ export class MarsTextField extends MarsElement {
 
   render() {
     return html` <input
+        part="marsinput"
         .value=${this.value}
         .type=${this.type}
         .name=${this.name}
         .placeholder=${this.label}
         ?disabled=${this.disabled}
-        @change=${this.__change}
+        @input=${this.__change}
       />
       ${this.__renderLabel()} ${this.__renderCaption()}`;
   }
