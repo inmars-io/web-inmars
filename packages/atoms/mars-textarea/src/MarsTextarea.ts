@@ -6,8 +6,9 @@ import {
   css,
   colorGray,
   fontFundations,
-} from '@web-inmars/core';
+} from '@webinmars/core';
 import { styles } from './MarsTextarea.styles';
+
 export class MarsTextarea extends MarsElement {
   static get styles() {
     return [
@@ -46,7 +47,7 @@ export class MarsTextarea extends MarsElement {
       return;
     }
     this.value = event.target.value;
-    let newEvent = new CustomEvent('on-input', {
+    const newEvent = new CustomEvent('on-input', {
       detail: { event, value: this.value },
     });
     this.dispatchEvent(newEvent);

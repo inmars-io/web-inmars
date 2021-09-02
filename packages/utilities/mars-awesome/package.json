@@ -1,5 +1,5 @@
 {
-  "name": "@web-inmars/mars-awesome",
+  "name": "@webinmars/mars-awesome",
   "version": "0.0.2",
   "description": "Font awesome pack for mars icons",
   "main": "dist/index.js",

@@ -1,5 +1,5 @@
 import { html } from 'lit-element';
-import { tagsFont, TemplateResult } from '@web-inmars/core';
+import { tagsFont, TemplateResult } from '@webinmars/core';
 import { unsafeHTML } from 'lit-html/directives/unsafe-html.js';
 
 import '../mars-button.js';
@@ -43,19 +43,17 @@ const Template: Story<ArgTypes> = ({
   onClick,
   disabled,
   type = '',
-}: ArgTypes) => {
-  return html`
-    ${unsafeHTML(tagsFont)}
-    <mars-button
-      .value=${value}
-      variant=${variant}
-      @on-click=${onClick}
-      ?disabled=${disabled}
-      type=${type}
-      >${slot}</mars-button
-    >
-  `;
-};
+}: ArgTypes) => html`
+  ${unsafeHTML(tagsFont)}
+  <mars-button
+    .value=${value}
+    variant=${variant}
+    @on-click=${onClick}
+    ?disabled=${disabled}
+    type=${type}
+    >${slot}</mars-button
+  >
+`;
 
 export const Regular = Template.bind({});
 

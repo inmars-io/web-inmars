@@ -1,5 +1,5 @@
 {
-  "name": "@web-inmars/core",
+  "name": "@webinmars/core",
   "version": "0.0.2",
   "description": "Webcomponent mars-textarea following open-wc recommendations",
   "author": "Mars Gotta <me@marsgotta.com> (http://www.marsgotta.com)",

@@ -6,8 +6,9 @@ import {
   css,
   colorGray,
   fontFundations,
-} from '@web-inmars/core';
+} from '@webinmars/core';
 import { styles } from './MarsRadioButton.styles';
+
 export class MarsRadioButton extends MarsElement {
   static get styles() {
     return [
@@ -47,12 +48,14 @@ export class MarsRadioButton extends MarsElement {
       event.stopImmediatePropagation();
       return;
     }
-    let newEvent = new CustomEvent('on-change', {
+    const newEvent = new CustomEvent('on-change', {
       detail: { event },
     });
     this.dispatchEvent(newEvent);
   }
-  __renderCaption(showCaption: boolean, caption: string) {
+
+  __renderCaption() {
+    const { showCaption, caption } = this;
     return (
       (showCaption &&
         caption &&
@@ -62,18 +65,8 @@ export class MarsRadioButton extends MarsElement {
   }
 
   render() {
-    const {
-      children,
-      name,
-      checked,
-      value,
-      label,
-      caption,
-      disabled,
-      showCaption,
-      id,
-      __change,
-    } = this;
+    const { children, name, checked, value, label, disabled, id, __change } =
+      this;
     return html`
       <label for=${id} part="label-box">
         <input
@@ -82,13 +75,13 @@ export class MarsRadioButton extends MarsElement {
           type="radio"
           name=${name}
           ?checked=${checked}
-          value=${value}
+          .value=${value}
           ?disabled=${disabled}
           @change=${__change}
         />
         <span part="label">${children.length ? children : label}</span>
       </label>
-      ${this.__renderCaption(showCaption, caption)}
+      ${this.__renderCaption()}
     `;
   }
 }

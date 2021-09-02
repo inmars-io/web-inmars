@@ -1,6 +1,7 @@
-import { svg, property, MarsElement } from '@web-inmars/core';
-import { selectIcon } from '@web-inmars/mars-awesome';
+import { svg, property, MarsElement } from '@webinmars/core';
+import { selectIcon } from '@webinmars/mars-awesome';
 import { styles } from './MarsIcon.styles';
+
 export class MarsIcon extends MarsElement {
   static get styles() {
     return [...super.styles, styles];

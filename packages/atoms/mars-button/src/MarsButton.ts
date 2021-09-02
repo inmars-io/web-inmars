@@ -1,5 +1,6 @@
-import { html, property, MarsElement } from '@web-inmars/core';
+import { html, property, MarsElement } from '@webinmars/core';
 import { styles } from './MarsButton.styles';
+
 export class MarsButton extends MarsElement {
   static get styles() {
     return [...super.styles, styles];
@@ -20,7 +21,7 @@ export class MarsButton extends MarsElement {
       event.stopImmediatePropagation();
       return;
     }
-    let newEvent = new CustomEvent('on-click', {
+    const newEvent = new CustomEvent('on-click', {
       detail: { event },
     });
     this.dispatchEvent(newEvent);

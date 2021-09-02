@@ -6,8 +6,9 @@ import {
   css,
   colorGray,
   fontFundations,
-} from '@web-inmars/core';
+} from '@webinmars/core';
 import { styles } from './MarsTextField.styles';
+
 export class MarsTextField extends MarsElement {
   static get styles() {
     return [
@@ -50,7 +51,7 @@ export class MarsTextField extends MarsElement {
       return;
     }
     this.value = event?.target?.value;
-    let newEvent = new CustomEvent('on-input', {
+    const newEvent = new CustomEvent('on-input', {
       detail: { event, value: this.value },
       bubbles: true,
       composed: true,
