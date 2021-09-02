@@ -15,6 +15,7 @@ export const styles = css`
     font-size: var(--button-font-size);
     border: 0;
     padding: 10px 22px;
+    width: 100%;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.5s ease;

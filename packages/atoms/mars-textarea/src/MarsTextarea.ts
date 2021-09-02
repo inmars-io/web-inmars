@@ -38,15 +38,16 @@ export class MarsTextarea extends MarsElement {
 
   @property({ type: Boolean, attribute: 'show-caption' }) showCaption = false;
 
-  __change(event: any) {
+  __input(event: any) {
     if (this.disabled) {
       event.preventDefault();
       event.stopPropagation();
       event.stopImmediatePropagation();
       return;
     }
-    let newEvent = new CustomEvent('on-change', {
-      detail: { event },
+    this.value = event.target.value;
+    let newEvent = new CustomEvent('on-input', {
+      detail: { event, value: this.value },
     });
     this.dispatchEvent(newEvent);
   }
@@ -67,7 +68,7 @@ export class MarsTextarea extends MarsElement {
         .name=${this.name}
         .placeholder=${this.label}
         ?disabled=${this.disabled}
-        @change=${this.__change}
+        @input=${this.__input}
       >
 ${this.value}</textarea
       >

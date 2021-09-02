@@ -17,7 +17,8 @@ export const styles = css`
     --textarea-font-size-label: var(--font-size-mobile-sm);
     font-family: var(--textarea-family-font);
     display: grid;
-    width: fit-content;
+    min-height: 100px;
+    min-width: 300px;
     grid-template-areas: 'textarea';
     box-sizing: border-box;
     font-weight: 300;
@@ -35,8 +36,6 @@ export const styles = css`
     grid-area: textarea;
     box-sizing: border-box;
     padding: 12px 18px 12px 18px;
-    min-height: 100px;
-    min-width: 300px;
     font-weight: 300;
   }
 
