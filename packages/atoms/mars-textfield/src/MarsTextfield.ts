@@ -7,9 +7,9 @@ import {
   colorGray,
   fontFundations,
 } from '@web-inmars/core';
-import { styles } from './MarsTextField.styles';
+import { styles } from './MarsTextfield.styles';
 
-export class MarsTextField extends MarsElement {
+export class MarsTextfield extends MarsElement {
   static get styles() {
     return [
       ...super.styles,

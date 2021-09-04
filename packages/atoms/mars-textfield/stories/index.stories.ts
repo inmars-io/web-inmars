@@ -1,9 +1,9 @@
 import { html, TemplateResult } from 'lit-html';
-import '../mars-text-field.js';
+import '../mars-textfield.js';
 
 export default {
-  title: 'MarsTextField',
-  component: 'mars-text-field',
+  title: 'MarsTextfield',
+  component: 'mars-textfield',
   argTypes: {
     onChage: { action: 'changed' },
     value: { control: 'text' },
@@ -54,7 +54,7 @@ const Template: Story<ArgTypes> = ({
   label = 'This is a label',
   showCaption = false,
 }: ArgTypes) => html`
-  <mars-text-field
+  <mars-textfield
     .value=${value}
     .name=${name}
     .placeholder=${placeholder}
@@ -66,7 +66,7 @@ const Template: Story<ArgTypes> = ({
     ?show-caption=${showCaption}
     type=${type}
   >
-  </mars-text-field>
+  </mars-textfield>
 `;
 
 export const Regular = Template.bind({});
