@@ -4,7 +4,7 @@ import {
   colorFundations,
   fontFundations,
   colorMarsBase,
-} from '../styles/fundations';
+} from '../styles/fundations.js';
 
 export class MarsElement extends LitElement {
   static styles = [

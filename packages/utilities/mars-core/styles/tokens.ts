@@ -1,5 +1,5 @@
 import { css } from 'lit-element';
-import { calcRemMixin } from './mixins';
+import { calcRemMixin } from './mixins.js';
 
 export const COLOR_INDIGO = {
   100: css`#dbcfec`,
