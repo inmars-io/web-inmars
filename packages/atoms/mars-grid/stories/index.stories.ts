@@ -1,4 +1,5 @@
 import { html, TemplateResult } from 'lit-html';
+import { ifDefined } from 'lit-html/directives/if-defined';
 import '../mars-grid.js';
 
 export default {
@@ -64,16 +65,16 @@ const Template: Story<ArgTypes> = ({
     ?inline=${inline}
     grid=${grid}
     gap=${gap}
-    grid-template=${gridTemplate}
-    justify-items=${justifyItems}
-    align-items=${alignItems}
-    place-items=${placeItems}
-    justify-content=${justifyContent}
-    align-content=${alignContent}
-    place-content=${placeContent}
-    grid-auto-flow=${gridAutoFlow}
-    grid-size=${gridSize}
-    container-size=${containerSize}
+    grid-template=${ifDefined(gridTemplate)}
+    justify-items=${ifDefined(justifyItems)}
+    align-items=${ifDefined(alignItems)}
+    place-items=${ifDefined(placeItems)}
+    justify-content=${ifDefined(justifyContent)}
+    align-content=${ifDefined(alignContent)}
+    place-content=${ifDefined(placeContent)}
+    grid-auto-flow=${ifDefined(gridAutoFlow)}
+    grid-size=${ifDefined(gridSize)}
+    container-size=${ifDefined(containerSize)}
   >
     ${slot}
   </mars-grid>

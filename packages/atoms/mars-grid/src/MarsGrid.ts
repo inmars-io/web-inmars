@@ -1,72 +1,8 @@
 import { html, css, LitElement, property } from 'lit-element';
 import { styleMap } from 'lit-html/directives/style-map';
+import { styles } from './MarsGrid.styles';
 
 export class MarsGrid extends LitElement {
-  static styles = css`
-    :host {
-      display: block;
-      max-width: var(--mars-container-width, inherit);
-      max-height: var(--mars-container-height, inherit);
-    }
-
-    section {
-      display: var(--mars-display-grid, grid);
-      max-width: var(--mars-grid-width, fit-content);
-      max-height: var(--mars-grid-height, fit-content);
-    }
-
-    :host([inline]) section {
-      --display-grid: inline-grid;
-    }
-
-    :host([grid-size*='full-width']) {
-      --mars-grid-width: 100%;
-    }
-
-    :host([grid-size*='full-height']) {
-      --mars-grid-height: 100%;
-    }
-
-    :host([grid-size='extra-large']) {
-      --mars-grid-width: var(--mars-grid-width-extra-large, 1140px);
-    }
-
-    :host([grid-size='large']) {
-      --mars-grid-width: var(--mars-grid-width-large, 960px);
-    }
-
-    :host([grid-size='medium']) {
-      --mars-grid-width: var(--mars-grid-width-medium, 720px);
-    }
-
-    :host([grid-size='small']) {
-      --mars-grid-width: var(--mars-grid-width-small, 540px);
-    }
-    :host([grid-size*='full-width']) {
-      --mars-grid-width: 100%;
-    }
-
-    :host([grid-size*='full-height']) {
-      --mars-grid-height: 100%;
-    }
-
-    :host([container-size='extra-large']) {
-      --mars-container-width: var(--mars-container-width-extra-large, 1220px);
-    }
-
-    :host([container-size='large']) {
-      --mars-container-width: var(--mars-container-width-large, 1000px);
-    }
-
-    :host([container-size='medium']) {
-      --mars-container-width: var(--mars-container-width-medium, 800px);
-    }
-
-    :host([container-size='small']) {
-      --mars-container-width: var(--mars-container-width-small, 620px);
-    }
-  `;
-
   @property({ type: Boolean }) inline = false;
 
   @property({ type: String, attribute: 'grid-template' }) gridTemplate = '';
@@ -101,7 +37,12 @@ export class MarsGrid extends LitElement {
     alignSelf: 'align-self',
     placeSelf: 'place-self',
   };
+
   private _children: any = [];
+
+  createRenderRoot() {
+    return this;
+  }
 
   update(changedProperties: Map<string | number | symbol, unknown>) {
     if (changedProperties) {
@@ -137,7 +78,10 @@ export class MarsGrid extends LitElement {
 
   render() {
     return html`<section part="grid" style=${styleMap(this._styleMap)}>
-      ${this._getChildren()}
-    </section>`;
+        ${this._getChildren()}
+      </section>
+      <style>
+        ${styles}
+      </style> `;
   }
 }
