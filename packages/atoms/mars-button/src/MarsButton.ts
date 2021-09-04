@@ -1,4 +1,4 @@
-import { html, property, MarsElement } from '@webinmars/core';
+import { html, property, MarsElement } from '@web-inmars/core';
 import { styles } from './MarsButton.styles';
 
 export class MarsButton extends MarsElement {

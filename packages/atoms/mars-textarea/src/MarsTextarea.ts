@@ -6,7 +6,7 @@ import {
   css,
   colorGray,
   fontFundations,
-} from '@webinmars/core';
+} from '@web-inmars/core';
 import { styles } from './MarsTextarea.styles';
 
 export class MarsTextarea extends MarsElement {
