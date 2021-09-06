@@ -1,4 +1,5 @@
 import { html, TemplateResult } from 'lit-html';
+import '@web-inmars/mars-awesome-solid/dist/index';
 import '../mars-icon.js';
 
 export default {

@@ -39,9 +39,9 @@
     "clean": "rimraf node_modules && rimraf yarn.lock && lerna clean",
     "bootstrap": "yarn install && lerna bootstrap"
   },
-  "name": "webinmars",
+  "name": "web-inmars",
   "version": "0.0.1",
-  "description": "Webcomponent web-inmars following open-wc recommendations",
+  "description": "UI Webcomponents Library",
   "author": "Mars Gotta <me@marsgotta.com> (http://www.marsgotta.com)",
   "license": "MIT",
   "dependencies": {

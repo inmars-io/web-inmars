@@ -1,6 +1,15 @@
 import { svg, property, MarsElement } from '@web-inmars/core';
-import { selectIcon } from '@web-inmars/mars-awesome';
+
 import { styles } from './MarsIcon.styles';
+declare global {
+  interface Window {
+    __webinmars: any;
+  }
+}
+
+function selectIcon(name: any, iconSet: any) {
+  return name && iconSet[name as keyof object];
+}
 
 export class MarsIcon extends MarsElement {
   static get styles() {
@@ -17,9 +26,32 @@ export class MarsIcon extends MarsElement {
 
   @property({ type: String, attribute: true }) variant = '';
 
+  __iconSet: any = {};
+
+  connectedCallback() {
+    super.connectedCallback();
+    this.__setIconSet();
+  }
+
+  update(_changedProperties: any) {
+    super.update(_changedProperties);
+    if (_changedProperties.has('type') || _changedProperties.has('name')) {
+      this.__setIconSet();
+    }
+  }
+
+  __setIconSet() {
+    const globalIconSet = window?.__webinmars?.iconSet[this.type];
+    if (globalIconSet && globalIconSet !== this.__iconSet) {
+      this.__iconSet = globalIconSet;
+    }
+  }
+
   render() {
-    const icon: { path: any; viewBox: any } =
-      selectIcon(this.name, this.type) || '';
+    const icon: { path: any; viewBox: any } = selectIcon(
+      this.name,
+      this.__iconSet
+    );
     return (
       icon &&
       svg`
