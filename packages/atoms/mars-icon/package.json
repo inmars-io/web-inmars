@@ -18,7 +18,7 @@
 		"storybook:build": "tsc && build-storybook"
 	},
 	"dependencies": {
-		"@web-inmars/core": "^0.0.1",
+		"@web-inmars/mars-core": "^0.1.0",
 		"@web-inmars/mars-awesome": "^0.1.0",
 		"@web-inmars/mars-awesome-solid": "^0.1.0",
 		"lit-element": "^2.4.0",

@@ -6,7 +6,7 @@ import {
   css,
   colorGray,
   fontFundations,
-} from '@web-inmars/core';
+} from '@web-inmars/mars-core';
 import { styles } from './MarsRadioButton.styles';
 
 export class MarsRadioButton extends MarsElement {

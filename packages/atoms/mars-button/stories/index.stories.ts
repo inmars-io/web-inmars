@@ -1,5 +1,5 @@
 import { html } from 'lit-element';
-import { tagsFont, TemplateResult } from '@web-inmars/core';
+import { tagsFont, TemplateResult } from '@web-inmars/mars-core';
 import { unsafeHTML } from 'lit-html/directives/unsafe-html.js';
 
 import '../mars-button.js';

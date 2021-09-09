@@ -1,6 +1,7 @@
-import { svg, property, MarsElement } from '@web-inmars/core';
+import { svg, property, MarsElement } from '@web-inmars/mars-core';
 
 import { styles } from './MarsIcon.styles';
+
 declare global {
   interface Window {
     __webinmars: any;

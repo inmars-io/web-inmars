@@ -6,7 +6,7 @@ import {
   css,
   colorGray,
   fontFundations,
-} from '@web-inmars/core';
+} from '@web-inmars/mars-core';
 import { styles } from './MarsCheckbox.styles';
 
 export class MarsCheckbox extends MarsElement {
