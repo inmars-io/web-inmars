@@ -28,6 +28,7 @@ const { source, help } = commandLineArgs(options);
 const writeFile = util.promisify(fs.writeFile);
 const readFile = util.promisify(fs.readFile);
 const delimiter = /<%\s*content\s*%>/;
+const delimiterIcon = /<%\s*contentIcon\s*%>/;
 
 function printUsage() {
   const sections = [
@@ -55,12 +56,15 @@ if (!source) {
 }
 
 const templateFile = path.join(__dirname, './template.tmpl');
+const templateIconFile = path.join(__dirname, './templateIcon.tmpl');
 
 glob(source, async (err, files) => {
   const template = await readFile(templateFile, 'utf-8');
+  const templateIcon = await readFile(templateIconFile, 'utf-8');
   const iconTypes = ['brands', 'solid', 'regular'];
   iconTypes.forEach(async type => {
     let iconSet = {};
+
     const itemFiltered = files.filter(
       file => !path.basename(file).startsWith('_')
     );
@@ -71,11 +75,33 @@ glob(source, async (err, files) => {
           .replace('.svg', '')
           .replace(`assets/svg/${type}/`, '');
         iconSet[name] = pathD;
+        const newContent = templateIcon.replace(
+          delimiter,
+          JSON.stringify(pathD)
+        );
+        const newContent2 = newContent.replace(
+          delimiterIcon,
+          `${type}['${name}']`
+        );
+        writeFile(
+          `packages/utilities/mars-awesome-${type}/src/icons/${name}.ts`,
+          newContent2,
+          'utf-8'
+        );
       }
     })[0];
     setTimeout(() => {
       const newContent = template.replace(delimiter, JSON.stringify(iconSet));
-      return writeFile(`./src/icons/${type}-icons.ts`, newContent, 'utf-8');
+      writeFile(
+        `packages/utilities/mars-awesome-${type}/src/icons/all.ts`,
+        newContent,
+        'utf-8'
+      );
+      return writeFile(
+        `packages/utilities/mars-awesome/src/icons/${type}-icons.ts`,
+        newContent,
+        'utf-8'
+      );
     }, 2000);
   });
 });

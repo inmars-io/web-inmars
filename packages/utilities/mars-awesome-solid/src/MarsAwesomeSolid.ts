@@ -1,4 +1,4 @@
-import solidIcons from './icons/solid-icons';
+import solidIcons from './icons/all.js';
 
 declare global {
   interface Window {

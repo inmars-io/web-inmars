@@ -1,4 +1,4 @@
-import brandsIcons from './icons/brands-icons';
+import brandsIcons from './icons/all.js';
 
 declare global {
   interface Window {

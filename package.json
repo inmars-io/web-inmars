@@ -37,7 +37,8 @@
     "start:build": "npm run build && web-dev-server --root-dir dist --app-index index.html --open --compatibility none",
     "start": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds\"",
     "clean": "rimraf node_modules && rimraf yarn.lock && lerna clean",
-    "bootstrap": "yarn install && lerna bootstrap"
+    "bootstrap": "yarn install && lerna bootstrap",
+    "build:svg": "node ./scripts/svg-to-object/index.js -s \" assets/svg/**/**.svg \""
   },
   "name": "web-inmars",
   "version": "0.0.1",
