@@ -197,6 +197,12 @@ export const FONT_FAMILY = {
   mono: css`var(--theme-font-family-mono, 'Roboto Mono', monospace)`,
 };
 
+export const FONT_FAMILY_TITLE = {
+  primary: css`var(--theme-font-family-title-primary, 'Montserrat', sans-serif)`,
+  secondary: css`var(--theme-font-family-title-secondary, 'Quicksand', sans-serif)`,
+  mono: css`var(--theme-font-family-title-mono, 'Roboto Mono', monospace)`,
+};
+
 export const FONT_SIZE_MOBILE = {
   xs4: css`var(--theme-font-size-mobile-4xs, ${calcRemMixin(8)})`,
   xs3: css`var(--theme-font-size-mobile-3xs, ${calcRemMixin(10)})`,
@@ -323,6 +329,7 @@ export default {
   COLOR_TERTIARY,
   COLOR_TEXT,
   FONT_FAMILY,
+  FONT_FAMILY_TITLE,
   FONT_SIZE_MOBILE,
   FONT_SIZE_DESKTOP,
   FONT_WEIGHT,

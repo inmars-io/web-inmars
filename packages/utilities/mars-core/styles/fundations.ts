@@ -52,6 +52,9 @@ export const colorText = (types: any[]) =>
 export const fontFamily = (types: any[]) =>
   selectVariables(types, TOKENS.FONT_FAMILY, 'font-family');
 
+export const fontFamilyTitle = (types: any[]) =>
+  selectVariables(types, TOKENS.FONT_FAMILY_TITLE, 'font-family-title');
+
 export const fontSizeMobile = (types: any[]) =>
   selectVariables(types, TOKENS.FONT_SIZE_MOBILE, 'font-size-mobile');
 
