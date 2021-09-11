@@ -1,7 +1,7 @@
 import { html, unsafeHTML, property, MarsElement } from '@web-inmars/mars-core';
-import { styles } from './MarsText.styles';
+import { styles } from './MarsTitle.styles';
 
-export class MarsText extends MarsElement {
+export class MarsTitle extends MarsElement {
   static get styles() {
     return [...super.styles, styles];
   }
@@ -10,17 +10,15 @@ export class MarsText extends MarsElement {
 
   @property({ type: String }) variant = '';
 
-  @property({ type: String }) tag = '';
-
-  @property({ type: String, attribute: 'css-part' }) cssPart = '';
+  @property({ type: String }) heading = '';
 
   @property({ type: Boolean }) disabled = false;
 
   render() {
     return html`${unsafeHTML(
-      `<${this.tag} class="text" part=${this.cssPart || this.tag}>
+      `<h${this.heading} class="title" part=${`title-${this.heading}`}>
         ${this.value}
-      </${this.tag}>`
+      </h${this.heading}>`
     )}`;
   }
 }

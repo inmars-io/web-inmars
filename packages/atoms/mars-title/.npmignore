@@ -1,0 +1,15 @@
+.npmignore
+stories/*
+.storybook/*
+src/*
+node_modules/*
+test/*
+demo/*
+dist/stories/*
+dist/test/*
+dist/tsconfig.tsbuildinfo
+**.d.ts
+**.js.map
+**.ts
+**.config.mjs
+tsconfig.json
