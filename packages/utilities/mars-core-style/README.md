@@ -1,20 +1,19 @@
-# \mars-core
+# \mars-core-styles
 
-This packages contains the core utilities of the web-inmars UI Library.
+This packages contains the styles for the core components of the web-inmars UI Library.
 
 ## Installation
 ```bash
-npm i @web-inmars/mars-core
-yarn add @web-inmars/mars-core
+npm i @web-inmars/mars-core-styles
+yarn add @web-inmars/mars-core-styles
 ```
 
 ## Usage
 ```html
 <script type="module">
-  import '@web-inmars/mars-core/mars-core.js';
+  import 'mars-core-styles/mars-core-styles.js';
 </script>
 ```
-
 
 ## Linting with ESLint, Prettier, and Types
 To scan the project for linting errors, run

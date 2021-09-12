@@ -1,7 +1,7 @@
 {
-  "name": "@web-inmars/mars-core",
-  "version": "0.1.1",
-  "description": "Webcomponent mars-core following open-wc recommendations",
+  "name": "@web-inmars/mars-core-style",
+  "version": "0.0.1",
+  "description": "Webcomponent mars-core-style following open-wc recommendations",
   "author": "Mars Gotta <me@marsgotta.com> (http://www.marsgotta.com)",
   "license": "MIT",
   "main": "dist/index.js",

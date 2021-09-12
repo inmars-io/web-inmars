@@ -1,17 +1,17 @@
-# \mars-core
+# \mars-core-element
 
-This packages contains the core utilities of the web-inmars UI Library.
+This packages contains the core element utilities of the web-inmars UI Library.
 
 ## Installation
 ```bash
-npm i @web-inmars/mars-core
-yarn add @web-inmars/mars-core
+npm i @web-inmars/mars-core-element
+yarn add @web-inmars/mars-core-element
 ```
 
 ## Usage
 ```html
 <script type="module">
-  import '@web-inmars/mars-core/mars-core.js';
+  import '@web-inmars/mars-core-element/mars-core-element.js';
 </script>
 ```
 
