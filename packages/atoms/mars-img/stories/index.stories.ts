@@ -1,6 +1,9 @@
-import { html } from 'lit-element';
-import { tagsFont, TemplateResult } from '@web-inmars/mars-core';
-import { unsafeHTML } from 'lit-html/directives/unsafe-html.js';
+import {
+  html,
+  tagsFont,
+  TemplateResult,
+  unsafeHTML,
+} from '@web-inmars/mars-core';
 
 import '../mars-img.js';
 

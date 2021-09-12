@@ -18,13 +18,11 @@
 		"storybook:build": "tsc && build-storybook"
 	},
 	"dependencies": {
-		"@web-inmars/mars-awesome": "^0.1.0",
-		"@web-inmars/mars-awesome-solid": "^0.1.0",
-		"@web-inmars/mars-core": "^0.1.0",
-		"lit-element": "^2.0.0",
-		"lit-html": "^1.0.0"
+		"@web-inmars/mars-core": "^0.1.0"
 	},
 	"devDependencies": {
+	  "@web-inmars/mars-awesome": "^0.1.0",
+	  "@web-inmars/mars-awesome-solid": "^0.1.0",
 	  "@open-wc/eslint-config": "^4.0.0",
 	  "@open-wc/testing": "^2.0.0",
 	  "@typescript-eslint/eslint-plugin": "^4.0.0",

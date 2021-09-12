@@ -1,8 +1,7 @@
-import { html, css, LitElement, property } from 'lit-element';
-import { styleMap } from 'lit-html/directives/style-map';
+import { html, styleMap, MarsElement, property } from '@web-inmars/mars-core';
 import { styles } from './MarsGrid.styles';
 
-export class MarsGrid extends LitElement {
+export class MarsGrid extends MarsElement {
   @property({ type: Boolean }) inline = false;
 
   @property({ type: String, attribute: 'grid-template' }) gridTemplate = '';

@@ -1,4 +1,4 @@
-import { css } from 'lit-element';
+import { css } from '@web-inmars/mars-core';
 
 export const styles = css`
   :host {

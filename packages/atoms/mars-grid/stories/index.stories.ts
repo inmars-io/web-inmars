@@ -1,5 +1,4 @@
-import { html, TemplateResult } from 'lit-html';
-import { ifDefined } from 'lit-html/directives/if-defined';
+import { html, TemplateResult, ifDefined } from '@web-inmars/mars-core';
 import '../mars-grid.js';
 
 export default {

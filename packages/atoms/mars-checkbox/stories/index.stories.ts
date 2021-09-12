@@ -1,4 +1,4 @@
-import { html, TemplateResult } from 'lit-html';
+import { html, TemplateResult } from '@web-inmars/mars-core';
 import '../mars-checkbox.js';
 
 export default {
