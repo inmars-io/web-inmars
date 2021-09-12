@@ -2,7 +2,7 @@ import { html, TemplateResult } from 'lit-html';
 import '../mars-textarea.js';
 
 export default {
-  title: 'MarsTextarea',
+  title: 'Atoms / MarsTextarea',
   component: 'mars-textarea',
   argTypes: {
     onChage: { action: 'changed' },

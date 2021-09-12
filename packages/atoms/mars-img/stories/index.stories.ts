@@ -5,7 +5,7 @@ import { unsafeHTML } from 'lit-html/directives/unsafe-html.js';
 import '../mars-img.js';
 
 export default {
-  title: 'MarsImg',
+  title: 'Atoms / MarsImg',
   component: 'mars-img',
   argTypes: {
     src: { control: 'text' },

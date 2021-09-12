@@ -2,7 +2,7 @@ import { html, TemplateResult } from 'lit-html';
 import '../mars-radio-button.js';
 
 export default {
-  title: 'MarsRadioButton',
+  title: 'Atoms / MarsRadioButton',
   component: 'mars-radio-button',
   argTypes: {
     onChage: { action: 'changed' },

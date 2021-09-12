@@ -5,7 +5,7 @@ import { unsafeHTML } from 'lit-html/directives/unsafe-html.js';
 import '../mars-button.js';
 
 export default {
-  title: 'MarsButton',
+  title: 'Atoms / MarsButton',
   component: 'mars-button',
   argTypes: {
     onClick: { action: 'clicked' },

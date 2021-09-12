@@ -2,7 +2,7 @@ import { html, TemplateResult } from 'lit-html';
 import '../mars-textfield.js';
 
 export default {
-  title: 'MarsTextfield',
+  title: 'Atoms / MarsTextfield',
   component: 'mars-textfield',
   argTypes: {
     onChage: { action: 'changed' },

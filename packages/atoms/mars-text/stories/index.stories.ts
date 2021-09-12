@@ -5,7 +5,7 @@ import { unsafeHTML } from 'lit-html/directives/unsafe-html.js';
 import '../mars-text.js';
 
 export default {
-  title: 'MarsText',
+  title: 'Atoms / MarsText',
   component: 'mars-text',
   argTypes: {
     value: { control: 'text' },

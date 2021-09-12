@@ -3,7 +3,7 @@ import { ifDefined } from 'lit-html/directives/if-defined';
 import '../mars-grid.js';
 
 export default {
-  title: 'MarsGrid',
+  title: 'Atoms / MarsGrid',
   component: 'mars-grid',
   argTypes: {
     inline: { control: 'boolean' },

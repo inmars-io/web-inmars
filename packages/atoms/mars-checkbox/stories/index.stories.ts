@@ -2,7 +2,7 @@ import { html, TemplateResult } from 'lit-html';
 import '../mars-checkbox.js';
 
 export default {
-  title: 'MarsCheckbox',
+  title: 'Atoms / MarsCheckbox',
   component: 'mars-checkbox',
   argTypes: {
     onChage: { action: 'changed' },

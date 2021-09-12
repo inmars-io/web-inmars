@@ -3,7 +3,7 @@ import '@web-inmars/mars-awesome-solid/dist/index';
 import '../mars-icon.js';
 
 export default {
-  title: 'MarsIcon',
+  title: 'Atoms / MarsIcon',
   component: 'mars-icon',
   argTypes: {
     type: { type: 'select', options: ['solid', 'regular', 'brands'] },
