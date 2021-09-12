@@ -1,8 +1,7 @@
 {
   "packages": [
     "packages/atoms/*",
-    "packages/utilities/*",
-    "packages/core"
+    "packages/utilities/*"
   ],
   "npmClient": "yarn",
   "version": "independent",
@@ -12,5 +11,11 @@
       "conventionalCommits": true,
       "conventionalGraduate": true
     }
-  }
+  },
+  "ignoreChanges": [
+    "**/stories/**",
+    "**/demo/**",
+    "**/test/**",
+    "**/*.md"
+  ]
 }

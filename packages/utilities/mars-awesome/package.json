@@ -19,7 +19,7 @@
   "author": "Mars Gotta <me@marsgotta.com> (http://www.marsgotta.com)",
   "license": "ISC",
   "dependencies": {
-    "command-line-args": "^5.1.1",
-    "command-line-usage": "^6.1.1"
+    "command-line-args": "^5.0.0",
+    "command-line-usage": "^6.0.0"
   }
 }
