@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.3](https://github.com/MarsGotta/web-inmars/compare/@web-inmars/mars-switch@0.1.2...@web-inmars/mars-switch@0.1.3) (2021-09-13)
+
+
+### Bug Fixes
+
+* **mars-switch:** css custom variables added ([2da6fdf](https://github.com/MarsGotta/web-inmars/commit/2da6fdf990f222ed0840ce3edef2032ba58b7a18))
+
+
+
+
+
 ## [0.1.2](https://github.com/MarsGotta/web-inmars/compare/@web-inmars/mars-switch@0.1.1...@web-inmars/mars-switch@0.1.2) (2021-09-13)
 
 
