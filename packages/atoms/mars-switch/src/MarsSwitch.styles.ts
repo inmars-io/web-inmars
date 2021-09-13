@@ -89,25 +89,31 @@ export const styles = css`
 
   :host([variant*='outline']) [part='slider'] {
     background-color: transparent;
-    border: 2px solid var(--switch-color-bg);
+    border: 2px solid var(--custom-switch-color-bg, var(--switch-color-bg));
     border-radius: var(--switch-border-radius);
     box-sizing: border-box;
   }
 
   :host([variant*='outline']) [part='slider'] [part='slider-content'] {
-    background-color: var(--switch-color-bg);
+    background-color: var(--custom-switch-color-bg, var(--switch-color-bg));
   }
 
   :host([variant*='outline']) [part='switch']:checked + [part='slider'] {
     background: transparent;
-    border-color: var(--switch-color-bg-checked);
+    border-color: var(
+      --custom-switch-color-bg-checked,
+      var(--switch-color-bg-checked)
+    );
   }
 
   :host([variant*='outline'])
     [part='switch']:checked
     + [part='slider']
     [part='slider-content'] {
-    background-color: var(--switch-color-bg-checked);
+    background-color: var(
+      --custom-switch-color-bg-checked,
+      var(--switch-color-bg-checked)
+    );
   }
 
   :host([variant*='outline'])
