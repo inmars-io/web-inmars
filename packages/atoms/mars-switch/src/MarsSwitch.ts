@@ -65,10 +65,9 @@ export class MarsSwitch extends MarsElement {
   }
 
   render() {
-    const { children, name, checked, value, label, disabled, id, __change } =
-      this;
+    const { name, checked, value, label, disabled, id, __change } = this;
     return html`
-      <label for=${id}>
+      <label for=${id} part="switch-box">
         <input
           id=${id}
           part="switch"
@@ -79,8 +78,12 @@ export class MarsSwitch extends MarsElement {
           ?disabled=${disabled}
           @change=${__change}
         />
-        <span part="slider"></span>
-        <span part="label">${children.length ? children : label}</span>
+        <span part="slider">
+          <span part="slider-content">
+            <slot name="slider"></slot>
+          </span>
+        </span>
+        <span part="label"><slot name="label">${label}</slot></span>
       </label>
       ${this.__renderCaption()}
     `;

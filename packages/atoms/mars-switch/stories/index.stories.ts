@@ -17,7 +17,7 @@ export default {
     variant: {
       control: {
         type: 'select',
-        options: ['primary', 'secondary', 'tertiary'],
+        options: ['primary', 'secondary', 'tertiary', 'xs', 'sm'],
       },
     },
   },
@@ -82,7 +82,7 @@ CustomValue.args = {
 
 export const SlottedContent = Template.bind({});
 SlottedContent.args = {
-  slot: html`<span>Slotted content</span>`,
+  slot: html`<span slot="label">Content slotted</span>`,
 };
 
 SlottedContent.argTypes = {
