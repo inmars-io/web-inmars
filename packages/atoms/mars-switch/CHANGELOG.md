@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.2](https://github.com/MarsGotta/web-inmars/compare/@web-inmars/mars-switch@0.1.1...@web-inmars/mars-switch@0.1.2) (2021-09-13)
+
+
+### Bug Fixes
+
+* **mars-switch:** added outline variant and event bubbled and composed ([60eaac9](https://github.com/MarsGotta/web-inmars/commit/60eaac9a88d007037063e3c7c1203899c48c6d26))
+
+
+
+
+
 ## [0.1.1](https://github.com/MarsGotta/web-inmars/compare/@web-inmars/mars-switch@0.1.0...@web-inmars/mars-switch@0.1.1) (2021-09-13)
 
 

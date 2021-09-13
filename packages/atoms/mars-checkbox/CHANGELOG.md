@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/MarsGotta/web-inmars/compare/@web-inmars/mars-checkbox@0.2.0...@web-inmars/mars-checkbox@0.2.1) (2021-09-13)
+
+
+### Bug Fixes
+
+* bubbled and composed added to events ([ed990ea](https://github.com/MarsGotta/web-inmars/commit/ed990ea4aa78b258e33d9ac6b1044a418d856cdb))
+
+
+
+
+
 # [0.2.0](https://github.com/MarsGotta/web-inmars/compare/@web-inmars/mars-checkbox@0.1.2...@web-inmars/mars-checkbox@0.2.0) (2021-09-13)
 
 

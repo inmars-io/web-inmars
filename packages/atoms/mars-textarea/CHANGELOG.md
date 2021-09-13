@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.4](https://github.com/MarsGotta/web-inmars/compare/@web-inmars/mars-textarea@0.1.3...@web-inmars/mars-textarea@0.1.4) (2021-09-13)
+
+
+### Bug Fixes
+
+* bubbled and composed added to events ([ed990ea](https://github.com/MarsGotta/web-inmars/commit/ed990ea4aa78b258e33d9ac6b1044a418d856cdb))
+
+
+
+
+
 ## [0.1.3](https://github.com/MarsGotta/web-inmars/compare/@web-inmars/mars-textarea@0.1.2...@web-inmars/mars-textarea@0.1.3) (2021-09-13)
 
 **Note:** Version bump only for package @web-inmars/mars-textarea
