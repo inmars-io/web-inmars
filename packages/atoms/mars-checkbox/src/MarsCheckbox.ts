@@ -50,6 +50,8 @@ export class MarsCheckbox extends MarsElement {
     }
     const newEvent = new CustomEvent('on-change', {
       detail: { event },
+      bubbles: true,
+      composed: true,
     });
     this.dispatchEvent(newEvent);
   }

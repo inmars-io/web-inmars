@@ -49,6 +49,8 @@ export class MarsTextarea extends MarsElement {
     this.value = event.target.value;
     const newEvent = new CustomEvent('on-input', {
       detail: { event, value: this.value },
+      bubbles: true,
+      composed: true,
     });
     this.dispatchEvent(newEvent);
   }

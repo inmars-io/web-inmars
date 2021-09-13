@@ -23,6 +23,8 @@ export class MarsButton extends MarsElement {
     }
     const newEvent = new CustomEvent('on-click', {
       detail: { event },
+      bubbles: true,
+      composed: true,
     });
     this.dispatchEvent(newEvent);
   }
