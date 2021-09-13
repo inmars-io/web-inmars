@@ -1,6 +1,6 @@
 {
   "name": "@web-inmars/mars-checkbox",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Webcomponent mars-checkbox following open-wc recommendations",
   "author": "Mars Gotta <me@marsgotta.com> (http://www.marsgotta.com)",
   "license": "MIT",
@@ -18,7 +18,7 @@
     "storybook:build": "tsc && build-storybook"
   },
   "dependencies": {
-    "@web-inmars/mars-core": "^0.1.0"
+    "@web-inmars/mars-core": "^0.2.0"
   },
   "devDependencies": {
     "@open-wc/eslint-config": "^4.0.0",

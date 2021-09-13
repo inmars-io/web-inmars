@@ -1,6 +1,6 @@
 {
   "name": "@web-inmars/mars-link",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Webcomponent mars-link following open-wc recommendations",
   "author": "Mars Gotta <me@marsgotta.com> (http://www.marsgotta.com)",
   "license": "MIT",
@@ -17,26 +17,26 @@
     "storybook": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds -c .storybook/server.mjs\"",
     "storybook:build": "tsc && build-storybook"
   },
-	"dependencies": {
-	  "@web-inmars/mars-core": "^0.1.0"
-	},
-	"devDependencies": {
-	  "@open-wc/eslint-config": "^4.0.0",
-	  "@open-wc/testing": "^2.0.0",
-	  "@typescript-eslint/eslint-plugin": "^4.0.0",
-	  "@typescript-eslint/parser": "^4.0.0",
-	  "@web/dev-server": "^0.1.0",
-	  "@web/dev-server-storybook": "^0.3.0",
-	  "@web/test-runner": "^0.12.0",
-	  "concurrently": "^5.0.0",
-	  "eslint": "^7.0.0",
-	  "eslint-config-prettier": "^7.0.0",
-	  "husky": "^4.0.0",
-	  "lint-staged": "^10.0.0",
-	  "prettier": "^2.0.0",
-	  "tslib": "^2.0.0",
-	  "typescript": "^4.0.0"
-	},
+  "dependencies": {
+    "@web-inmars/mars-core": "^0.2.0"
+  },
+  "devDependencies": {
+    "@open-wc/eslint-config": "^4.0.0",
+    "@open-wc/testing": "^2.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.0.0",
+    "@typescript-eslint/parser": "^4.0.0",
+    "@web/dev-server": "^0.1.0",
+    "@web/dev-server-storybook": "^0.3.0",
+    "@web/test-runner": "^0.12.0",
+    "concurrently": "^5.0.0",
+    "eslint": "^7.0.0",
+    "eslint-config-prettier": "^7.0.0",
+    "husky": "^4.0.0",
+    "lint-staged": "^10.0.0",
+    "prettier": "^2.0.0",
+    "tslib": "^2.0.0",
+    "typescript": "^4.0.0"
+  },
   "eslintConfig": {
     "parser": "@typescript-eslint/parser",
     "extends": [

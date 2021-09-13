@@ -1,6 +1,6 @@
 {
   "name": "@web-inmars/mars-awesome-brands",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Font awesome brands set for mars icons",
   "main": "dist/index.js",
   "scripts": {
