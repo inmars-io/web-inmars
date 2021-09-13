@@ -17,7 +17,7 @@ export default {
     variant: {
       control: {
         type: 'select',
-        options: ['primary', 'secondary', 'tertiary', 'xs', 'sm'],
+        options: ['outline', 'primary', 'secondary', 'tertiary', 'xs', 'sm'],
       },
     },
   },

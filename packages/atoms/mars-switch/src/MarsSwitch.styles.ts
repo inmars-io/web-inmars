@@ -4,7 +4,7 @@ export const styles = css`
   :host {
     --switch-color-bg: var(--color-gray-400);
     --switch-color-bg-checked: var(--color-primary-500);
-    --switch-color-bg-checked-hover: var(--color-primary-600);
+    --switch-color-bg-checked-hover: var(--color-primary-700);
     --switch-color-bg-disabled: var(--color-gray-200);
     --switch-color-bg-hover: var(--color-gray-500);
     --switch-color-focus: var(--color-primary-300);
@@ -53,6 +53,14 @@ export const styles = css`
     --switch-translate-x: 25px;
   }
 
+  :host([variant*='sm'][variant*='outline']) {
+    --switch-content-size-height: 23px;
+    --switch-content-size-width: 23px;
+    --switch-content-position-left: 0px;
+    --switch-content-position-bottom: 0px;
+    --switch-translate-x: 25px;
+  }
+
   :host([variant*='xs']) {
     --switch-size-width: 42px;
     --switch-size-height: 22px;
@@ -64,6 +72,84 @@ export const styles = css`
     --switch-translate-x: 20px;
   }
 
+  :host([variant*='xs'][variant*='outline']) {
+    --switch-content-size-height: 18px;
+    --switch-content-size-width: 18px;
+    --switch-content-position-left: 0px;
+    --switch-content-position-bottom: 0px;
+    --switch-translate-x: 20px;
+  }
+
+  :host([variant*='outline']) {
+    --switch-content-size-height: 30px;
+    --switch-content-position-left: 1px;
+    --switch-content-position-bottom: 1px;
+    --switch-translate-x: 27px;
+  }
+
+  :host([variant*='outline']) [part='slider'] {
+    background-color: transparent;
+    border: 2px solid var(--switch-color-bg);
+    border-radius: var(--switch-border-radius);
+    box-sizing: border-box;
+  }
+
+  :host([variant*='outline']) [part='slider'] [part='slider-content'] {
+    background-color: var(--switch-color-bg);
+  }
+
+  :host([variant*='outline']) [part='switch']:checked + [part='slider'] {
+    background: transparent;
+    border-color: var(--switch-color-bg-checked);
+  }
+
+  :host([variant*='outline'])
+    [part='switch']:checked
+    + [part='slider']
+    [part='slider-content'] {
+    background-color: var(--switch-color-bg-checked);
+  }
+
+  :host([variant*='outline'])
+    [part='switch']:checked:not([disabled]):hover
+    + [part='slider'] {
+    background: transparent;
+    border-color: var(
+      --custom-switch-color-bg-checked-hover,
+      var(--switch-color-bg-checked-hover)
+    );
+  }
+
+  :host([variant*='outline'])
+    [part='switch']:checked:not([disabled]):hover
+    + [part='slider']
+    [part='slider-content'] {
+    background-color: var(
+      --custom-switch-color-bg-checked-hover,
+      var(--switch-color-bg-checked-hover)
+    );
+  }
+
+  :host([variant*='outline'])
+    [part='switch']:not([disabled]):hover
+    + [part='slider'] {
+    background: transparent;
+    border-color: var(
+      --custom-switch-color-bg-hover,
+      var(--switch-color-bg-hover)
+    );
+  }
+
+  :host([variant*='outline'])
+    [part='switch']:not([disabled]):hover
+    + [part='slider']
+    [part='slider-content'] {
+    background-color: var(
+      --custom-switch-color-bg-hover,
+      var(--switch-color-bg-hover)
+    );
+  }
+
   label {
     display: flex;
     align-items: center;
@@ -71,6 +157,7 @@ export const styles = css`
 
   [part='switch'] {
     position: absolute;
+    opacity: 0;
   }
 
   [part='slider'] {
