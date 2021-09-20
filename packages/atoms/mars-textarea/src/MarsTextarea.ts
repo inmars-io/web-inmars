@@ -9,6 +9,28 @@ import {
 } from '@web-inmars/mars-core';
 import { styles } from './MarsTextarea.styles';
 
+/**
+ * # <mars-textarea>
+ * Web component that allows us to show an accessible and beautiful textarea so that users can interact
+ *
+ * ## Installation
+ * ```bash
+ *  npm i @web-inmars/mars-textarea --save
+ * ```
+ *
+ * ## Usage
+ * ```html
+ * <script type="module">
+ *   import 'mars-textarea/mars-textarea.js';
+ * </script>
+ *
+ * <mars-textarea>
+ *     Click me!
+ * </mars-textarea>
+ * ```
+ * @element mars-textarea
+ */
+
 export class MarsTextarea extends MarsElement {
   static get styles() {
     return [

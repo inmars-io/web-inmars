@@ -9,6 +9,28 @@ import {
 } from '@web-inmars/mars-core';
 import { styles } from './MarsTextfield.styles';
 
+/**
+ * # <mars-textfield>
+ * Web component that allows us to show an accessible and beautiful textfield so that users can interact
+ *
+ * ## Installation
+ * ```bash
+ *  npm i @web-inmars/mars-textfield --save
+ * ```
+ *
+ * ## Usage
+ * ```html
+ * <script type="module">
+ *   import 'mars-textfield/mars-textfield.js';
+ * </script>
+ *
+ * <mars-textfield>
+ *     Click me!
+ * </mars-textfield>
+ * ```
+ * @element mars-textfield
+ */
+
 export class MarsTextfield extends MarsElement {
   static get styles() {
     return [

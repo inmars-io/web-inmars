@@ -1,6 +1,28 @@
 import { html, property, MarsElement } from '@web-inmars/mars-core';
 import { styles } from './MarsLink.styles';
 
+/**
+ * # <mars-link>
+ * Web component that allows us to show an accessible and beautiful link so that users can interact
+ *
+ * ## Installation
+ * ```bash
+ *  npm i @web-inmars/mars-link --save
+ * ```
+ *
+ * ## Usage
+ * ```html
+ * <script type="module">
+ *   import 'mars-link/mars-link.js';
+ * </script>
+ *
+ * <mars-link>
+ *     Click me!
+ * </mars-link>
+ * ```
+ * @element mars-link
+ */
+
 export class MarsLink extends MarsElement {
   static get styles() {
     return [...super.styles, styles];

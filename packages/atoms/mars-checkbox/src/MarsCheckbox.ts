@@ -9,6 +9,28 @@ import {
 } from '@web-inmars/mars-core';
 import { styles } from './MarsCheckbox.styles';
 
+/**
+ * # <mars-checkbox>
+ * Web component that allows us to show an accessible and beautiful checkbox so that users can interact
+ *
+ * ## Installation
+ * ```bash
+ *  npm i @web-inmars/mars-checkbox --save
+ * ```
+ *
+ * ## Usage
+ * ```html
+ * <script type="module">
+ *   import 'mars-checkbox/mars-checkbox.js';
+ * </script>
+ *
+ * <mars-checkbox>
+ *     Click me!
+ * </mars-checkbox>
+ * ```
+ * @element mars-checkbox
+ */
+
 export class MarsCheckbox extends MarsElement {
   static get styles() {
     return [

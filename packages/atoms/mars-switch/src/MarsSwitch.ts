@@ -9,6 +9,28 @@ import {
 } from '@web-inmars/mars-core';
 import { styles } from './MarsSwitch.styles';
 
+/**
+ * # <mars-switch>
+ * Web component that allows us to show an accessible and beautiful switch so that users can interact
+ *
+ * ## Installation
+ * ```bash
+ *  npm i @web-inmars/mars-switch --save
+ * ```
+ *
+ * ## Usage
+ * ```html
+ * <script type="module">
+ *   import 'mars-switch/mars-switch.js';
+ * </script>
+ *
+ * <mars-switch>
+ *     Click me!
+ * </mars-switch>
+ * ```
+ * @element mars-switch
+ */
+
 export class MarsSwitch extends MarsElement {
   static get styles() {
     return [

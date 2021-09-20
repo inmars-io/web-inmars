@@ -1,6 +1,27 @@
 import { svg, property, MarsElement } from '@web-inmars/mars-core';
-
 import { styles } from './MarsIcon.styles';
+
+/**
+ * # <mars-icon>
+ * Web component that allows us to show an accessible and beautiful icon so that users can interact
+ *
+ * ## Installation
+ * ```bash
+ *  npm i @web-inmars/mars-icon --save
+ * ```
+ *
+ * ## Usage
+ * ```html
+ * <script type="module">
+ *   import 'mars-icon/mars-icon.js';
+ * </script>
+ *
+ * <mars-icon>
+ *     Click me!
+ * </mars-icon>
+ * ```
+ * @element mars-icon
+ */
 
 declare global {
   interface Window {

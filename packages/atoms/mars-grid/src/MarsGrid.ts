@@ -1,6 +1,28 @@
 import { html, styleMap, MarsElement, property } from '@web-inmars/mars-core';
 import { styles } from './MarsGrid.styles';
 
+/**
+ * # <mars-grid>
+ * Web component that allows us to show an accessible and beautiful grid so that users can interact
+ *
+ * ## Installation
+ * ```bash
+ *  npm i @web-inmars/mars-grid --save
+ * ```
+ *
+ * ## Usage
+ * ```html
+ * <script type="module">
+ *   import 'mars-grid/mars-grid.js';
+ * </script>
+ *
+ * <mars-grid>
+ *     Click me!
+ * </mars-grid>
+ * ```
+ * @element mars-grid
+ */
+
 export class MarsGrid extends MarsElement {
   @property({ type: Boolean }) inline = false;
 
