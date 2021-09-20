@@ -1,11 +1,38 @@
 import { html, property, MarsElement } from '@web-inmars/mars-core';
 import { styles } from './MarsButton.styles';
 
+/**
+ * # <mars-button>
+ * Web component that allows us to show an accessible and beautiful button so that users can interact
+ *
+ * ## Installation
+ * ```bash
+ *  npm i @web-inmars/mars-button --save
+ * ```
+ *
+ * ## Usage
+ * ```html
+ * <script type="module">
+ *   import 'mars-button/mars-button.js';
+ * </script>
+ *
+ * <mars-button>
+ *     Click me!
+ * </mars-button>
+ * ```
+ * @element mars-button
+ */
+
 export class MarsButton extends MarsElement {
   static get styles() {
     return [...super.styles, styles];
   }
 
+  /*
+   *
+   *
+   *
+   */
   @property({ type: String }) value = '';
 
   @property({ type: String }) variant = '';
