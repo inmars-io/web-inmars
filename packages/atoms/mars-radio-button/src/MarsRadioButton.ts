@@ -24,8 +24,8 @@ import { styles } from './MarsRadioButton.styles';
  *   import 'mars-radio-button/mars-radio-button.js';
  * </script>
  *
- * <mars-radio-button>
- *     Click me!
+ * <mars-radio-button id="myRadioButton">
+ *     I am a radio button!
  * </mars-radio-button>
  * ```
  * @element mars-radio-button

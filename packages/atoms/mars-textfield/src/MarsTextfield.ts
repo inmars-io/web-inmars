@@ -25,7 +25,7 @@ import { styles } from './MarsTextfield.styles';
  * </script>
  *
  * <mars-textfield>
- *     Click me!
+ *     I am a textfield
  * </mars-textfield>
  * ```
  * @element mars-textfield

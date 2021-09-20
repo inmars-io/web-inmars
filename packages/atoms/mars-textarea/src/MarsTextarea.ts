@@ -25,7 +25,7 @@ import { styles } from './MarsTextarea.styles';
  * </script>
  *
  * <mars-textarea>
- *     Click me!
+ *     I'm a textarea
  * </mars-textarea>
  * ```
  * @element mars-textarea

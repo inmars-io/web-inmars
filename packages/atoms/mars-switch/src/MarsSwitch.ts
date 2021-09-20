@@ -24,8 +24,8 @@ import { styles } from './MarsSwitch.styles';
  *   import 'mars-switch/mars-switch.js';
  * </script>
  *
- * <mars-switch>
- *     Click me!
+ * <mars-switch id="mars-switch">
+ *     I am a switch
  * </mars-switch>
  * ```
  * @element mars-switch

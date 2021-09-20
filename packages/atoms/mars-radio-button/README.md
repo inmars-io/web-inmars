@@ -1,80 +1,40 @@
-# \<mars-radio>
+# mars-radio-button
 
-This webcomponent follows the [open-wc](https://github.com/open-wc/open-wc) recommendation.
+# <mars-radio-button>
+Web component that allows us to show an accessible and beautiful radio-button so that users can interact
 
 ## Installation
 ```bash
-npm i mars-radio
+  npm i @web-inmars/mars-radio-button --save
 ```
 
 ## Usage
 ```html
 <script type="module">
-  import 'mars-radio/mars-radio.js';
+   import 'mars-radio-button/mars-radio-button.js';
 </script>
 
-<mars-radio></mars-radio>
+<mars-radio-button id="myRadioButton">
+     I am a radio button!
+</mars-radio-button>
 ```
 
-## Linting with ESLint, Prettier, and Types
-To scan the project for linting errors, run
-```bash
-npm run lint
-```
+## Properties
 
-You can lint with ESLint and Prettier individually as well
-```bash
-npm run lint:eslint
-```
-```bash
-npm run lint:prettier
-```
+| Property      | Attribute      | Type      | Default |
+|---------------|----------------|-----------|---------|
+| `caption`     | `caption`      | `string`  | ""      |
+| `checked`     | `checked`      | `boolean` | false   |
+| `disabled`    | `disabled`     | `boolean` | false   |
+| `id`          | `id`           | `string`  | ""      |
+| `label`       | `label`        | `string`  | ""      |
+| `name`        | `name`         | `string`  | ""      |
+| `showCaption` | `show-caption` | `boolean` | false   |
+| `value`       | `value`        | `string`  | ""      |
+| `variant`     | `variant`      | `string`  | ""      |
 
-To automatically fix many linting errors, run
-```bash
-npm run format
-```
+## Events
 
-You can format using ESLint and Prettier individually as well
-```bash
-npm run format:eslint
-```
-```bash
-npm run format:prettier
-```
-
-## Testing with Web Test Runner
-To run the suite of Web Test Runner tests, run
-```bash
-npm run test
-```
-
-To run the tests in watch mode (for &lt;abbr title=&#34;test driven development&#34;&gt;TDD&lt;/abbr&gt;, for example), run
-
-```bash
-npm run test:watch
-```
-
-## Demoing with Storybook
-To run a local instance of Storybook for your component, run
-```bash
-npm run storybook
-```
-
-To build a production version of Storybook, run
-```bash
-npm run storybook:build
-```
-
-
-## Tooling configs
-
-For most of the tools, the configuration is in the `package.json` to reduce the amount of files in your project.
-
-If you customize the configuration a lot, you can consider moving them to individual files.
-
-## Local Demo with `web-dev-server`
-```bash
-npm start
-```
-To run a local development server that serves the basic demo located in `demo/index.html`
+| Event       | Type                           |
+|-------------|--------------------------------|
+| `on-change` | `CustomEvent<{ event: any; }>` |

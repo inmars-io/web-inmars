@@ -1,80 +1,43 @@
-# \<mars-grid>
+# mars-grid
 
-This webcomponent follows the [open-wc](https://github.com/open-wc/open-wc) recommendation.
+# <mars-grid>
+Web component that allows us to show an accessible and beautiful grid so that users can see the content of the page.
 
 ## Installation
 ```bash
-npm i mars-grid
+  npm i @web-inmars/mars-grid --save
 ```
 
 ## Usage
 ```html
 <script type="module">
-  import 'mars-grid/mars-grid.js';
+   import 'mars-grid/mars-grid.js';
 </script>
 
-<mars-grid></mars-grid>
+<mars-grid>
+     I'm a container for the items
+</mars-grid>
 ```
 
-## Linting with ESLint, Prettier, and Types
-To scan the project for linting errors, run
-```bash
-npm run lint
-```
+## Properties
 
-You can lint with ESLint and Prettier individually as well
-```bash
-npm run lint:eslint
-```
-```bash
-npm run lint:prettier
-```
+| Property         | Attribute         | Type      | Default |
+|------------------|-------------------|-----------|---------|
+| `alignContent`   | `align-content`   | `string`  | ""      |
+| `alignItems`     | `align-items`     | `string`  | ""      |
+| `containerSize`  | `container-size`  | `string`  | ""      |
+| `gap`            | `gap`             | `string`  | ""      |
+| `grid`           | `grid`            | `string`  | ""      |
+| `gridAutoFlow`   | `grid-auto-flow`  | `string`  | ""      |
+| `gridTemplate`   | `grid-template`   | `string`  | ""      |
+| `inline`         | `inline`          | `boolean` | false   |
+| `justifyContent` | `justify-content` | `string`  | ""      |
+| `justifyItems`   | `justify-items`   | `string`  | ""      |
+| `placeContent`   | `place-content`   | `string`  | ""      |
+| `placeItems`     | `place-items`     | `string`  | ""      |
 
-To automatically fix many linting errors, run
-```bash
-npm run format
-```
+## Methods
 
-You can format using ESLint and Prettier individually as well
-```bash
-npm run format:eslint
-```
-```bash
-npm run format:prettier
-```
-
-## Testing with Web Test Runner
-To run the suite of Web Test Runner tests, run
-```bash
-npm run test
-```
-
-To run the tests in watch mode (for &lt;abbr title=&#34;test driven development&#34;&gt;TDD&lt;/abbr&gt;, for example), run
-
-```bash
-npm run test:watch
-```
-
-## Demoing with Storybook
-To run a local instance of Storybook for your component, run
-```bash
-npm run storybook
-```
-
-To build a production version of Storybook, run
-```bash
-npm run storybook:build
-```
-
-
-## Tooling configs
-
-For most of the tools, the configuration is in the `package.json` to reduce the amount of files in your project.
-
-If you customize the configuration a lot, you can consider moving them to individual files.
-
-## Local Demo with `web-dev-server`
-```bash
-npm start
-```
-To run a local development server that serves the basic demo located in `demo/index.html`
+| Method             | Type       |
+|--------------------|------------|
+| `createRenderRoot` | `(): this` |

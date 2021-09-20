@@ -16,8 +16,8 @@ import { styles } from './MarsLink.styles';
  *   import 'mars-link/mars-link.js';
  * </script>
  *
- * <mars-link>
- *     Click me!
+ * <mars-link href="#">
+ *     I'm a link!
  * </mars-link>
  * ```
  * @element mars-link

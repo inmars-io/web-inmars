@@ -16,9 +16,7 @@ import { styles } from './MarsIcon.styles';
  *   import 'mars-icon/mars-icon.js';
  * </script>
  *
- * <mars-icon>
- *     Click me!
- * </mars-icon>
+ * <mars-icon name="iconname" type="solid"></mars-icon>
  * ```
  * @element mars-icon
  */

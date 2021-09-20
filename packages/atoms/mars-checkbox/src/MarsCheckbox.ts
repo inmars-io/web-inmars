@@ -24,8 +24,8 @@ import { styles } from './MarsCheckbox.styles';
  *   import 'mars-checkbox/mars-checkbox.js';
  * </script>
  *
- * <mars-checkbox>
- *     Click me!
+ * <mars-checkbox id="marsCheckbox">
+ *     I'm a checkbox
  * </mars-checkbox>
  * ```
  * @element mars-checkbox

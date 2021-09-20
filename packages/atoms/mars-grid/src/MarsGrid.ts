@@ -3,7 +3,7 @@ import { styles } from './MarsGrid.styles';
 
 /**
  * # <mars-grid>
- * Web component that allows us to show an accessible and beautiful grid so that users can interact
+ * Web component that allows us to show an accessible and beautiful grid so that users can see the content of the page.
  *
  * ## Installation
  * ```bash
@@ -17,7 +17,7 @@ import { styles } from './MarsGrid.styles';
  * </script>
  *
  * <mars-grid>
- *     Click me!
+ *     I'm a container for the items
  * </mars-grid>
  * ```
  * @element mars-grid

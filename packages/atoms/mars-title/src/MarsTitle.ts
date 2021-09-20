@@ -3,7 +3,7 @@ import { styles } from './MarsTitle.styles';
 
 /**
  * # <mars-title>
- * Web component that allows us to show an accessible and beautiful title so that users can interact
+ * Web component that allows us to show an accessible and beautiful title.
  *
  * ## Installation
  * ```bash
@@ -17,7 +17,7 @@ import { styles } from './MarsTitle.styles';
  * </script>
  *
  * <mars-title>
- *     Click me!
+ *     I am a title
  * </mars-title>
  * ```
  * @element mars-title

@@ -3,7 +3,7 @@ import { styles } from './MarsImg.styles';
 
 /**
  * # <mars-img>
- * Web component that allows us to show an accessible and beautiful img so that users can interact
+ * Web component that allows us to show an accessible and beautiful img.
  *
  * ## Installation
  * ```bash
@@ -16,9 +16,7 @@ import { styles } from './MarsImg.styles';
  *   import 'mars-img/mars-img.js';
  * </script>
  *
- * <mars-img>
- *     Click me!
- * </mars-img>
+ * <mars-img src="url/from/images" alt="Alt from image"></mars-img>
  * ```
  * @element mars-img
  */

@@ -3,7 +3,7 @@ import { styles } from './MarsText.styles';
 
 /**
  * # <mars-text>
- * Web component that allows us to show an accessible and beautiful text so that users can interact
+ * Web component that allows us to show an accessible and beautiful text.
  *
  * ## Installation
  * ```bash
@@ -16,8 +16,8 @@ import { styles } from './MarsText.styles';
  *   import 'mars-text/mars-text.js';
  * </script>
  *
- * <mars-text>
- *     Click me!
+ * <mars-text tag="p">
+ *     I'm a paragraph.
  * </mars-text>
  * ```
  * @element mars-text
