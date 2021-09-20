@@ -1,7 +1,7 @@
 {
   "name": "@web-inmars/mars-switch",
   "version": "0.1.3",
-  "description": "Webcomponent mars-switch following open-wc recommendations",
+  "description": "Web-inmars switch web component",
   "author": "Mars Gotta <me@marsgotta.com> (http://www.marsgotta.com)",
   "license": "MIT",
   "main": "dist/index.js",
