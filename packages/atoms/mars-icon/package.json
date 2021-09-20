@@ -9,7 +9,7 @@
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/MarsGotta/web-inmars.git",
-		"directory": "packages/mars-icon"
+		"directory": "packages/atoms/mars-icon"
 	},
 	"scripts": {
 		"start": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds\"",
