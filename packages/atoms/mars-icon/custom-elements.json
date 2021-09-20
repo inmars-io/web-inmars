@@ -1,30 +1,70 @@
 {
-  "version": 2,
+  "version": "experimental",
   "tags": [
     {
       "name": "mars-icon",
-      "description": "A component with a title and an action counter",
-      "properties": [
+      "path": "./mars-icon.ts",
+      "attributes": [
         {
-          "name": "title",
-          "type": "String",
-          "description": "The title of your component",
-          "default": "Hey there"
+          "name": "type",
+          "type": "string",
+          "default": "\"\""
         },
         {
-          "name": "counter",
-          "type": "Number",
-          "description": "An action counter",
-          "default": 0
+          "name": "name",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "width",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "height",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "variant",
+          "type": "string",
+          "default": "\"\""
         }
       ],
-      "events": [],
-      "slots": [],
-      "cssProperties": [
+      "properties": [
         {
-          "name": "--mars-icon-text-color",
-          "description": "Main Text Color",
-          "type": "Color"
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "name",
+          "attribute": "name",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "width",
+          "attribute": "width",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "height",
+          "attribute": "height",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "variant",
+          "attribute": "variant",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "styles",
+          "type": "CSSResult[]"
         }
       ]
     }

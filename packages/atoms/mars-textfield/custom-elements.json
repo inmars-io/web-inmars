@@ -1,30 +1,131 @@
 {
-  "version": 2,
+  "version": "experimental",
   "tags": [
     {
-      "name": "mars-input",
-      "description": "A component with a title and an action counter",
-      "properties": [
+      "name": "mars-textfield",
+      "path": "./mars-textfield.ts",
+      "description": "# <mars-textfield>\nWeb component that allows us to show an accessible and beautiful textfield so that users can interact\n\n## Installation\n```bash\n  npm i @web-inmars/mars-textfield --save\n```\n\n## Usage\n```html\n<script type=\"module\">\n   import 'mars-textfield/mars-textfield.js';\n</script>\n\n<mars-textfield>\n     Click me!\n</mars-textfield>\n```",
+      "attributes": [
         {
-          "name": "title",
-          "type": "String",
-          "description": "The title of your component",
-          "default": "Hey there"
+          "name": "value",
+          "type": "string",
+          "default": "\"\""
         },
         {
-          "name": "counter",
-          "type": "Number",
-          "description": "An action counter",
-          "default": 0
+          "name": "name",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "for",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "variant",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "\"text\""
+        },
+        {
+          "name": "placeholder",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "caption",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "show-caption",
+          "type": "boolean",
+          "default": "false"
         }
       ],
-      "events": [],
-      "slots": [],
-      "cssProperties": [
+      "properties": [
         {
-          "name": "--mars-input-text-color",
-          "description": "Main Text Color",
-          "type": "Color"
+          "name": "value",
+          "attribute": "value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "name",
+          "attribute": "name",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "for",
+          "attribute": "for",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "variant",
+          "attribute": "variant",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "string",
+          "default": "\"text\""
+        },
+        {
+          "name": "placeholder",
+          "attribute": "placeholder",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "caption",
+          "attribute": "caption",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "showCaption",
+          "attribute": "show-caption",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "styles",
+          "type": "CSSResult[]"
+        }
+      ],
+      "events": [
+        {
+          "name": "on-input"
         }
       ]
     }

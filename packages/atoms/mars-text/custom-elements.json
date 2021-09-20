@@ -1,30 +1,71 @@
 {
-  "version": 2,
+  "version": "experimental",
   "tags": [
     {
       "name": "mars-text",
-      "description": "A component with a title and an action counter",
-      "properties": [
+      "path": "./mars-text.ts",
+      "description": "# <mars-text>\nWeb component that allows us to show an accessible and beautiful text so that users can interact\n\n## Installation\n```bash\n  npm i @web-inmars/mars-text --save\n```\n\n## Usage\n```html\n<script type=\"module\">\n   import 'mars-text/mars-text.js';\n</script>\n\n<mars-text>\n     Click me!\n</mars-text>\n```",
+      "attributes": [
         {
-          "name": "title",
-          "type": "String",
-          "description": "The title of your component",
-          "default": "Hey there"
+          "name": "value",
+          "type": "string",
+          "default": "\"\""
         },
         {
-          "name": "counter",
-          "type": "Number",
-          "description": "An action counter",
-          "default": 0
+          "name": "variant",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "tag",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "css-part",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "default": "false"
         }
       ],
-      "events": [],
-      "slots": [],
-      "cssProperties": [
+      "properties": [
         {
-          "name": "--mars-text-text-color",
-          "description": "Main Text Color",
-          "type": "Color"
+          "name": "value",
+          "attribute": "value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "variant",
+          "attribute": "variant",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "tag",
+          "attribute": "tag",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "cssPart",
+          "attribute": "css-part",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "styles",
+          "type": "CSSResult[]"
         }
       ]
     }
