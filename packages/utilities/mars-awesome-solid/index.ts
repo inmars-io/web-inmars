@@ -1,1 +1,1 @@
-export * from './src/MarsAwesomeSolid';
+//export * from './src/MarsAwesomeSolid';

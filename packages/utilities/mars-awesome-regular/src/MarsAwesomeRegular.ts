@@ -1,5 +1,9 @@
-import regularIcons from './icons/all.js';
+const regularIcons = require('./icons/all.js').icon;
+interface Window {
+  __webinmars: any;
+}
 
-export function selectIconRegular(name: any, type: any) {
-  return name && type && regularIcons[name as keyof object];
+if (typeof window !== 'undefined') {
+  window.__webinmars = window.__webinmars || { iconSet: {} };
+  window.__webinmars.iconSet.brands = regularIcons;
 }

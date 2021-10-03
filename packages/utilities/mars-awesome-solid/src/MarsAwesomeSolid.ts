@@ -1,10 +1,9 @@
-import solidIcons from './icons/all.js';
-
-declare global {
-  interface Window {
-    __webinmars: any;
-  }
+const solidIcons = require('./icons/all.js').icon;
+interface Window {
+  __webinmars: any;
 }
 
-window.__webinmars = window.__webinmars || { iconSet: {} };
-window.__webinmars.iconSet.solid = solidIcons;
+if (typeof window !== 'undefined') {
+  window.__webinmars = window.__webinmars || { iconSet: {} };
+  window.__webinmars.iconSet.brands = solidIcons;
+}

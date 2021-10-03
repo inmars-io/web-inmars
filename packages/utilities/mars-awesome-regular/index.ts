@@ -1,1 +1,1 @@
-export { selectIconRegular } from './src/MarsAwesomeRegular';
+//export { selectIconRegular } from './src/MarsAwesomeRegular';
