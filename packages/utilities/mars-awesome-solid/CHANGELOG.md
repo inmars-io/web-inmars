@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/MarsGotta/web-inmars/compare/@web-inmars/mars-awesome-solid@0.2.0...@web-inmars/mars-awesome-solid@0.2.1) (2021-10-03)
+
+
+### Bug Fixes
+
+* change object name regular and solid iconset ([1b82cbf](https://github.com/MarsGotta/web-inmars/commit/1b82cbfd563d1672f6d68288b1daed9d75c77c03))
+
+
+
+
+
 # [0.2.0](https://github.com/MarsGotta/web-inmars/compare/@web-inmars/mars-awesome-solid@0.1.2...@web-inmars/mars-awesome-solid@0.2.0) (2021-10-03)
 
 
