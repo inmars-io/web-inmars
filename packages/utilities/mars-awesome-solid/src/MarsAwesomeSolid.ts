@@ -5,5 +5,5 @@ interface Window {
 
 if (typeof window !== 'undefined') {
   window.__webinmars = window.__webinmars || { iconSet: {} };
-  window.__webinmars.iconSet.brands = solidIcons;
+  window.__webinmars.iconSet.solid = solidIcons;
 }
