@@ -1,3 +1,5 @@
 import { MarsImg } from './src/MarsImg.js';
 
-if (!customElements.get('mars-img')) customElements.define('mars-img', MarsImg);
+if (!customElements.get('mars-img')) {
+  customElements.define('mars-img', MarsImg);
+}
