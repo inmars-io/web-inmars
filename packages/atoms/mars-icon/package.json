@@ -1,6 +1,6 @@
 {
 	"name": "@web-inmars/mars-icon",
-	"version": "0.1.7",
+	"version": "0.1.8",
 	"description": "Web-inmars icon web component",
 	"author": "Mars Gotta <me@marsgotta.com> (http://www.marsgotta.com)",
 	"license": "MIT",
@@ -11,7 +11,7 @@
 		"url": "https://github.com/MarsGotta/web-inmars.git",
 		"directory": "packages/atoms/mars-icon"
 	},
-  "type": "module",
+	"type": "module",
 	"scripts": {
 		"start": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds\"",
 		"build": "tsc",
