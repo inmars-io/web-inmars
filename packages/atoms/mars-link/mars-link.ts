@@ -1,3 +1,3 @@
 import { MarsLink } from './src/MarsLink.js';
 
-window.customElements.define('mars-link', MarsLink);
+customElements.get('mars-link') || customElements.define('mars-link', MarsLink);

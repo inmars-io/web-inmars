@@ -1,3 +1,3 @@
 import { MarsTextfield } from './src/MarsTextfield.js';
 
-window.customElements.define('mars-textfield', MarsTextfield);
+customElements.get('mars-textfield') || customElements.define('mars-textfield', MarsTextfield);

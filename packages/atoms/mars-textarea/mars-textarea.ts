@@ -1,3 +1,3 @@
 import { MarsTextarea } from './src/MarsTextarea.js';
 
-window.customElements.define('mars-textarea', MarsTextarea);
+customElements.get('mars-textarea') || customElements.define('mars-textarea', MarsTextarea);

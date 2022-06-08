@@ -1,3 +1,3 @@
 import { MarsImg } from './src/MarsImg.js';
 
-window.customElements.define('mars-img', MarsImg);
+customElements.get('mars-img') || customElements.define('mars-img', MarsImg);

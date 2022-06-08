@@ -1,3 +1,3 @@
 import { MarsButton } from './src/MarsButton.js';
 
-window.customElements.define('mars-button', MarsButton);
+customElements.get('mars-button') || customElements.define('mars-button', MarsButton);

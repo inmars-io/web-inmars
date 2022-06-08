@@ -11,6 +11,7 @@
     "url": "https://github.com/MarsGotta/web-inmars.git",
     "directory": "packages/atoms/mars-link"
   },
+  "type": "module",
   "scripts": {
     "start": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds\"",
     "build": "tsc",

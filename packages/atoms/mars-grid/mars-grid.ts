@@ -1,3 +1,3 @@
 import { MarsGrid } from './src/MarsGrid.js';
 
-window.customElements.define('mars-grid', MarsGrid);
+customElements.get('mars-grid') || customElements.define('mars-grid', MarsGrid);

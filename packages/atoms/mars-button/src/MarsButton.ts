@@ -28,11 +28,6 @@ export class MarsButton extends MarsElement {
     return [...super.styles, styles];
   }
 
-  /*
-   *
-   *
-   *
-   */
   @property({ type: String }) value = '';
 
   @property({ type: String }) variant = '';
