@@ -1,6 +1,6 @@
 {
   "name": "@web-inmars/mars-title",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Web-inmars title web component",
   "author": "Mars Gotta <me@marsgotta.com> (http://www.marsgotta.com)",
   "license": "MIT",
@@ -26,7 +26,7 @@
     "storybook:build": "tsc && build-storybook"
   },
   "dependencies": {
-    "@web-inmars/mars-core": "^0.2.1"
+    "@web-inmars/mars-core": "^0.2.2"
   },
   "devDependencies": {
     "@open-wc/eslint-config": "^4.0.0",
