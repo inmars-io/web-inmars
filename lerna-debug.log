@@ -1,0 +1,211 @@
+0 silly argv {
+0 silly argv   _: [ 'publish' ],
+0 silly argv   composed: 'publish',
+0 silly argv   lernaVersion: '4.0.0',
+0 silly argv   '$0': '/usr/local/bin/lerna',
+0 silly argv   bump: 'from-package'
+0 silly argv }
+1 notice cli v4.0.0
+2 verbose rootPath /Users/marcelagotta/mars-project/web-inmars
+3 info versioning independent
+4 verbose session 1c613a5b27f4b7e0
+5 verbose user-agent lerna/4.0.0/node@v18.3.0+x64 (darwin)
+6 verbose git-describe undefined => "@web-inmars/mars-awesome-brands@0.2.1-0-g34132ad"
+7 silly git-describe parsed => {"lastTagName":"@web-inmars/mars-awesome-brands@0.2.1","lastVersion":"0.2.1","refCount":"0","sha":"34132ad","isDirty":false}
+8 silly getUnpublishedPackages
+9 info publish Publishing packages to npm...
+10 info Verifying npm credentials
+11 verbose Retrieving npm user profile
+12 http fetch GET 200 https://registry.npmjs.org/-/npm/v1/user 499ms
+13 silly npm profile get received {"tfa":false,"name":"marcelagotta","email":"marcelagotta@gmail.com","email_verified":true,"created":"2017-01-18T22:33:52.032Z","updated":"2021-09-21T13:39:19.464Z","cidr_whitelist":null,"fullname":"Marcela Gotta","twitter":"marcelagotta","github":"MarsGotta"}
+14 silly get npm username received {"username":"marcelagotta","tfa":false,"name":"marcelagotta","email":"marcelagotta@gmail.com","email_verified":true,"created":"2017-01-18T22:33:52.032Z","updated":"2021-09-21T13:39:19.464Z","cidr_whitelist":null,"fullname":"Marcela Gotta","twitter":"marcelagotta","github":"MarsGotta"}
+15 silly verifyNpmPackageAccess
+16 http fetch GET 200 https://registry.npmjs.org/-/org/marcelagotta/package?format=cli 384ms (cache updated)
+17 info Checking two-factor auth mode
+18 verbose Retrieving npm user profile
+19 http fetch GET 200 https://registry.npmjs.org/-/npm/v1/user 300ms
+20 silly npm profile get received {"tfa":false,"name":"marcelagotta","email":"marcelagotta@gmail.com","email_verified":true,"created":"2017-01-18T22:33:52.032Z","updated":"2021-09-21T13:39:19.464Z","cidr_whitelist":null,"fullname":"Marcela Gotta","twitter":"marcelagotta","github":"MarsGotta"}
+21 silly 2FA false
+22 silly getCurrentSHA
+23 verbose getCurrentSHA 34132adbde880901a04740d49eb32938f371d77a
+24 silly lifecycle No script for "prepublish" in "web-inmars", continuing
+25 silly lifecycle No script for "prepare" in "web-inmars", continuing
+26 silly lifecycle No script for "prepublishOnly" in "web-inmars", continuing
+27 silly lifecycle No script for "prepack" in "web-inmars", continuing
+28 verbose pack-directory packages/utilities/mars-awesome-brands/dist
+29 verbose pack-directory packages/utilities/mars-awesome-regular/dist
+30 verbose pack-directory packages/utilities/mars-awesome-solid/dist
+31 verbose pack-directory packages/utilities/mars-awesome/dist
+32 verbose pack-directory packages/utilities/mars-core/dist
+33 silly lifecycle "prepublish" starting in "@web-inmars/mars-awesome-brands"
+34 info lifecycle @web-inmars/mars-awesome-brands@0.2.1~prepublish: @web-inmars/mars-awesome-brands@0.2.1
+35 silly lifecycle "prepublish" starting in "@web-inmars/mars-awesome-regular"
+36 info lifecycle @web-inmars/mars-awesome-regular@0.2.2~prepublish: @web-inmars/mars-awesome-regular@0.2.2
+37 silly lifecycle "prepublish" starting in "@web-inmars/mars-awesome-solid"
+38 info lifecycle @web-inmars/mars-awesome-solid@0.2.2~prepublish: @web-inmars/mars-awesome-solid@0.2.2
+39 silly lifecycle "prepublish" starting in "@web-inmars/mars-awesome"
+40 info lifecycle @web-inmars/mars-awesome@0.1.3~prepublish: @web-inmars/mars-awesome@0.1.3
+41 silly lifecycle "prepublish" starting in "@web-inmars/mars-core"
+42 info lifecycle @web-inmars/mars-core@0.2.1~prepublish: @web-inmars/mars-core@0.2.1
+43 warn lifecycle @web-inmars/mars-awesome-brands@0.2.1~prepublish: cannot run in wd @web-inmars/mars-awesome-brands@0.2.1 tsc (wd=/Users/marcelagotta/mars-project/web-inmars/packages/utilities/mars-awesome-brands)
+44 silly lifecycle "prepublish" finished in "@web-inmars/mars-awesome-brands"
+45 silly lifecycle No script for "prepare" in "@web-inmars/mars-awesome-brands", continuing
+46 warn lifecycle @web-inmars/mars-awesome-regular@0.2.2~prepublish: cannot run in wd @web-inmars/mars-awesome-regular@0.2.2 tsc (wd=/Users/marcelagotta/mars-project/web-inmars/packages/utilities/mars-awesome-regular)
+47 silly lifecycle "prepublish" finished in "@web-inmars/mars-awesome-regular"
+48 silly lifecycle No script for "prepare" in "@web-inmars/mars-awesome-regular", continuing
+49 warn lifecycle @web-inmars/mars-awesome-solid@0.2.2~prepublish: cannot run in wd @web-inmars/mars-awesome-solid@0.2.2 tsc (wd=/Users/marcelagotta/mars-project/web-inmars/packages/utilities/mars-awesome-solid)
+50 silly lifecycle "prepublish" finished in "@web-inmars/mars-awesome-solid"
+51 silly lifecycle No script for "prepare" in "@web-inmars/mars-awesome-solid", continuing
+52 warn lifecycle @web-inmars/mars-awesome@0.1.3~prepublish: cannot run in wd @web-inmars/mars-awesome@0.1.3 tsc (wd=/Users/marcelagotta/mars-project/web-inmars/packages/utilities/mars-awesome)
+53 silly lifecycle "prepublish" finished in "@web-inmars/mars-awesome"
+54 silly lifecycle No script for "prepare" in "@web-inmars/mars-awesome", continuing
+55 warn lifecycle @web-inmars/mars-core@0.2.1~prepublish: cannot run in wd @web-inmars/mars-core@0.2.1 tsc (wd=/Users/marcelagotta/mars-project/web-inmars/packages/utilities/mars-core)
+56 silly lifecycle "prepublish" finished in "@web-inmars/mars-core"
+57 silly lifecycle No script for "prepare" in "@web-inmars/mars-core", continuing
+58 silly lifecycle No script for "prepublishOnly" in "@web-inmars/mars-awesome-brands", continuing
+59 silly lifecycle No script for "prepublishOnly" in "@web-inmars/mars-awesome-regular", continuing
+60 silly lifecycle No script for "prepublishOnly" in "@web-inmars/mars-awesome-solid", continuing
+61 silly lifecycle No script for "prepublishOnly" in "@web-inmars/mars-awesome", continuing
+62 silly lifecycle No script for "prepublishOnly" in "@web-inmars/mars-core", continuing
+63 silly lifecycle No script for "prepack" in "@web-inmars/mars-awesome-regular", continuing
+64 silly lifecycle No script for "prepack" in "@web-inmars/mars-awesome-brands", continuing
+65 silly lifecycle No script for "prepack" in "@web-inmars/mars-awesome-solid", continuing
+66 silly lifecycle No script for "prepack" in "@web-inmars/mars-core", continuing
+67 silly lifecycle No script for "prepack" in "@web-inmars/mars-awesome", continuing
+68 silly lifecycle No script for "postpack" in "@web-inmars/mars-awesome-regular", continuing
+69 verbose packed packages/utilities/mars-awesome-regular/dist
+70 silly lifecycle No script for "postpack" in "@web-inmars/mars-core", continuing
+71 verbose packed packages/utilities/mars-core/dist
+72 verbose pack-directory packages/atoms/mars-button/dist
+73 verbose pack-directory packages/atoms/mars-checkbox/dist
+74 verbose pack-directory packages/atoms/mars-grid/dist
+75 verbose pack-directory packages/atoms/mars-icon/dist
+76 silly lifecycle "prepublish" starting in "@web-inmars/mars-button"
+77 info lifecycle @web-inmars/mars-button@0.1.12~prepublish: @web-inmars/mars-button@0.1.12
+78 silly lifecycle "prepublish" starting in "@web-inmars/mars-checkbox"
+79 info lifecycle @web-inmars/mars-checkbox@0.2.7~prepublish: @web-inmars/mars-checkbox@0.2.7
+80 silly lifecycle "prepublish" starting in "@web-inmars/mars-grid"
+81 info lifecycle @web-inmars/mars-grid@0.1.8~prepublish: @web-inmars/mars-grid@0.1.8
+82 silly lifecycle "prepublish" starting in "@web-inmars/mars-icon"
+83 info lifecycle @web-inmars/mars-icon@0.1.11~prepublish: @web-inmars/mars-icon@0.1.11
+84 verbose pack-directory packages/atoms/mars-img/dist
+85 silly lifecycle "prepublish" starting in "@web-inmars/mars-img"
+86 info lifecycle @web-inmars/mars-img@0.1.6~prepublish: @web-inmars/mars-img@0.1.6
+87 warn lifecycle @web-inmars/mars-button@0.1.12~prepublish: cannot run in wd @web-inmars/mars-button@0.1.12 tsc (wd=/Users/marcelagotta/mars-project/web-inmars/packages/atoms/mars-button)
+88 silly lifecycle "prepublish" finished in "@web-inmars/mars-button"
+89 silly lifecycle No script for "prepare" in "@web-inmars/mars-button", continuing
+90 warn lifecycle @web-inmars/mars-checkbox@0.2.7~prepublish: cannot run in wd @web-inmars/mars-checkbox@0.2.7 tsc (wd=/Users/marcelagotta/mars-project/web-inmars/packages/atoms/mars-checkbox)
+91 silly lifecycle "prepublish" finished in "@web-inmars/mars-checkbox"
+92 silly lifecycle No script for "prepare" in "@web-inmars/mars-checkbox", continuing
+93 warn lifecycle @web-inmars/mars-grid@0.1.8~prepublish: cannot run in wd @web-inmars/mars-grid@0.1.8 tsc (wd=/Users/marcelagotta/mars-project/web-inmars/packages/atoms/mars-grid)
+94 silly lifecycle "prepublish" finished in "@web-inmars/mars-grid"
+95 silly lifecycle No script for "prepare" in "@web-inmars/mars-grid", continuing
+96 warn lifecycle @web-inmars/mars-icon@0.1.11~prepublish: cannot run in wd @web-inmars/mars-icon@0.1.11 tsc (wd=/Users/marcelagotta/mars-project/web-inmars/packages/atoms/mars-icon)
+97 silly lifecycle "prepublish" finished in "@web-inmars/mars-icon"
+98 silly lifecycle No script for "prepare" in "@web-inmars/mars-icon", continuing
+99 warn lifecycle @web-inmars/mars-img@0.1.6~prepublish: cannot run in wd @web-inmars/mars-img@0.1.6 tsc (wd=/Users/marcelagotta/mars-project/web-inmars/packages/atoms/mars-img)
+100 silly lifecycle "prepublish" finished in "@web-inmars/mars-img"
+101 silly lifecycle No script for "prepare" in "@web-inmars/mars-img", continuing
+102 silly lifecycle No script for "prepublishOnly" in "@web-inmars/mars-button", continuing
+103 silly lifecycle No script for "prepublishOnly" in "@web-inmars/mars-checkbox", continuing
+104 silly lifecycle No script for "prepublishOnly" in "@web-inmars/mars-grid", continuing
+105 silly lifecycle No script for "prepublishOnly" in "@web-inmars/mars-icon", continuing
+106 silly lifecycle No script for "prepublishOnly" in "@web-inmars/mars-img", continuing
+107 silly lifecycle No script for "prepack" in "@web-inmars/mars-checkbox", continuing
+108 silly lifecycle No script for "prepack" in "@web-inmars/mars-grid", continuing
+109 silly lifecycle No script for "prepack" in "@web-inmars/mars-img", continuing
+110 silly lifecycle No script for "prepack" in "@web-inmars/mars-button", continuing
+111 silly lifecycle No script for "prepack" in "@web-inmars/mars-icon", continuing
+112 silly lifecycle No script for "postpack" in "@web-inmars/mars-awesome-brands", continuing
+113 verbose packed packages/utilities/mars-awesome-brands/dist
+114 silly lifecycle No script for "postpack" in "@web-inmars/mars-awesome-solid", continuing
+115 verbose packed packages/utilities/mars-awesome-solid/dist
+116 verbose pack-directory packages/atoms/mars-link/dist
+117 silly lifecycle "prepublish" starting in "@web-inmars/mars-link"
+118 info lifecycle @web-inmars/mars-link@0.1.6~prepublish: @web-inmars/mars-link@0.1.6
+119 warn lifecycle @web-inmars/mars-link@0.1.6~prepublish: cannot run in wd @web-inmars/mars-link@0.1.6 tsc (wd=/Users/marcelagotta/mars-project/web-inmars/packages/atoms/mars-link)
+120 silly lifecycle "prepublish" finished in "@web-inmars/mars-link"
+121 silly lifecycle No script for "prepare" in "@web-inmars/mars-link", continuing
+122 verbose pack-directory packages/atoms/mars-radio-button/dist
+123 silly lifecycle "prepublish" starting in "@web-inmars/mars-radio-button"
+124 info lifecycle @web-inmars/mars-radio-button@0.1.10~prepublish: @web-inmars/mars-radio-button@0.1.10
+125 silly lifecycle No script for "prepublishOnly" in "@web-inmars/mars-link", continuing
+126 warn lifecycle @web-inmars/mars-radio-button@0.1.10~prepublish: cannot run in wd @web-inmars/mars-radio-button@0.1.10 tsc (wd=/Users/marcelagotta/mars-project/web-inmars/packages/atoms/mars-radio-button)
+127 silly lifecycle "prepublish" finished in "@web-inmars/mars-radio-button"
+128 silly lifecycle No script for "prepare" in "@web-inmars/mars-radio-button", continuing
+129 silly lifecycle No script for "prepack" in "@web-inmars/mars-link", continuing
+130 silly lifecycle No script for "prepublishOnly" in "@web-inmars/mars-radio-button", continuing
+131 silly lifecycle No script for "prepack" in "@web-inmars/mars-radio-button", continuing
+132 silly lifecycle No script for "postpack" in "@web-inmars/mars-grid", continuing
+133 verbose packed packages/atoms/mars-grid/dist
+134 silly lifecycle No script for "postpack" in "@web-inmars/mars-checkbox", continuing
+135 verbose packed packages/atoms/mars-checkbox/dist
+136 silly lifecycle No script for "postpack" in "@web-inmars/mars-img", continuing
+137 verbose packed packages/atoms/mars-img/dist
+138 silly lifecycle No script for "postpack" in "@web-inmars/mars-icon", continuing
+139 verbose packed packages/atoms/mars-icon/dist
+140 silly lifecycle No script for "postpack" in "@web-inmars/mars-button", continuing
+141 verbose packed packages/atoms/mars-button/dist
+142 silly lifecycle No script for "postpack" in "@web-inmars/mars-awesome", continuing
+143 verbose packed packages/utilities/mars-awesome/dist
+144 verbose pack-directory packages/atoms/mars-switch/dist
+145 silly lifecycle "prepublish" starting in "@web-inmars/mars-switch"
+146 info lifecycle @web-inmars/mars-switch@0.1.9~prepublish: @web-inmars/mars-switch@0.1.9
+147 verbose pack-directory packages/atoms/mars-text/dist
+148 silly lifecycle "prepublish" starting in "@web-inmars/mars-text"
+149 info lifecycle @web-inmars/mars-text@0.1.6~prepublish: @web-inmars/mars-text@0.1.6
+150 verbose pack-directory packages/atoms/mars-textarea/dist
+151 silly lifecycle "prepublish" starting in "@web-inmars/mars-textarea"
+152 info lifecycle @web-inmars/mars-textarea@0.1.10~prepublish: @web-inmars/mars-textarea@0.1.10
+153 verbose pack-directory packages/atoms/mars-textfield/dist
+154 silly lifecycle "prepublish" starting in "@web-inmars/mars-textfield"
+155 info lifecycle @web-inmars/mars-textfield@0.1.9~prepublish: @web-inmars/mars-textfield@0.1.9
+156 verbose pack-directory packages/atoms/mars-title/dist
+157 silly lifecycle "prepublish" starting in "@web-inmars/mars-title"
+158 info lifecycle @web-inmars/mars-title@0.1.5~prepublish: @web-inmars/mars-title@0.1.5
+159 warn lifecycle @web-inmars/mars-switch@0.1.9~prepublish: cannot run in wd @web-inmars/mars-switch@0.1.9 tsc (wd=/Users/marcelagotta/mars-project/web-inmars/packages/atoms/mars-switch)
+160 silly lifecycle "prepublish" finished in "@web-inmars/mars-switch"
+161 silly lifecycle No script for "prepare" in "@web-inmars/mars-switch", continuing
+162 warn lifecycle @web-inmars/mars-text@0.1.6~prepublish: cannot run in wd @web-inmars/mars-text@0.1.6 tsc (wd=/Users/marcelagotta/mars-project/web-inmars/packages/atoms/mars-text)
+163 silly lifecycle "prepublish" finished in "@web-inmars/mars-text"
+164 silly lifecycle No script for "prepare" in "@web-inmars/mars-text", continuing
+165 warn lifecycle @web-inmars/mars-textarea@0.1.10~prepublish: cannot run in wd @web-inmars/mars-textarea@0.1.10 tsc (wd=/Users/marcelagotta/mars-project/web-inmars/packages/atoms/mars-textarea)
+166 silly lifecycle "prepublish" finished in "@web-inmars/mars-textarea"
+167 silly lifecycle No script for "prepare" in "@web-inmars/mars-textarea", continuing
+168 warn lifecycle @web-inmars/mars-textfield@0.1.9~prepublish: cannot run in wd @web-inmars/mars-textfield@0.1.9 tsc (wd=/Users/marcelagotta/mars-project/web-inmars/packages/atoms/mars-textfield)
+169 silly lifecycle "prepublish" finished in "@web-inmars/mars-textfield"
+170 silly lifecycle No script for "prepare" in "@web-inmars/mars-textfield", continuing
+171 warn lifecycle @web-inmars/mars-title@0.1.5~prepublish: cannot run in wd @web-inmars/mars-title@0.1.5 tsc (wd=/Users/marcelagotta/mars-project/web-inmars/packages/atoms/mars-title)
+172 silly lifecycle "prepublish" finished in "@web-inmars/mars-title"
+173 silly lifecycle No script for "prepare" in "@web-inmars/mars-title", continuing
+174 silly lifecycle No script for "prepublishOnly" in "@web-inmars/mars-switch", continuing
+175 silly lifecycle No script for "prepublishOnly" in "@web-inmars/mars-text", continuing
+176 silly lifecycle No script for "prepublishOnly" in "@web-inmars/mars-title", continuing
+177 silly lifecycle No script for "prepublishOnly" in "@web-inmars/mars-textfield", continuing
+178 silly lifecycle No script for "prepublishOnly" in "@web-inmars/mars-textarea", continuing
+179 silly lifecycle No script for "prepack" in "@web-inmars/mars-switch", continuing
+180 silly lifecycle No script for "prepack" in "@web-inmars/mars-text", continuing
+181 silly lifecycle No script for "prepack" in "@web-inmars/mars-textfield", continuing
+182 silly lifecycle No script for "prepack" in "@web-inmars/mars-textarea", continuing
+183 silly lifecycle No script for "prepack" in "@web-inmars/mars-title", continuing
+184 silly lifecycle No script for "postpack" in "@web-inmars/mars-link", continuing
+185 verbose packed packages/atoms/mars-link/dist
+186 silly lifecycle No script for "postpack" in "@web-inmars/mars-radio-button", continuing
+187 verbose packed packages/atoms/mars-radio-button/dist
+188 silly lifecycle No script for "postpack" in "@web-inmars/mars-switch", continuing
+189 verbose packed packages/atoms/mars-switch/dist
+190 silly lifecycle No script for "postpack" in "@web-inmars/mars-textfield", continuing
+191 verbose packed packages/atoms/mars-textfield/dist
+192 silly lifecycle No script for "postpack" in "@web-inmars/mars-title", continuing
+193 verbose packed packages/atoms/mars-title/dist
+194 silly lifecycle No script for "postpack" in "@web-inmars/mars-textarea", continuing
+195 verbose packed packages/atoms/mars-textarea/dist
+196 silly lifecycle No script for "postpack" in "@web-inmars/mars-text", continuing
+197 verbose packed packages/atoms/mars-text/dist
+198 silly lifecycle No script for "postpack" in "web-inmars", continuing
+199 verbose publish @web-inmars/mars-awesome-brands
+200 verbose publish @web-inmars/mars-awesome-regular
+201 verbose publish @web-inmars/mars-awesome-solid
+202 verbose publish @web-inmars/mars-awesome
+203 verbose publish @web-inmars/mars-core
+204 error

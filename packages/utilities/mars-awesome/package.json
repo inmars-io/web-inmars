@@ -12,10 +12,6 @@
     "test": "tsc && wtr --coverage",
     "test:watch": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wtr --watch\""
   },
-  "publishConfig": {
-    "access": "public",
-    "directory": "dist"
-  },
   "type": "module",
   "keywords": [
     "font-awesome",
