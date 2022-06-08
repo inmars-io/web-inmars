@@ -7,7 +7,7 @@ import {
   colorGray,
   fontFundations,
 } from '@web-inmars/mars-core';
-import { styles } from './MarsCheckbox.styles';
+import { styles } from './MarsCheckbox.styles.js';
 
 /**
  * # <mars-checkbox>

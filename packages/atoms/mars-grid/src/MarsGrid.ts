@@ -1,5 +1,5 @@
 import { html, styleMap, MarsElement, property } from '@web-inmars/mars-core';
-import { styles } from './MarsGrid.styles';
+import { styles } from './MarsGrid.styles.js';
 
 /**
  * # <mars-grid>

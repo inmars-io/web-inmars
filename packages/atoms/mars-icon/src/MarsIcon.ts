@@ -1,5 +1,5 @@
 import { svg, property, MarsElement } from '@web-inmars/mars-core';
-import { styles } from './MarsIcon.styles';
+import { styles } from './MarsIcon.styles.js';
 
 /**
  * # <mars-icon>

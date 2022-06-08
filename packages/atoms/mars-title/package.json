@@ -11,6 +11,10 @@
     "url": "https://github.com/MarsGotta/web-inmars.git",
     "directory": "packages/atoms/mars-title"
   },
+  "publishConfig": {
+    "access": "public",
+    "directory": "dist"
+  },
   "type": "module",
   "scripts": {
     "bootstrap": "lerna bootstrap",

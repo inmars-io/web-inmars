@@ -7,7 +7,7 @@ import {
   colorGray,
   fontFundations,
 } from '@web-inmars/mars-core';
-import { styles } from './MarsRadioButton.styles';
+import { styles } from './MarsRadioButton.styles.js';
 
 /**
  * # <mars-radio-button>

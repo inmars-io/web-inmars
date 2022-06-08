@@ -12,6 +12,10 @@
     "directory": "packages/atoms/mars-checkbox"
   },
   "type": "module",
+  "publishConfig": {
+    "access": "public",
+    "directory": "dist"
+  },
   "scripts": {
     "start": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds\"",
     "build": "tsc",

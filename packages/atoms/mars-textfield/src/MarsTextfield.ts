@@ -7,7 +7,7 @@ import {
   colorGray,
   fontFundations,
 } from '@web-inmars/mars-core';
-import { styles } from './MarsTextfield.styles';
+import { styles } from './MarsTextfield.styles.js';
 
 /**
  * # <mars-textfield>

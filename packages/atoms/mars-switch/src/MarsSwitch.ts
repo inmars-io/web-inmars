@@ -7,7 +7,7 @@ import {
   colorGray,
   fontFundations,
 } from '@web-inmars/mars-core';
-import { styles } from './MarsSwitch.styles';
+import { styles } from './MarsSwitch.styles.js';
 
 /**
  * # <mars-switch>

@@ -1,5 +1,5 @@
 import { html, unsafeHTML, property, MarsElement } from '@web-inmars/mars-core';
-import { styles } from './MarsTitle.styles';
+import { styles } from './MarsTitle.styles.js';
 
 /**
  * # <mars-title>

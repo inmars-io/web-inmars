@@ -1,12 +1,12 @@
 import TOKENS from './tokens.js';
 
-const selectVariables = <T extends object, U extends keyof T>(
+const selectVariables = (
   types: any[],
-  tokens: T,
+  tokens: any,
   name: string
 ) => {
   let styleTempl: any = '';
-  types.forEach((type: U) => {
+  types.forEach((type: any) => {
     if (tokens[type]) styleTempl += `--${name}-${type}: ${tokens[type]};`;
   });
 

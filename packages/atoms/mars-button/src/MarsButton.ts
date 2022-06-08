@@ -1,5 +1,5 @@
 import { html, property, MarsElement } from '@web-inmars/mars-core';
-import { styles } from './MarsButton.styles';
+import { styles } from './MarsButton.styles.js';
 
 /**
  * # <mars-button>

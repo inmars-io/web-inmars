@@ -17,6 +17,11 @@
     "storybook": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds -c .storybook/server.mjs\"",
     "storybook:build": "tsc && build-storybook"
   },
+  "publishConfig": {
+    "access": "public",
+    "directory": "dist"
+  },
+  "type": "module",
   "dependencies": {
     "lit-element": "^2.0.0",
     "lit-html": "^1.0.0"

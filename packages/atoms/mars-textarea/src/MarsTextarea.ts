@@ -7,7 +7,7 @@ import {
   colorGray,
   fontFundations,
 } from '@web-inmars/mars-core';
-import { styles } from './MarsTextarea.styles';
+import { styles } from './MarsTextarea.styles.js';
 
 /**
  * # <mars-textarea>
