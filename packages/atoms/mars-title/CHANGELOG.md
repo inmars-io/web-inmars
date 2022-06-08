@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.4](https://github.com/MarsGotta/web-inmars/compare/@web-inmars/mars-title@0.1.3...@web-inmars/mars-title@0.1.4) (2022-06-08)
+
+
+### Bug Fixes
+
+* changed if statement custom define ([043cc57](https://github.com/MarsGotta/web-inmars/commit/043cc57e8d068619ec186e6ba00e04e61bcc3cf2))
+
+
+
+
+
 ## [0.1.3](https://github.com/MarsGotta/web-inmars/compare/@web-inmars/mars-title@0.1.2...@web-inmars/mars-title@0.1.3) (2022-06-08)
 
 
