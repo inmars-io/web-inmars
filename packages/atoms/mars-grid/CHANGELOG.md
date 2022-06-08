@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.7](https://github.com/MarsGotta/web-inmars/compare/@web-inmars/mars-grid@0.1.6...@web-inmars/mars-grid@0.1.7) (2022-06-08)
+
+
+### Bug Fixes
+
+* changed if statement custom define ([9f661c4](https://github.com/MarsGotta/web-inmars/commit/9f661c4fca934e04140207f2335664a530cd5d43))
+
+
+
+
+
 ## [0.1.6](https://github.com/MarsGotta/web-inmars/compare/@web-inmars/mars-grid@0.1.5...@web-inmars/mars-grid@0.1.6) (2022-06-08)
 
 **Note:** Version bump only for package @web-inmars/mars-grid
