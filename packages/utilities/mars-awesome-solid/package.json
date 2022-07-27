@@ -1,6 +1,6 @@
 {
   "name": "@web-inmars/mars-awesome-solid",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Font awesome solid icon set for mars icons",
   "main": "dist/index.js",
   "scripts": {

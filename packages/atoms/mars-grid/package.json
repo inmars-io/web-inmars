@@ -1,21 +1,21 @@
 {
-	"name": "@web-inmars/mars-grid",
-	"version": "0.1.9",
-	"description": "Web-inmars grid web component",
-	"author": "Mars Gotta <me@marsgotta.com> (http://www.marsgotta.com)",
-	"license": "MIT",
-	"main": "dist/index.js",
-	"module": "dist/index.js",
+  "name": "@web-inmars/mars-grid",
+  "version": "0.1.10",
+  "description": "Web-inmars grid web component",
+  "author": "Mars Gotta <me@marsgotta.com> (http://www.marsgotta.com)",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "exports": {
     ".": "./dist/index.js",
     "./mars-grid.js": "./dist/mars-grid.js"
   },
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/MarsGotta/web-inmars.git",
-		"directory": "packages/atoms/mars-grid"
-	},
-	"type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MarsGotta/web-inmars.git",
+    "directory": "packages/atoms/mars-grid"
+  },
+  "type": "module",
   "scripts": {
     "analyze": "cem analyze --litelement",
     "start": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds\"",
@@ -29,7 +29,7 @@
     "storybook:build": "tsc && npm run analyze -- --exclude dist && build-storybook"
   },
   "dependencies": {
-    "@web-inmars/mars-core": "^0.2.0"
+    "@web-inmars/mars-core": "^0.2.5"
   },
   "devDependencies": {
     "@custom-elements-manifest/analyzer": "^0.4.0",
