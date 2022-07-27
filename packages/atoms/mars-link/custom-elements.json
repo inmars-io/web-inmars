@@ -1,93 +1,256 @@
 {
-  "version": "experimental",
-  "tags": [
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
     {
-      "name": "mars-link",
-      "path": "./mars-link.ts",
-      "description": "# <mars-link>\nWeb component that allows us to show an accessible and beautiful link so that users can interact\n\n## Installation\n```bash\n  npm i @web-inmars/mars-link --save\n```\n\n## Usage\n```html\n<script type=\"module\">\n   import 'mars-link/mars-link.js';\n</script>\n\n<mars-link>\n     Click me!\n</mars-link>\n```",
-      "attributes": [
+      "kind": "javascript-module",
+      "path": "index.ts",
+      "declarations": [],
+      "exports": [
         {
-          "name": "value",
-          "type": "string",
-          "default": "\"\""
+          "kind": "js",
+          "name": "MarsLink",
+          "declaration": {
+            "name": "MarsLink",
+            "module": "./src/MarsLink.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "mars-link.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "mars-link",
+          "declaration": {
+            "name": "MarsLink",
+            "module": "/src/MarsLink.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "stories/index.stories.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "Regular"
         },
         {
-          "name": "variant",
-          "type": "string",
-          "default": "\"\""
+          "kind": "variable",
+          "name": "CustomValue"
         },
         {
-          "name": "href",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "target",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "rel",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "type",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "disabled",
-          "type": "boolean",
-          "default": "false"
+          "kind": "variable",
+          "name": "SlottedContent"
         }
       ],
-      "properties": [
+      "exports": [
         {
-          "name": "value",
-          "attribute": "value",
-          "type": "string",
-          "default": "\"\""
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "stories/index.stories.ts"
+          }
         },
         {
-          "name": "variant",
-          "attribute": "variant",
-          "type": "string",
-          "default": "\"\""
+          "kind": "js",
+          "name": "Regular",
+          "declaration": {
+            "name": "Regular",
+            "module": "stories/index.stories.ts"
+          }
         },
         {
-          "name": "href",
-          "attribute": "href",
-          "type": "string",
-          "default": "\"\""
+          "kind": "js",
+          "name": "CustomValue",
+          "declaration": {
+            "name": "CustomValue",
+            "module": "stories/index.stories.ts"
+          }
         },
         {
-          "name": "target",
-          "attribute": "target",
-          "type": "string",
-          "default": "\"\""
-        },
+          "kind": "js",
+          "name": "SlottedContent",
+          "declaration": {
+            "name": "SlottedContent",
+            "module": "stories/index.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/MarsLink.styles.ts",
+      "declarations": [
         {
-          "name": "rel",
-          "attribute": "rel",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "type",
-          "attribute": "type",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "disabled",
-          "attribute": "disabled",
-          "type": "boolean",
-          "default": "false"
-        },
-        {
+          "kind": "variable",
           "name": "styles",
-          "type": "CSSResult[]"
+          "default": "css`\n  :host {\n    display: block;\n    text-align: var(--text-align);\n    font-family: var(--text-family-font, var(--font-family-primary));\n    background-color: var(--text-background-color, transparent);\n    font-size: var(--text-font-size), var(--font-size-mobile-sm);\n    font-weight: var(--text-font-weight, var(--font-weight-base));\n    font-style: var(--text-font-style, var(--font-style-normal));\n    transition: all 0.5s ease;\n    color: var(--text-color, var(--color-gray-600));\n  }\n\n  :host .text {\n    all: var(--text-all);\n  }\n\n  :host([variant*='primary']) {\n    --text-color: var(--color-primary-500);\n  }\n\n  :host([variant*='secondary']) {\n    --text-color: var(--color-secondary-500);\n  }\n\n  :host([variant*='tertiary']) {\n    --text-color: var(--color-tertiary-500);\n  }\n\n  :host([variant*='left']) {\n    --text-align: left;\n  }\n\n  :host([variant*='right']) {\n    --text-align: right;\n  }\n\n  :host([variant*='center']) {\n    --text-align: center;\n  }\n\n  :host([variant*='unset']) {\n    --text-all: unset;\n  }\n\n  :host([variant*='inherit']) {\n    --text-all: inherit;\n  }\n\n  text:disabled {\n    cursor: not-allowed;\n    opacity: 0.5;\n  }\n`"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "styles",
+          "declaration": {
+            "name": "styles",
+            "module": "src/MarsLink.styles.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/MarsLink.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "# <mars-link>\nWeb component that allows us to show an accessible and beautiful link so that users can interact\n\n## Installation\n```bash\n npm i @web-inmars/mars-link --save\n```\n\n## Usage\n```html\n<script type=\"module\">\n  import 'mars-link/mars-link.js';\n</script>\n\n<mars-link href=\"#\">\n    I'm a link!\n</mars-link>\n```",
+          "name": "MarsLink",
+          "members": [
+            {
+              "kind": "field",
+              "name": "value",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "value"
+            },
+            {
+              "kind": "field",
+              "name": "variant",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "variant"
+            },
+            {
+              "kind": "field",
+              "name": "href",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "href"
+            },
+            {
+              "kind": "field",
+              "name": "target",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "target"
+            },
+            {
+              "kind": "field",
+              "name": "rel",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "rel"
+            },
+            {
+              "kind": "field",
+              "name": "type",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "type"
+            },
+            {
+              "kind": "field",
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "disabled"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "value",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "value"
+            },
+            {
+              "name": "variant",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "variant"
+            },
+            {
+              "name": "href",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "href"
+            },
+            {
+              "name": "target",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "target"
+            },
+            {
+              "name": "rel",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "rel"
+            },
+            {
+              "name": "type",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "type"
+            },
+            {
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "disabled"
+            }
+          ],
+          "superclass": {
+            "name": "MarsElement",
+            "package": "@web-inmars/mars-core"
+          },
+          "tagName": "mars-link",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "MarsLink",
+          "declaration": {
+            "name": "MarsLink",
+            "module": "src/MarsLink.ts"
+          }
         }
       ]
     }

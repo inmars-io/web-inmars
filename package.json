@@ -8,6 +8,7 @@
   "repository": "https://github.com/MarsGotta/web-inmars.git",
   "private": true,
   "scripts": {
+    "analyze": "cem analyze --litelement",
     "lint": "eslint --ext .ts,.html . --ignore-path .gitignore && prettier \"**/*.ts\" --check --ignore-path .gitignore",
     "format": "eslint --ext .ts,.html . --fix --ignore-path .gitignore && prettier \"**/*.ts\" --write --ignore-path .gitignore",
     "test": "tsc && wtr --coverage",
@@ -22,7 +23,7 @@
     "build:svg": "node ./scripts/svg-to-object/index.js -s \" assets/svg/**/**.svg \""
   },
   "devDependencies": {
-    "@custom-elements-manifest/analyzer": "^0.4.17",
+    "@custom-elements-manifest/analyzer": "^0.4.0",
     "@open-wc/building-rollup": "^2.0.0",
     "@open-wc/eslint-config": "^4.0.0",
     "@open-wc/testing": "next",
@@ -85,5 +86,6 @@
       "eslint --fix",
       "prettier --write"
     ]
-  }
+  },
+  "customElements": "custom-elements.json"
 }

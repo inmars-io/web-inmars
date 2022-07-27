@@ -6,6 +6,10 @@
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./mars-title.js": "./dist/mars-title.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/MarsGotta/web-inmars.git",
@@ -13,32 +17,32 @@
   },
   "type": "module",
   "scripts": {
-    "bootstrap": "lerna bootstrap",
+    "analyze": "cem analyze --litelement",
     "start": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds\"",
-    "build": "tsc",
-    "prepublish": "tsc",
+    "build": "tsc && npm run analyze -- --exclude dist",
+    "prepublish": "tsc && npm run analyze -- --exclude dist",
     "lint": "eslint --ext .ts,.html . --ignore-path .gitignore && prettier \"**/*.ts\" --check --ignore-path .gitignore",
     "format": "eslint --ext .ts,.html . --fix --ignore-path .gitignore && prettier \"**/*.ts\" --write --ignore-path .gitignore",
-    "clean": "rm yarn.lock && lerna clean",
     "test": "tsc && wtr --coverage",
     "test:watch": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wtr --watch\"",
-    "storybook": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds -c .storybook/server.mjs\"",
-    "storybook:build": "tsc && build-storybook"
+    "storybook": "tsc && npm run analyze -- --exclude dist && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds -c .storybook/server.mjs\"",
+    "storybook:build": "tsc && npm run analyze -- --exclude dist && build-storybook"
   },
   "dependencies": {
-    "@web-inmars/mars-core": "latest"
+    "@web-inmars/mars-core": "^0.2.0"
   },
   "devDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.4.0",
     "@open-wc/eslint-config": "^4.0.0",
-    "@open-wc/testing": "^2.0.0",
+    "@open-wc/testing": "next",
     "@typescript-eslint/eslint-plugin": "^4.0.0",
     "@typescript-eslint/parser": "^4.0.0",
     "@web/dev-server": "^0.1.0",
-    "@web/dev-server-storybook": "^0.3.0",
-    "@web/test-runner": "^0.12.0",
+    "@web/dev-server-storybook": "next",
+    "@web/test-runner": "next",
     "concurrently": "^5.0.0",
     "eslint": "^7.0.0",
-    "eslint-config-prettier": "^7.0.0",
+    "eslint-config-prettier": "^8.0.0",
     "husky": "^4.0.0",
     "lint-staged": "^10.0.0",
     "prettier": "^2.0.0",
@@ -48,8 +52,8 @@
   "eslintConfig": {
     "parser": "@typescript-eslint/parser",
     "extends": [
-      "@open-wc/eslint-config",
-      "eslint-config-prettier"
+      "@open-wc",
+      "prettier"
     ],
     "plugins": [
       "@typescript-eslint"
@@ -83,5 +87,6 @@
       "eslint --fix",
       "prettier --write"
     ]
-  }
+  },
+  "customElements": "custom-elements.json"
 }

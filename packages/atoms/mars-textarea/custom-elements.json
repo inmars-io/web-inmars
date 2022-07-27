@@ -1,109 +1,269 @@
 {
-  "version": "experimental",
-  "tags": [
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
     {
-      "name": "mars-textarea",
-      "path": "./mars-textarea.ts",
-      "description": "# <mars-textarea>\nWeb component that allows us to show an accessible and beautiful textarea so that users can interact\n\n## Installation\n```bash\n  npm i @web-inmars/mars-textarea --save\n```\n\n## Usage\n```html\n<script type=\"module\">\n   import 'mars-textarea/mars-textarea.js';\n</script>\n\n<mars-textarea>\n     Click me!\n</mars-textarea>\n```",
-      "attributes": [
+      "kind": "javascript-module",
+      "path": "index.ts",
+      "declarations": [],
+      "exports": [
         {
-          "name": "value",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "name",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "for",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "variant",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "caption",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "label",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "disabled",
-          "type": "boolean",
-          "default": "false"
-        },
-        {
-          "name": "show-caption",
-          "type": "boolean",
-          "default": "false"
+          "kind": "js",
+          "name": "MarsTextarea",
+          "declaration": {
+            "name": "MarsTextarea",
+            "module": "./src/MarsTextarea.js"
+          }
         }
-      ],
-      "properties": [
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "mars-textarea.ts",
+      "declarations": [],
+      "exports": [
         {
-          "name": "value",
-          "attribute": "value",
-          "type": "string",
-          "default": "\"\""
-        },
+          "kind": "custom-element-definition",
+          "name": "mars-textarea",
+          "declaration": {
+            "name": "MarsTextarea",
+            "module": "/src/MarsTextarea.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/MarsTextarea.styles.ts",
+      "declarations": [
         {
-          "name": "name",
-          "attribute": "name",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "for",
-          "attribute": "for",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "variant",
-          "attribute": "variant",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "caption",
-          "attribute": "caption",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "label",
-          "attribute": "label",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "disabled",
-          "attribute": "disabled",
-          "type": "boolean",
-          "default": "false"
-        },
-        {
-          "name": "showCaption",
-          "attribute": "show-caption",
-          "type": "boolean",
-          "default": "false"
-        },
-        {
+          "kind": "variable",
           "name": "styles",
-          "type": "CSSResult[]"
+          "default": "css`\n  :host {\n    --textarea-color: var(--color-gray-200);\n    --textarea-color-border: var(--color-primary-500);\n    --textarea-color-hover: var(--color-gray-300);\n    --textarea-color-active: var(--color-primary-400);\n    --textarea-bg-color-focus: var(--color-gray-100);\n    --textarea-color-focus: var(--color-primary-300);\n    --textarea-color-text: var(--color-gray-700);\n    --textarea-color-text-filled: var(--color-primary-500);\n    --textarea-color-label: var(--color-gray-600);\n    --textarea-color-placeholder: var(--color-gray-600);\n    --textarea-family-font: var(--font-family-primary);\n    --textarea-font-size: var(--font-size-mobile-sm);\n    --textarea-font-size-label: var(--font-size-mobile-sm);\n    font-family: var(--textarea-family-font);\n    display: grid;\n    min-height: 100px;\n    min-width: 300px;\n    grid-template-areas: 'textarea';\n    box-sizing: border-box;\n    font-weight: 300;\n  }\n\n  textarea {\n    font-family: var(--textarea-family-font);\n    background-color: var(--textarea-color);\n    font-size: var(--textarea-font-size);\n    color: var(--textarea-color-text);\n    border: 2px solid transparent;\n    border-radius: 5px;\n    cursor: pointer;\n    transition: all 0.5s ease;\n    grid-area: textarea;\n    box-sizing: border-box;\n    padding: 12px 18px 12px 18px;\n    font-weight: 300;\n  }\n\n  textarea::placeholder {\n    visibility: hidden;\n  }\n\n  :host([variant*='primary']) textarea {\n    --textarea-color-border: var(--color-primary-500);\n    --textarea-color-active: var(--color-primary-400);\n    --textarea-color-focus: var(--color-primary-300);\n    --textarea-color-text: var(--color-primary-500);\n    --textarea-color-text-filled: var(--color-primary-500);\n  }\n\n  :host([variant*='secondary']) textarea {\n    --textarea-color-border: var(--color-secondary-500);\n    --textarea-color-active: var(--color-secondary-400);\n    --textarea-color-focus: var(--color-secondary-300);\n    --textarea-color-text: var(--color-secondary-500);\n    --textarea-color-text-filled: var(--color-secondary-500);\n  }\n\n  :host([variant*='tertiary']) textarea {\n    --textarea-color-border: var(--color-tertiary-500);\n    --textarea-color-active: var(--color-tertiary-400);\n    --textarea-color-focus: var(--color-tertiary-300);\n    --textarea-color-text: var(--color-tertiary-500);\n    --textarea-color-text-filled: var(--color-tertiary-500);\n  }\n\n  textarea:hover:not([disabled]),\n  textarea:hover:not([disabled]) ~ label {\n    background-color: var(--textarea-color-hover);\n    color: var(--textarea-color-text);\n    transition: all 0.35s ease;\n  }\n\n  textarea:active:not([disabled]),\n  textarea:focus:not([disabled]),\n  textarea:not(:placeholder-shown) {\n    border: 2px solid var(--textarea-color-active);\n    padding: 38px 18px 15px 18px;\n    outline: none;\n  }\n\n  textarea:not(:placeholder-shown) {\n    color: var(--textarea-color-text-filled);\n  }\n\n  textarea:focus:not([disabled]),\n  textarea:focus:not([disabled]) ~ label {\n    background-color: var(--textarea-bg-color-focus);\n  }\n\n  textarea:disabled {\n    cursor: not-allowed;\n    opacity: 0.5;\n  }\n  textarea:disabled ~ label {\n    background-color: transparent;\n    opacity: 0.5;\n  }\n\n  label {\n    color: var(--textarea-color-label);\n    grid-area: textarea;\n    width: inherit;\n    padding: 24px 0px 5px 20px;\n    margin: 2px 12px 14px 2px;\n    width: auto;\n    height: fit-content;\n    font-size: var(--textarea-font-size-label);\n    transition: all 0.5s ease;\n    pointer-events: none;\n    z-index: 0;\n    background-color: var(--textarea-color);\n  }\n\n  textarea:active:not([disabled]) ~ label,\n  textarea:focus:not([disabled]) ~ label,\n  textarea:not(:placeholder-shown) ~ label {\n    padding: 18px 0px 2px 19px;\n    font-size: 14px;\n    font-weight: 500;\n    color: var(--color-gray-800);\n  }\n\n  span {\n    margin-top: 5px;\n    color: var(--color-gray-800);\n    transition: all 0.5s ease;\n  }\n`"
         }
       ],
-      "events": [
+      "exports": [
         {
-          "name": "on-input"
+          "kind": "js",
+          "name": "styles",
+          "declaration": {
+            "name": "styles",
+            "module": "src/MarsTextarea.styles.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/MarsTextarea.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "# <mars-textarea>\nWeb component that allows us to show an accessible and beautiful textarea so that users can interact\n\n## Installation\n```bash\n npm i @web-inmars/mars-textarea --save\n```\n\n## Usage\n```html\n<script type=\"module\">\n  import 'mars-textarea/mars-textarea.js';\n</script>\n\n<mars-textarea>\n    I'm a textarea\n</mars-textarea>\n```",
+          "name": "MarsTextarea",
+          "members": [
+            {
+              "kind": "field",
+              "name": "value",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "value"
+            },
+            {
+              "kind": "field",
+              "name": "name",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "name"
+            },
+            {
+              "kind": "field",
+              "name": "for",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "for"
+            },
+            {
+              "kind": "field",
+              "name": "variant",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "variant"
+            },
+            {
+              "kind": "field",
+              "name": "caption",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "caption"
+            },
+            {
+              "kind": "field",
+              "name": "label",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "label"
+            },
+            {
+              "kind": "field",
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "disabled"
+            },
+            {
+              "kind": "field",
+              "name": "showCaption",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "show-caption"
+            },
+            {
+              "kind": "method",
+              "name": "__input",
+              "parameters": [
+                {
+                  "name": "event",
+                  "type": {
+                    "text": "any"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "__renderLabel"
+            },
+            {
+              "kind": "method",
+              "name": "__renderCaption"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "value",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "value"
+            },
+            {
+              "name": "name",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "name"
+            },
+            {
+              "name": "for",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "for"
+            },
+            {
+              "name": "variant",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "variant"
+            },
+            {
+              "name": "caption",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "caption"
+            },
+            {
+              "name": "label",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "label"
+            },
+            {
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "disabled"
+            },
+            {
+              "name": "show-caption",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "showCaption"
+            }
+          ],
+          "superclass": {
+            "name": "MarsElement",
+            "package": "@web-inmars/mars-core"
+          },
+          "tagName": "mars-textarea",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "MarsTextarea",
+          "declaration": {
+            "name": "MarsTextarea",
+            "module": "src/MarsTextarea.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "stories/index.stories.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "Regular"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "stories/index.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Regular",
+          "declaration": {
+            "name": "Regular",
+            "module": "stories/index.stories.ts"
+          }
         }
       ]
     }

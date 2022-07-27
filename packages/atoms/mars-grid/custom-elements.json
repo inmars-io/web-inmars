@@ -1,148 +1,352 @@
 {
-  "version": "experimental",
-  "tags": [
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
     {
-      "name": "mars-grid",
-      "path": "./mars-grid.ts",
-      "description": "# <mars-grid>\nWeb component that allows us to show an accessible and beautiful grid so that users can interact\n\n## Installation\n```bash\n  npm i @web-inmars/mars-grid --save\n```\n\n## Usage\n```html\n<script type=\"module\">\n   import 'mars-grid/mars-grid.js';\n</script>\n\n<mars-grid>\n     Click me!\n</mars-grid>\n```",
-      "attributes": [
+      "kind": "javascript-module",
+      "path": "index.ts",
+      "declarations": [],
+      "exports": [
         {
-          "name": "inline",
-          "type": "boolean",
-          "default": "false"
-        },
+          "kind": "js",
+          "name": "MarsGrid",
+          "declaration": {
+            "name": "MarsGrid",
+            "module": "./src/MarsGrid.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "mars-grid.ts",
+      "declarations": [],
+      "exports": [
         {
-          "name": "grid-template",
-          "type": "string",
-          "default": "\"\""
-        },
+          "kind": "custom-element-definition",
+          "name": "mars-grid",
+          "declaration": {
+            "name": "MarsGrid",
+            "module": "/src/MarsGrid.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "stories/index.stories.ts",
+      "declarations": [
         {
-          "name": "gap",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "grid",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "justify-items",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "align-items",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "place-items",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "justify-content",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "align-content",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "place-content",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "grid-auto-flow",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "container-size",
-          "type": "string",
-          "default": "\"\""
+          "kind": "variable",
+          "name": "Regular"
         }
       ],
-      "properties": [
+      "exports": [
         {
-          "name": "inline",
-          "attribute": "inline",
-          "type": "boolean",
-          "default": "false"
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "stories/index.stories.ts"
+          }
         },
         {
-          "name": "gridTemplate",
-          "attribute": "grid-template",
-          "type": "string",
-          "default": "\"\""
-        },
+          "kind": "js",
+          "name": "Regular",
+          "declaration": {
+            "name": "Regular",
+            "module": "stories/index.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/MarsGrid.styles.ts",
+      "declarations": [
         {
-          "name": "gap",
-          "attribute": "gap",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "grid",
-          "attribute": "grid",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "justifyItems",
-          "attribute": "justify-items",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "alignItems",
-          "attribute": "align-items",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "placeItems",
-          "attribute": "place-items",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "justifyContent",
-          "attribute": "justify-content",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "alignContent",
-          "attribute": "align-content",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "placeContent",
-          "attribute": "place-content",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "gridAutoFlow",
-          "attribute": "grid-auto-flow",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
-          "name": "containerSize",
-          "attribute": "container-size",
-          "type": "string",
-          "default": "\"\""
-        },
-        {
+          "kind": "variable",
           "name": "styles",
-          "type": "CSSResult[]"
+          "default": "css`\n  :host {\n    display: block;\n    max-width: var(--mars-container-width, inherit);\n    max-height: var(--mars-container-height, inherit);\n  }\n\n  section {\n    display: var(--mars-display-grid, grid);\n    max-width: var(--mars-grid-width, fit-content);\n    max-height: var(--mars-grid-height, fit-content);\n  }\n\n  :host([inline]) section {\n    --display-grid: inline-grid;\n  }\n\n  :host([grid-size*='full-width']) {\n    --mars-grid-width: 100%;\n  }\n\n  :host([grid-size*='full-height']) {\n    --mars-grid-height: 100%;\n  }\n\n  :host([grid-size='extra-large']) {\n    --mars-grid-width: var(--mars-grid-width-extra-large, 1140px);\n  }\n\n  :host([grid-size='large']) {\n    --mars-grid-width: var(--mars-grid-width-large, 960px);\n  }\n\n  :host([grid-size='medium']) {\n    --mars-grid-width: var(--mars-grid-width-medium, 720px);\n  }\n\n  :host([grid-size='small']) {\n    --mars-grid-width: var(--mars-grid-width-small, 540px);\n  }\n  :host([grid-size*='full-width']) {\n    --mars-grid-width: 100%;\n  }\n\n  :host([grid-size*='full-height']) {\n    --mars-grid-height: 100%;\n  }\n\n  :host([container-size='extra-large']) {\n    --mars-container-width: var(--mars-container-width-extra-large, 1220px);\n  }\n\n  :host([container-size='large']) {\n    --mars-container-width: var(--mars-container-width-large, 1000px);\n  }\n\n  :host([container-size='medium']) {\n    --mars-container-width: var(--mars-container-width-medium, 800px);\n  }\n\n  :host([container-size='small']) {\n    --mars-container-width: var(--mars-container-width-small, 620px);\n  }\n\n  :host([justify-items]) {\n    justify-items: var(--mars-grid-justify-items);\n  }\n`"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "styles",
+          "declaration": {
+            "name": "styles",
+            "module": "src/MarsGrid.styles.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/MarsGrid.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "# <mars-grid>\nWeb component that allows us to show an accessible and beautiful grid so that users can see the content of the page.\n\n## Installation\n```bash\n npm i @web-inmars/mars-grid --save\n```\n\n## Usage\n```html\n<script type=\"module\">\n  import 'mars-grid/mars-grid.js';\n</script>\n\n<mars-grid>\n    I'm a container for the items\n</mars-grid>\n```",
+          "name": "MarsGrid",
+          "members": [
+            {
+              "kind": "field",
+              "name": "inline",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "inline"
+            },
+            {
+              "kind": "field",
+              "name": "gridTemplate",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "grid-template"
+            },
+            {
+              "kind": "field",
+              "name": "gap",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "gap"
+            },
+            {
+              "kind": "field",
+              "name": "grid",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "grid"
+            },
+            {
+              "kind": "field",
+              "name": "justifyItems",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "justify-items"
+            },
+            {
+              "kind": "field",
+              "name": "alignItems",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "align-items"
+            },
+            {
+              "kind": "field",
+              "name": "placeItems",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "place-items"
+            },
+            {
+              "kind": "field",
+              "name": "justifyContent",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "justify-content"
+            },
+            {
+              "kind": "field",
+              "name": "alignContent",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "align-content"
+            },
+            {
+              "kind": "field",
+              "name": "placeContent",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "place-content"
+            },
+            {
+              "kind": "field",
+              "name": "gridAutoFlow",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "grid-auto-flow"
+            },
+            {
+              "kind": "field",
+              "name": "containerSize",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "container-size"
+            },
+            {
+              "kind": "field",
+              "name": "_styleMap",
+              "type": {
+                "text": "any"
+              },
+              "privacy": "private",
+              "default": "{}"
+            },
+            {
+              "kind": "field",
+              "name": "_styleChildren",
+              "type": {
+                "text": "any"
+              },
+              "privacy": "private",
+              "default": "{\n    gridColumn: 'grid-column',\n    gridRow: 'grid-row',\n    gridArea: 'grid-area',\n    justifySelf: 'justify-self',\n    alignSelf: 'align-self',\n    placeSelf: 'place-self',\n  }"
+            },
+            {
+              "kind": "field",
+              "name": "_children",
+              "type": {
+                "text": "any"
+              },
+              "privacy": "private",
+              "default": "[]"
+            },
+            {
+              "kind": "method",
+              "name": "createRenderRoot"
+            },
+            {
+              "kind": "method",
+              "name": "_getChildren"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "inline",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "inline"
+            },
+            {
+              "name": "grid-template",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "gridTemplate"
+            },
+            {
+              "name": "gap",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "gap"
+            },
+            {
+              "name": "grid",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "grid"
+            },
+            {
+              "name": "justify-items",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "justifyItems"
+            },
+            {
+              "name": "align-items",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "alignItems"
+            },
+            {
+              "name": "place-items",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "placeItems"
+            },
+            {
+              "name": "justify-content",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "justifyContent"
+            },
+            {
+              "name": "align-content",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "alignContent"
+            },
+            {
+              "name": "place-content",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "placeContent"
+            },
+            {
+              "name": "grid-auto-flow",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "gridAutoFlow"
+            },
+            {
+              "name": "container-size",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "containerSize"
+            }
+          ],
+          "superclass": {
+            "name": "MarsElement",
+            "package": "@web-inmars/mars-core"
+          },
+          "tagName": "mars-grid",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "MarsGrid",
+          "declaration": {
+            "name": "MarsGrid",
+            "module": "src/MarsGrid.ts"
+          }
         }
       ]
     }
