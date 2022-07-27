@@ -22,7 +22,7 @@ import { styles } from './MarsImg.styles.js';
  */
 
 export class MarsImg extends MarsElement {
-  static get styles() {
+  static get styles(): any {
     return [...super.styles, styles];
   }
 

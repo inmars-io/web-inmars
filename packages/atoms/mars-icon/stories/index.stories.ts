@@ -1,5 +1,5 @@
 import { html, TemplateResult } from '@web-inmars/mars-core';
-import '@web-inmars/mars-awesome-solid/dist/index';
+// import '@web-inmars/mars-awesome-solid/dist/index';
 import '../mars-icon.js';
 
 export default {

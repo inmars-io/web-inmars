@@ -1,10 +1,9 @@
 import {
-  tagsFont,
-  TemplateResult,
-  unsafeHTML,
   html,
+  TemplateResult,
+  tagsFont,
+  unsafeHTML,
 } from '@web-inmars/mars-core';
-
 import '../mars-button.js';
 
 export default {

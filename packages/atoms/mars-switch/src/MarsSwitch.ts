@@ -32,7 +32,7 @@ import { styles } from './MarsSwitch.styles.js';
  */
 
 export class MarsSwitch extends MarsElement {
-  static get styles() {
+  static get styles(): any {
     return [
       ...super.styles,
       css`

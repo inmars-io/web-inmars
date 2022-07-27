@@ -32,7 +32,7 @@ import { styles } from './MarsRadioButton.styles.js';
  */
 
 export class MarsRadioButton extends MarsElement {
-  static get styles() {
+  static get styles(): any {
     return [
       ...super.styles,
       css`

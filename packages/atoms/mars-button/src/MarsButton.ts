@@ -24,9 +24,7 @@ import { styles } from './MarsButton.styles.js';
  */
 
 export class MarsButton extends MarsElement {
-  static get styles() {
-    return [...super.styles, styles];
-  }
+  static styles: any = [ MarsElement.styles, styles ];
 
   @property({ type: String }) value = '';
 
@@ -52,7 +50,7 @@ export class MarsButton extends MarsElement {
   }
 
   render() {
-    return html` <button
+    return html`<button
       part="button"
       .type=${this.type}
       ?disabled=${this.disabled}

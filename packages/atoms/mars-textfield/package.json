@@ -24,7 +24,7 @@
     "storybook:build": "tsc && build-storybook"
   },
   "dependencies": {
-    "@web-inmars/mars-core": "^0.2.2"
+    "@web-inmars/mars-core": "latest"
   },
   "devDependencies": {
     "@open-wc/eslint-config": "^4.0.0",

@@ -1,4 +1,4 @@
-import { css } from 'lit-element';
+import { css } from 'lit';
 import { calcRemMixin } from './mixins.js';
 
 export const COLOR_INDIGO = {

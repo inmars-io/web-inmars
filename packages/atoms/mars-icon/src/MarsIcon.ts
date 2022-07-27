@@ -32,7 +32,7 @@ function selectIcon(name: any, iconSet: any) {
 }
 
 export class MarsIcon extends MarsElement {
-  static get styles() {
+  static get styles(): any {
     return [...super.styles, styles];
   }
 

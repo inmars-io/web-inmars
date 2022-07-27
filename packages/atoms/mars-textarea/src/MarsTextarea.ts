@@ -32,7 +32,7 @@ import { styles } from './MarsTextarea.styles.js';
  */
 
 export class MarsTextarea extends MarsElement {
-  static get styles() {
+  static get styles(): any {
     return [
       ...super.styles,
       css`

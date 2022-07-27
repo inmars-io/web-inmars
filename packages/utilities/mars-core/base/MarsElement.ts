@@ -1,4 +1,4 @@
-import { LitElement, css, unsafeCSS } from 'lit-element';
+import { LitElement, css, unsafeCSS } from 'lit';
 import {
   colorGray,
   colorFundations,

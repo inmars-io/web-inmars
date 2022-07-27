@@ -1,4 +1,5 @@
 const solidIcons = require('./icons/all.js').icon;
+
 interface Window {
   __webinmars: any;
 }

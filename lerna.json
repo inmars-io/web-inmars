@@ -9,7 +9,8 @@
   "command": {
     "version": {
       "conventionalCommits": true,
-      "conventionalGraduate": true
+      "conventionalGraduate": true,
+      "message": "chore: publish"
     }
   },
   "ignoreChanges": [

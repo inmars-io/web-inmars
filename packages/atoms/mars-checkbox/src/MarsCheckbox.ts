@@ -32,18 +32,16 @@ import { styles } from './MarsCheckbox.styles.js';
  */
 
 export class MarsCheckbox extends MarsElement {
-  static get styles() {
-    return [
-      ...super.styles,
-      css`
-        :host {
-          ${unsafeCSS(colorGray([200, 300, 400, 500, 600, 700, 800]))};
-          ${unsafeCSS(fontFundations(['xs']))};
-        }
-      `,
-      styles,
-    ];
-  }
+  static styles: any = [
+    MarsElement.styles,
+    css`
+      :host {
+        ${unsafeCSS(colorGray([200, 300, 400, 500, 600, 700, 800]))};
+        ${unsafeCSS(fontFundations(['xs']))};
+      }
+    `,
+    styles
+  ];
 
   @property({ type: String }) value = '';
 

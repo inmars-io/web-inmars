@@ -24,7 +24,7 @@ import { styles } from './MarsTitle.styles.js';
  */
 
 export class MarsTitle extends MarsElement {
-  static get styles() {
+  static get styles(): any {
     return [...super.styles, styles];
   }
 
