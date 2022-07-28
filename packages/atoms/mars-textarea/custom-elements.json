@@ -4,81 +4,27 @@
   "modules": [
     {
       "kind": "javascript-module",
-      "path": "index.ts",
-      "declarations": [],
+      "path": "stories/index.stories.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "Regular"
+        }
+      ],
       "exports": [
         {
           "kind": "js",
-          "name": "MarsTextarea",
+          "name": "default",
           "declaration": {
-            "name": "MarsTextarea",
-            "module": "./src/MarsTextarea.js"
+            "module": "stories/index.stories.ts"
           }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "mars-textarea.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "custom-element-definition",
-          "name": "mars-textarea",
-          "declaration": {
-            "name": "MarsTextarea",
-            "module": "/src/MarsTextarea.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/index.d.ts",
-      "declarations": [],
-      "exports": [
+        },
         {
           "kind": "js",
-          "name": "MarsTextarea",
+          "name": "Regular",
           "declaration": {
-            "name": "MarsTextarea",
-            "module": "./src/MarsTextarea.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/index.js",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "MarsTextarea",
-          "declaration": {
-            "name": "MarsTextarea",
-            "module": "./src/MarsTextarea.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/mars-textarea.d.ts",
-      "declarations": [],
-      "exports": []
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/mars-textarea.js",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "custom-element-definition",
-          "name": "mars-textarea",
-          "declaration": {
-            "name": "MarsTextarea",
-            "module": "/dist/src/MarsTextarea.js"
+            "name": "Regular",
+            "module": "stories/index.stories.ts"
           }
         }
       ]
@@ -293,375 +239,33 @@
     },
     {
       "kind": "javascript-module",
-      "path": "stories/index.stories.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "Regular"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "stories/index.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Regular",
-          "declaration": {
-            "name": "Regular",
-            "module": "stories/index.stories.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/src/MarsTextarea.d.ts",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "# <mars-textarea>\nWeb component that allows us to show an accessible and beautiful textarea so that users can interact\n\n## Installation\n```bash\n npm i @web-inmars/mars-textarea --save\n```\n\n## Usage\n```html\n<script type=\"module\">\n  import 'mars-textarea/mars-textarea.js';\n</script>\n\n<mars-textarea>\n    I'm a textarea\n</mars-textarea>\n```",
-          "name": "MarsTextarea",
-          "members": [
-            {
-              "kind": "field",
-              "name": "value",
-              "type": {
-                "text": "string"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "name",
-              "type": {
-                "text": "string"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "for",
-              "type": {
-                "text": "string"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "variant",
-              "type": {
-                "text": "string"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "caption",
-              "type": {
-                "text": "string"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "label",
-              "type": {
-                "text": "string"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "disabled",
-              "type": {
-                "text": "boolean"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "showCaption",
-              "type": {
-                "text": "boolean"
-              }
-            },
-            {
-              "kind": "method",
-              "name": "__input",
-              "return": {
-                "type": {
-                  "text": "void"
-                }
-              },
-              "parameters": [
-                {
-                  "name": "event",
-                  "type": {
-                    "text": "any"
-                  }
-                }
-              ]
-            },
-            {
-              "kind": "method",
-              "name": "__renderLabel",
-              "return": {
-                "type": {
-                  "text": "\"\" | import(\"lit-html\").TemplateResult<1>"
-                }
-              }
-            },
-            {
-              "kind": "method",
-              "name": "__renderCaption",
-              "return": {
-                "type": {
-                  "text": "import(\"lit-html\").TemplateResult<1> | \"\""
-                }
-              }
-            }
-          ],
-          "superclass": {
-            "name": "MarsElement",
-            "package": "@web-inmars/mars-core"
-          },
-          "tagName": "mars-textarea",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "MarsTextarea",
-          "declaration": {
-            "name": "MarsTextarea",
-            "module": "dist/src/MarsTextarea.d.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/src/MarsTextarea.js",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "# <mars-textarea>\nWeb component that allows us to show an accessible and beautiful textarea so that users can interact\n\n## Installation\n```bash\n npm i @web-inmars/mars-textarea --save\n```\n\n## Usage\n```html\n<script type=\"module\">\n  import 'mars-textarea/mars-textarea.js';\n</script>\n\n<mars-textarea>\n    I'm a textarea\n</mars-textarea>\n```",
-          "name": "MarsTextarea",
-          "members": [
-            {
-              "kind": "method",
-              "name": "__input",
-              "parameters": [
-                {
-                  "name": "event"
-                }
-              ]
-            },
-            {
-              "kind": "method",
-              "name": "__renderLabel"
-            },
-            {
-              "kind": "method",
-              "name": "__renderCaption"
-            },
-            {
-              "kind": "field",
-              "name": "value",
-              "type": {
-                "text": "string"
-              },
-              "default": "''"
-            },
-            {
-              "kind": "field",
-              "name": "name",
-              "type": {
-                "text": "string"
-              },
-              "default": "''"
-            },
-            {
-              "kind": "field",
-              "name": "for",
-              "type": {
-                "text": "string"
-              },
-              "default": "''"
-            },
-            {
-              "kind": "field",
-              "name": "variant",
-              "type": {
-                "text": "string"
-              },
-              "default": "''"
-            },
-            {
-              "kind": "field",
-              "name": "caption",
-              "type": {
-                "text": "string"
-              },
-              "default": "''"
-            },
-            {
-              "kind": "field",
-              "name": "label",
-              "type": {
-                "text": "string"
-              },
-              "default": "''"
-            },
-            {
-              "kind": "field",
-              "name": "disabled",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false"
-            },
-            {
-              "kind": "field",
-              "name": "showCaption",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false"
-            }
-          ],
-          "superclass": {
-            "name": "MarsElement",
-            "package": "@web-inmars/mars-core"
-          },
-          "tagName": "mars-textarea",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "MarsTextarea",
-          "declaration": {
-            "name": "MarsTextarea",
-            "module": "dist/src/MarsTextarea.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/src/MarsTextarea.styles.d.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "styles",
-          "type": {
-            "text": "import(\"lit\").CSSResult"
-          }
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "styles",
-          "declaration": {
-            "name": "styles",
-            "module": "dist/src/MarsTextarea.styles.d.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/src/MarsTextarea.styles.js",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "styles",
-          "default": "css `\n  :host {\n    --textarea-color: var(--color-gray-200);\n    --textarea-color-border: var(--color-primary-500);\n    --textarea-color-hover: var(--color-gray-300);\n    --textarea-color-active: var(--color-primary-400);\n    --textarea-bg-color-focus: var(--color-gray-100);\n    --textarea-color-focus: var(--color-primary-300);\n    --textarea-color-text: var(--color-gray-700);\n    --textarea-color-text-filled: var(--color-primary-500);\n    --textarea-color-label: var(--color-gray-600);\n    --textarea-color-placeholder: var(--color-gray-600);\n    --textarea-family-font: var(--font-family-primary);\n    --textarea-font-size: var(--font-size-mobile-sm);\n    --textarea-font-size-label: var(--font-size-mobile-sm);\n    font-family: var(--textarea-family-font);\n    display: grid;\n    min-height: 100px;\n    min-width: 300px;\n    grid-template-areas: 'textarea';\n    box-sizing: border-box;\n    font-weight: 300;\n  }\n\n  textarea {\n    font-family: var(--textarea-family-font);\n    background-color: var(--textarea-color);\n    font-size: var(--textarea-font-size);\n    color: var(--textarea-color-text);\n    border: 2px solid transparent;\n    border-radius: 5px;\n    cursor: pointer;\n    transition: all 0.5s ease;\n    grid-area: textarea;\n    box-sizing: border-box;\n    padding: 12px 18px 12px 18px;\n    font-weight: 300;\n  }\n\n  textarea::placeholder {\n    visibility: hidden;\n  }\n\n  :host([variant*='primary']) textarea {\n    --textarea-color-border: var(--color-primary-500);\n    --textarea-color-active: var(--color-primary-400);\n    --textarea-color-focus: var(--color-primary-300);\n    --textarea-color-text: var(--color-primary-500);\n    --textarea-color-text-filled: var(--color-primary-500);\n  }\n\n  :host([variant*='secondary']) textarea {\n    --textarea-color-border: var(--color-secondary-500);\n    --textarea-color-active: var(--color-secondary-400);\n    --textarea-color-focus: var(--color-secondary-300);\n    --textarea-color-text: var(--color-secondary-500);\n    --textarea-color-text-filled: var(--color-secondary-500);\n  }\n\n  :host([variant*='tertiary']) textarea {\n    --textarea-color-border: var(--color-tertiary-500);\n    --textarea-color-active: var(--color-tertiary-400);\n    --textarea-color-focus: var(--color-tertiary-300);\n    --textarea-color-text: var(--color-tertiary-500);\n    --textarea-color-text-filled: var(--color-tertiary-500);\n  }\n\n  textarea:hover:not([disabled]),\n  textarea:hover:not([disabled]) ~ label {\n    background-color: var(--textarea-color-hover);\n    color: var(--textarea-color-text);\n    transition: all 0.35s ease;\n  }\n\n  textarea:active:not([disabled]),\n  textarea:focus:not([disabled]),\n  textarea:not(:placeholder-shown) {\n    border: 2px solid var(--textarea-color-active);\n    padding: 38px 18px 15px 18px;\n    outline: none;\n  }\n\n  textarea:not(:placeholder-shown) {\n    color: var(--textarea-color-text-filled);\n  }\n\n  textarea:focus:not([disabled]),\n  textarea:focus:not([disabled]) ~ label {\n    background-color: var(--textarea-bg-color-focus);\n  }\n\n  textarea:disabled {\n    cursor: not-allowed;\n    opacity: 0.5;\n  }\n  textarea:disabled ~ label {\n    background-color: transparent;\n    opacity: 0.5;\n  }\n\n  label {\n    color: var(--textarea-color-label);\n    grid-area: textarea;\n    width: inherit;\n    padding: 24px 0px 5px 20px;\n    margin: 2px 12px 14px 2px;\n    width: auto;\n    height: fit-content;\n    font-size: var(--textarea-font-size-label);\n    transition: all 0.5s ease;\n    pointer-events: none;\n    z-index: 0;\n    background-color: var(--textarea-color);\n  }\n\n  textarea:active:not([disabled]) ~ label,\n  textarea:focus:not([disabled]) ~ label,\n  textarea:not(:placeholder-shown) ~ label {\n    padding: 18px 0px 2px 19px;\n    font-size: 14px;\n    font-weight: 500;\n    color: var(--color-gray-800);\n  }\n\n  span {\n    margin-top: 5px;\n    color: var(--color-gray-800);\n    transition: all 0.5s ease;\n  }\n`"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "styles",
-          "declaration": {
-            "name": "styles",
-            "module": "dist/src/MarsTextarea.styles.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/stories/index.stories.d.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "_default",
-          "type": {
-            "text": "{\n    title: string;\n    component: string;\n    argTypes: {\n        onChage: {\n            action: string;\n        };\n        value: {\n            control: string;\n        };\n        name: {\n            control: string;\n        };\n        placeholder: {\n            control: string;\n        };\n        disabled: {\n            control: string;\n        };\n        showCaption: {\n            control: string;\n        };\n        caption: {\n            control: string;\n        };\n        label: {\n            control: string;\n        };\n        variant: {\n            control: {\n                type: string;\n                options: string[];\n            };\n        };\n    };\n}"
-          }
-        },
-        {
-          "kind": "variable",
-          "name": "Regular",
-          "type": {
-            "text": "Story<ArgTypes>"
-          }
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "name": "_default",
-            "module": "dist/stories/index.stories.d.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Regular",
-          "declaration": {
-            "name": "Regular",
-            "module": "dist/stories/index.stories.d.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/stories/index.stories.js",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "Regular"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "dist/stories/index.stories.js"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Regular",
-          "declaration": {
-            "name": "Regular",
-            "module": "dist/stories/index.stories.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/test/mars-textarea.test.d.ts",
+      "path": "src/index.ts",
       "declarations": [],
-      "exports": []
+      "exports": [
+        {
+          "kind": "js",
+          "name": "MarsTextarea",
+          "declaration": {
+            "name": "MarsTextarea",
+            "module": "./MarsTextarea.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/mars-textarea.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "mars-textarea",
+          "declaration": {
+            "name": "MarsTextarea",
+            "module": "/src/MarsTextarea.js"
+          }
+        }
+      ]
     }
   ]
 }

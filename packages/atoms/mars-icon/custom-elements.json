@@ -4,93 +4,12 @@
   "modules": [
     {
       "kind": "javascript-module",
-      "path": "index.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "MarsIcon",
-          "declaration": {
-            "name": "MarsIcon",
-            "module": "./src/MarsIcon.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "mars-icon.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "custom-element-definition",
-          "name": "mars-icon",
-          "declaration": {
-            "name": "MarsIcon",
-            "module": "/src/MarsIcon.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/index.d.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "MarsIcon",
-          "declaration": {
-            "name": "MarsIcon",
-            "module": "./src/MarsIcon.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/index.js",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "MarsIcon",
-          "declaration": {
-            "name": "MarsIcon",
-            "module": "./src/MarsIcon.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/mars-icon.d.ts",
-      "declarations": [],
-      "exports": []
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/mars-icon.js",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "custom-element-definition",
-          "name": "mars-icon",
-          "declaration": {
-            "name": "MarsIcon",
-            "module": "/dist/src/MarsIcon.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
       "path": "src/MarsIcon.styles.ts",
       "declarations": [
         {
           "kind": "variable",
           "name": "styles",
-          "default": "css`\n  :host {\n    --mars-icon-font: var(--icon-font, \"Material Icons\");\n    --mars-icon-size: var(--icon-size, 24px);\n    --mars-icon-color: var(--icon-color, var(--color-primary-500));\n\n    font-size: var(--mars-icon-size);\n    font-family: var(--mars-icon-font);\n\n    font-weight: normal;\n    font-style: normal;\n    color: inherit;\n    line-height: 1;\n    letter-spacing: normal;\n    text-transform: none;\n    display: inline-block;\n    white-space: nowrap;\n    word-wrap: normal;\n    direction: ltr;\n    -webkit-font-smoothing: antialiased;\n  }\n\n  svg {\n    fill: var(--mars-icon-color);\n    transition: all 0.5s ease;\n  }\n\n  :host([variant*='primary']) svg {\n    --mars-icon-color: var(--color-primary-500);\n  }\n\n  :host([variant*='secondary']) svg {\n    --mars-icon-color: var(--color-secondary-500);\n  }\n\n  :host([variant*='tertiary']) svg {\n    --mars-icon-color: var(--color-tertiary-500);\n  }\n`"
+          "default": "css`\n  :host {\n    --mars-icon-font: var(--icon-font, 'Material Icons');\n    --mars-icon-size: var(--icon-size, 24px);\n    --mars-icon-color: var(--icon-color, var(--color-primary-500));\n\n    font-size: var(--mars-icon-size);\n    font-family: var(--mars-icon-font);\n\n    font-weight: normal;\n    font-style: normal;\n    color: inherit;\n    line-height: 1;\n    letter-spacing: normal;\n    text-transform: none;\n    display: inline-block;\n    white-space: nowrap;\n    word-wrap: normal;\n    direction: ltr;\n    -webkit-font-smoothing: antialiased;\n  }\n\n  svg {\n    fill: var(--mars-icon-color);\n    transition: all 0.5s ease;\n  }\n\n  :host([variant*='primary']) svg {\n    --mars-icon-color: var(--color-primary-500);\n  }\n\n  :host([variant*='secondary']) svg {\n    --mars-icon-color: var(--color-secondary-500);\n  }\n\n  :host([variant*='tertiary']) svg {\n    --mars-icon-color: var(--color-tertiary-500);\n  }\n`"
         }
       ],
       "exports": [
@@ -154,6 +73,36 @@
     },
     {
       "kind": "javascript-module",
+      "path": "src/index.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "MarsIcon",
+          "declaration": {
+            "name": "MarsIcon",
+            "module": "./MarsIcon.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/mars-icon.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "mars-icon",
+          "declaration": {
+            "name": "MarsIcon",
+            "module": "/src/MarsIcon.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
       "path": "stories/index.stories.ts",
       "declarations": [
         {
@@ -178,282 +127,6 @@
           }
         }
       ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/src/MarsIcon.d.ts",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "",
-          "name": "MarsIcon",
-          "members": [
-            {
-              "kind": "field",
-              "name": "type",
-              "type": {
-                "text": "string"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "name",
-              "type": {
-                "text": "string"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "width",
-              "type": {
-                "text": "string"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "height",
-              "type": {
-                "text": "string"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "variant",
-              "type": {
-                "text": "string"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "__iconSet",
-              "type": {
-                "text": "any"
-              }
-            },
-            {
-              "kind": "method",
-              "name": "__setIconSet",
-              "return": {
-                "type": {
-                  "text": "void"
-                }
-              }
-            }
-          ],
-          "superclass": {
-            "name": "MarsElement",
-            "package": "@web-inmars/mars-core"
-          },
-          "tagName": "mars-icon",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "MarsIcon",
-          "declaration": {
-            "name": "MarsIcon",
-            "module": "dist/src/MarsIcon.d.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/src/MarsIcon.js",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "",
-          "name": "MarsIcon",
-          "members": [
-            {
-              "kind": "method",
-              "name": "__setIconSet"
-            },
-            {
-              "kind": "field",
-              "name": "type",
-              "type": {
-                "text": "string"
-              },
-              "default": "''"
-            },
-            {
-              "kind": "field",
-              "name": "name",
-              "type": {
-                "text": "string"
-              },
-              "default": "''"
-            },
-            {
-              "kind": "field",
-              "name": "width",
-              "type": {
-                "text": "string"
-              },
-              "default": "''"
-            },
-            {
-              "kind": "field",
-              "name": "height",
-              "type": {
-                "text": "string"
-              },
-              "default": "''"
-            },
-            {
-              "kind": "field",
-              "name": "variant",
-              "type": {
-                "text": "string"
-              },
-              "default": "''"
-            },
-            {
-              "kind": "field",
-              "name": "__iconSet",
-              "type": {
-                "text": "object"
-              },
-              "default": "{}"
-            }
-          ],
-          "superclass": {
-            "name": "MarsElement",
-            "package": "@web-inmars/mars-core"
-          },
-          "tagName": "mars-icon",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "MarsIcon",
-          "declaration": {
-            "name": "MarsIcon",
-            "module": "dist/src/MarsIcon.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/src/MarsIcon.styles.d.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "styles",
-          "type": {
-            "text": "import(\"lit\").CSSResult"
-          }
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "styles",
-          "declaration": {
-            "name": "styles",
-            "module": "dist/src/MarsIcon.styles.d.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/src/MarsIcon.styles.js",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "styles",
-          "default": "css `\n  svg {\n    --icon-color: var(--color-primary-500);\n    fill: var(--icon-color);\n    transition: all 0.5s ease;\n  }\n\n  :host([variant*='primary']) svg {\n    --icon-color: var(--color-primary-500);\n  }\n\n  :host([variant*='secondary']) svg {\n    --icon-color: var(--color-secondary-500);\n  }\n\n  :host([variant*='tertiary']) svg {\n    --icon-color: var(--color-tertiary-500);\n  }\n`"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "styles",
-          "declaration": {
-            "name": "styles",
-            "module": "dist/src/MarsIcon.styles.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/stories/index.stories.d.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "_default",
-          "type": {
-            "text": "{\n    title: string;\n    component: string;\n    argTypes: {\n        type: {\n            type: string;\n            options: string[];\n        };\n        name: {\n            control: string;\n        };\n        width: {\n            control: string;\n        };\n        height: {\n            control: string;\n        };\n        variant: {\n            control: {\n                type: string;\n                options: string[];\n            };\n        };\n    };\n}"
-          }
-        },
-        {
-          "kind": "variable",
-          "name": "Regular",
-          "type": {
-            "text": "Story<ArgTypes>"
-          }
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "name": "_default",
-            "module": "dist/stories/index.stories.d.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Regular",
-          "declaration": {
-            "name": "Regular",
-            "module": "dist/stories/index.stories.d.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/stories/index.stories.js",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "Regular"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "dist/stories/index.stories.js"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Regular",
-          "declaration": {
-            "name": "Regular",
-            "module": "dist/stories/index.stories.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/test/mars-icon.test.d.ts",
-      "declarations": [],
-      "exports": []
     }
   ]
 }

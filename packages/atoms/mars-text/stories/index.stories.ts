@@ -5,7 +5,7 @@ import {
   TemplateResult,
 } from '@web-inmars/mars-core';
 
-import '../mars-text.js';
+import '../src/mars-text.js';
 
 export default {
   title: 'Atoms / MarsText',

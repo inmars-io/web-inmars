@@ -1,7 +1,7 @@
 import { html, fixture, expect } from '@open-wc/testing';
 
 import { MarsTitle } from '../src/MarsTitle.js';
-import '../mars-title.js';
+import '../src/mars-title.js';
 
 describe('MarsTitle', () => {
   it('has a default title "Hey there" and counter 5', async () => {

@@ -4,7 +4,7 @@ import {
   tagsFont,
   unsafeHTML,
 } from '@web-inmars/mars-core';
-import '../mars-button.js';
+import '../src/mars-button.js';
 
 export default {
   title: 'Atoms / MarsButton',

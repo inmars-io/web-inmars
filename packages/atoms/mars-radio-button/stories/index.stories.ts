@@ -1,5 +1,5 @@
 import { html, TemplateResult } from '@web-inmars/mars-core';
-import '../mars-radio-button.js';
+import '../src/mars-radio-button.js';
 
 export default {
   title: 'Atoms / MarsRadioButton',

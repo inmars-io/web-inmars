@@ -5,7 +5,7 @@ import {
   TemplateResult,
 } from '@web-inmars/mars-core';
 
-import '../mars-link.js';
+import '../src/mars-link.js';
 
 export default {
   title: 'Atoms / MarsLink',

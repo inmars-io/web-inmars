@@ -4,81 +4,51 @@
   "modules": [
     {
       "kind": "javascript-module",
-      "path": "index.ts",
-      "declarations": [],
+      "path": "stories/index.stories.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "Regular"
+        },
+        {
+          "kind": "variable",
+          "name": "CustomValue"
+        },
+        {
+          "kind": "variable",
+          "name": "SlottedContent"
+        }
+      ],
       "exports": [
         {
           "kind": "js",
-          "name": "MarsButton",
+          "name": "default",
           "declaration": {
-            "name": "MarsButton",
-            "module": "./src/MarsButton.js"
+            "module": "stories/index.stories.ts"
           }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "mars-button.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "custom-element-definition",
-          "name": "mars-button",
-          "declaration": {
-            "name": "MarsButton",
-            "module": "/src/MarsButton.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/index.d.ts",
-      "declarations": [],
-      "exports": [
+        },
         {
           "kind": "js",
-          "name": "MarsButton",
+          "name": "Regular",
           "declaration": {
-            "name": "MarsButton",
-            "module": "./src/MarsButton.js"
+            "name": "Regular",
+            "module": "stories/index.stories.ts"
           }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/index.js",
-      "declarations": [],
-      "exports": [
+        },
         {
           "kind": "js",
-          "name": "MarsButton",
+          "name": "CustomValue",
           "declaration": {
-            "name": "MarsButton",
-            "module": "./src/MarsButton.js"
+            "name": "CustomValue",
+            "module": "stories/index.stories.ts"
           }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/mars-button.d.ts",
-      "declarations": [],
-      "exports": []
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/mars-button.js",
-      "declarations": [],
-      "exports": [
+        },
         {
-          "kind": "custom-element-definition",
-          "name": "mars-button",
+          "kind": "js",
+          "name": "SlottedContent",
           "declaration": {
-            "name": "MarsButton",
-            "module": "/dist/src/MarsButton.js"
+            "name": "SlottedContent",
+            "module": "stories/index.stories.ts"
           }
         }
       ]
@@ -217,367 +187,33 @@
     },
     {
       "kind": "javascript-module",
-      "path": "stories/index.stories.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "Regular"
-        },
-        {
-          "kind": "variable",
-          "name": "CustomValue"
-        },
-        {
-          "kind": "variable",
-          "name": "SlottedContent"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "stories/index.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Regular",
-          "declaration": {
-            "name": "Regular",
-            "module": "stories/index.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "CustomValue",
-          "declaration": {
-            "name": "CustomValue",
-            "module": "stories/index.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "SlottedContent",
-          "declaration": {
-            "name": "SlottedContent",
-            "module": "stories/index.stories.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/src/MarsButton.d.ts",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "# <mars-button>\nWeb component that allows us to show an accessible and beautiful button so that users can interact\n\n## Installation\n```bash\n npm i @web-inmars/mars-button --save\n```\n\n## Usage\n```html\n<script type=\"module\">\n  import 'mars-button/mars-button.js';\n</script>\n\n<mars-button>\n    Click me!\n</mars-button>\n```",
-          "name": "MarsButton",
-          "members": [
-            {
-              "kind": "field",
-              "name": "value",
-              "type": {
-                "text": "string"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "variant",
-              "type": {
-                "text": "string"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "type",
-              "type": {
-                "text": "string"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "disabled",
-              "type": {
-                "text": "boolean"
-              }
-            },
-            {
-              "kind": "method",
-              "name": "__click",
-              "return": {
-                "type": {
-                  "text": "void"
-                }
-              },
-              "parameters": [
-                {
-                  "name": "event",
-                  "type": {
-                    "text": "any"
-                  }
-                }
-              ]
-            }
-          ],
-          "superclass": {
-            "name": "MarsElement",
-            "package": "@web-inmars/mars-core"
-          },
-          "tagName": "mars-button",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "MarsButton",
-          "declaration": {
-            "name": "MarsButton",
-            "module": "dist/src/MarsButton.d.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/src/MarsButton.js",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "# <mars-button>\nWeb component that allows us to show an accessible and beautiful button so that users can interact\n\n## Installation\n```bash\n npm i @web-inmars/mars-button --save\n```\n\n## Usage\n```html\n<script type=\"module\">\n  import 'mars-button/mars-button.js';\n</script>\n\n<mars-button>\n    Click me!\n</mars-button>\n```",
-          "name": "MarsButton",
-          "members": [
-            {
-              "kind": "method",
-              "name": "__click",
-              "parameters": [
-                {
-                  "name": "event"
-                }
-              ]
-            },
-            {
-              "kind": "field",
-              "name": "value",
-              "type": {
-                "text": "string"
-              },
-              "default": "''"
-            },
-            {
-              "kind": "field",
-              "name": "variant",
-              "type": {
-                "text": "string"
-              },
-              "default": "''"
-            },
-            {
-              "kind": "field",
-              "name": "type",
-              "type": {
-                "text": "string"
-              },
-              "default": "'button'"
-            },
-            {
-              "kind": "field",
-              "name": "disabled",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false"
-            }
-          ],
-          "superclass": {
-            "name": "MarsElement",
-            "package": "@web-inmars/mars-core"
-          },
-          "tagName": "mars-button",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "MarsButton",
-          "declaration": {
-            "name": "MarsButton",
-            "module": "dist/src/MarsButton.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/src/MarsButton.styles.d.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "styles",
-          "type": {
-            "text": "import(\"lit\").CSSResult"
-          }
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "styles",
-          "declaration": {
-            "name": "styles",
-            "module": "dist/src/MarsButton.styles.d.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/src/MarsButton.styles.js",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "styles",
-          "default": "css `\n  button {\n    --button-color: var(--color-primary-500);\n    --button-color-hover: var(--color-primary-600);\n    --button-color-active: var(--color-primary-400);\n    --button-color-focus: var(--color-primary-300);\n    --button-color-text: var(--color-gray-100);\n    --button-family-font: var(--font-family-primary);\n    --button-font-size: var(--font-size-mobile-sm);\n    font-family: var(--button-family-font);\n    background-color: var(--button-color);\n    color: var(--button-color-text);\n    font-size: var(--button-font-size);\n    border: 0;\n    padding: 10px 22px;\n    width: 100%;\n    border-radius: 5px;\n    cursor: pointer;\n    transition: all 0.5s ease;\n    transform: translate(0, 0);\n  }\n\n  :host([variant*='primary']) button {\n    --button-color: var(--color-primary-500);\n    --button-color-hover: var(--color-primary-600);\n    --button-color-active: var(--color-primary-400);\n    --button-color-focus: var(--color-primary-300);\n  }\n\n  :host([variant*='secondary']) button {\n    --button-color: var(--color-secondary-500);\n    --button-color-hover: var(--color-secondary-600);\n    --button-color-active: var(--color-secondary-400);\n    --button-color-focus: var(--color-secondary-300);\n  }\n\n  :host([variant*='tertiary']) button {\n    --button-color: var(--color-tertiary-500);\n    --button-color-hover: var(--color-tertiary-600);\n    --button-color-active: var(--color-tertiary-400);\n    --button-color-focus: var(--color-tertiary-300);\n  }\n\n  :host([variant*='outline']) button {\n    background: transparent;\n    border: 1px solid var(--button-color);\n    color: var(--button-color);\n  }\n\n  button:hover:not([disabled]),\n  :host([variant*='outline']) button:hover:not([disabled]) {\n    background-color: var(--button-color-hover);\n    color: var(--button-color-text);\n    transition: all 0.35s ease;\n  }\n\n  button:active:not([disabled]),\n  :host([variant*='outline']) button:active:not([disabled]) {\n    transform: translate(1px, 1px);\n    color: var(--button-color-text);\n    background-color: var(--button-color-active);\n  }\n\n  button:focus-visible:not([disabled]),\n  button:active:not([disabled]) {\n    box-shadow: var(--button-color-focus) 0px 0px 0px 5px;\n    outline: none;\n  }\n\n  button:disabled {\n    cursor: not-allowed;\n    opacity: 0.5;\n  }\n`"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "styles",
-          "declaration": {
-            "name": "styles",
-            "module": "dist/src/MarsButton.styles.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/stories/index.stories.d.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "_default",
-          "type": {
-            "text": "{\n    title: string;\n    component: string;\n    argTypes: {\n        onClick: {\n            action: string;\n        };\n        value: {\n            control: string;\n        };\n        disabled: {\n            control: string;\n        };\n        type: {\n            control: string;\n        };\n        variant: {\n            control: {\n                type: string;\n                options: string[];\n            };\n        };\n    };\n}"
-          }
-        },
-        {
-          "kind": "variable",
-          "name": "Regular",
-          "type": {
-            "text": "Story<ArgTypes>"
-          }
-        },
-        {
-          "kind": "variable",
-          "name": "CustomValue",
-          "type": {
-            "text": "Story<ArgTypes>"
-          }
-        },
-        {
-          "kind": "variable",
-          "name": "SlottedContent",
-          "type": {
-            "text": "Story<ArgTypes>"
-          }
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "name": "_default",
-            "module": "dist/stories/index.stories.d.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Regular",
-          "declaration": {
-            "name": "Regular",
-            "module": "dist/stories/index.stories.d.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "CustomValue",
-          "declaration": {
-            "name": "CustomValue",
-            "module": "dist/stories/index.stories.d.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "SlottedContent",
-          "declaration": {
-            "name": "SlottedContent",
-            "module": "dist/stories/index.stories.d.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/stories/index.stories.js",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "Regular"
-        },
-        {
-          "kind": "variable",
-          "name": "CustomValue"
-        },
-        {
-          "kind": "variable",
-          "name": "SlottedContent"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "dist/stories/index.stories.js"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Regular",
-          "declaration": {
-            "name": "Regular",
-            "module": "dist/stories/index.stories.js"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "CustomValue",
-          "declaration": {
-            "name": "CustomValue",
-            "module": "dist/stories/index.stories.js"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "SlottedContent",
-          "declaration": {
-            "name": "SlottedContent",
-            "module": "dist/stories/index.stories.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "dist/test/mars-button.test.d.ts",
+      "path": "src/index.ts",
       "declarations": [],
-      "exports": []
+      "exports": [
+        {
+          "kind": "js",
+          "name": "MarsButton",
+          "declaration": {
+            "name": "MarsButton",
+            "module": "./MarsButton.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/mars-button.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "mars-button",
+          "declaration": {
+            "name": "MarsButton",
+            "module": "/src/MarsButton.js"
+          }
+        }
+      ]
     }
   ]
 }

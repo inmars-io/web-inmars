@@ -4,11 +4,11 @@
   "description": "Web-inmars radio button web component",
   "author": "Mars Gotta <me@marsgotta.com> (http://www.marsgotta.com)",
   "license": "MIT",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "main": "dist/src/index.js",
+  "module": "dist/src/index.js",
   "exports": {
-    ".": "./dist/index.js",
-    "./mars-radio-button.js": "./dist/mars-radio-button.js"
+    ".": "./dist/src/index.js",
+    "./mars-radio-button.js": "./dist/src/mars-radio-button.js"
   },
   "repository": {
     "type": "git",

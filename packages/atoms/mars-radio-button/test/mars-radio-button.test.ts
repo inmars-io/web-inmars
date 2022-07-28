@@ -1,7 +1,7 @@
 import { html, fixture, expect } from '@open-wc/testing';
 
 import { MarsRadioButton } from '../src/MarsRadioButton.js';
-import '../mars-radio-button.js';
+import '../src/mars-radio-button.js';
 
 describe('MarsRadioButton', () => {
   it('has a default title "Hey there" and counter 5', async () => {

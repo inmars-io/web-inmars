@@ -1,7 +1,7 @@
 import { html, fixture, expect } from '@open-wc/testing';
 
 import { MarsIcon } from '../src/MarsIcon.js';
-import '../mars-icon.js';
+import '../src/mars-icon.js';
 
 describe('MarsIcon', () => {
   it('has a default title "Hey there"', async () => {

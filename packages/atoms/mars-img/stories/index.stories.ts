@@ -5,7 +5,7 @@ import {
   unsafeHTML,
 } from '@web-inmars/mars-core';
 
-import '../mars-img.js';
+import '../src/mars-img.js';
 
 export default {
   title: 'Atoms / MarsImg',

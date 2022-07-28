@@ -1,5 +1,5 @@
 import { html, TemplateResult } from '@web-inmars/mars-core';
-import '../mars-textfield.js';
+import '../src/mars-textfield.js';
 
 export default {
   title: 'Atoms / MarsTextfield',

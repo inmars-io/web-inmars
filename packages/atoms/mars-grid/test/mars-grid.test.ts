@@ -1,7 +1,7 @@
 import { html, fixture, expect } from '@open-wc/testing';
 
 import { MarsGrid } from '../src/MarsGrid.js';
-import '../mars-grid.js';
+import '../src/mars-grid.js';
 
 describe('MarsGrid', () => {
   it('has a default title "Hey there" and counter 5', async () => {

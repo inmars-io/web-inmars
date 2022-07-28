@@ -1,7 +1,7 @@
 import { html, fixture, expect } from '@open-wc/testing';
 
 import { MarsSwitch } from '../src/MarsSwitch.js';
-import '../mars-switch.js';
+import '../src/mars-switch.js';
 
 describe('MarsSwitch', () => {
   it('has a default title "Hey there" and counter 5', async () => {

@@ -1,5 +1,5 @@
 import { html, TemplateResult } from '@web-inmars/mars-core';
-import '../mars-switch.js';
+import '../src/mars-switch.js';
 
 export default {
   title: 'Atoms / MarsSwitch',

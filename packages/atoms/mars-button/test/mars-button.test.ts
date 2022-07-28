@@ -1,7 +1,7 @@
 import { html, fixture, expect } from '@open-wc/testing';
 
 import { MarsButton } from '../src/MarsButton.js';
-import '../mars-button.js';
+import '../src/mars-button.js';
 
 describe('MarsButton', () => {
   it('has a default title "Hey there" and counter 5', async () => {

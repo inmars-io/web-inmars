@@ -1,5 +1,5 @@
 import { html, TemplateResult } from '@web-inmars/mars-core';
-import '../mars-checkbox.js';
+import '../src/mars-checkbox.js';
 
 export default {
   title: 'Atoms / MarsCheckbox',

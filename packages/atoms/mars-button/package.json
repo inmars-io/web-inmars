@@ -4,11 +4,11 @@
   "description": "Web-inmars button web component",
   "author": "Mars Gotta <me@marsgotta.com> (http://www.marsgotta.com)",
   "license": "MIT",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "main": "dist/src/index.js",
+  "module": "dist/src/index.js",
   "exports": {
-    ".": "./dist/index.js",
-    "./mars-button.js": "./dist/mars-button.js"
+    ".": "./dist/src/index.js",
+    "./mars-button.js": "./dist/src/mars-button.js"
   },
   "type": "module",
   "repository": {

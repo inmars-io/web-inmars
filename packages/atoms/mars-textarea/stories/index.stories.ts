@@ -1,5 +1,5 @@
 import { html, TemplateResult } from '@web-inmars/mars-core';
-import '../mars-textarea.js';
+import '../src/mars-textarea.js';
 
 export default {
   title: 'Atoms / MarsTextarea',

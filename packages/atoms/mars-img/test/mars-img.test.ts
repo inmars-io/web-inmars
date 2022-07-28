@@ -1,7 +1,7 @@
 import { html, fixture, expect } from '@open-wc/testing';
 
 import { MarsImg } from '../src/MarsImg.js';
-import '../mars-img.js';
+import '../src/mars-img.js';
 
 describe('MarsImg', () => {
   it('has a default title "Hey there" and counter 5', async () => {

@@ -1,5 +1,5 @@
 import { html, TemplateResult, ifDefined } from '@web-inmars/mars-core';
-import '../mars-grid.js';
+import '../src/mars-grid.js';
 
 export default {
   title: 'Atoms / MarsGrid',

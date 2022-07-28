@@ -1,7 +1,7 @@
 import { html, fixture, expect } from '@open-wc/testing';
 
 import { MarsTextfield } from '../src/MarsTextfield.js';
-import '../mars-textfield.js';
+import '../src/mars-textfield.js';
 
 describe('MarsTextfield', () => {
   it('has a default title "Hey there" and counter 5', async () => {

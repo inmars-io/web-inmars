@@ -32,6 +32,7 @@ storybook-static
 /packages/**/coverage
 /packages/**/coverage-report
 /packages/**/storybook-static
+/packages/**/custom-elements.json
 /packages/**/.idea
 /packages/**/.vscode
 /packages/**/.temp

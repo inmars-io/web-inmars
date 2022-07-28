@@ -1,4 +1,4 @@
-import { MarsGrid } from './src/MarsGrid.js';
+import { MarsGrid } from './MarsGrid.js';
 
 if (!customElements.get('mars-grid')) {
   customElements.define('mars-grid', MarsGrid);

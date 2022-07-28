@@ -1,7 +1,7 @@
 import { html, fixture, expect } from '@open-wc/testing';
 
 import { MarsCheckbox } from '../src/MarsCheckbox.js';
-import '../mars-checkbox.js';
+import '../src/mars-checkbox.js';
 
 describe('MarsCheckbox', () => {
   it('has a default title "Hey there" and counter 5', async () => {

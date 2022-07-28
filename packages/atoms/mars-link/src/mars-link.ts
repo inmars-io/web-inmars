@@ -1,4 +1,4 @@
-import { MarsLink } from './src/MarsLink.js';
+import { MarsLink } from './MarsLink.js';
 
 if (!customElements.get('mars-link')) {
   customElements.define('mars-link', MarsLink);

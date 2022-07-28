@@ -1,7 +1,7 @@
 import { html, fixture, expect } from '@open-wc/testing';
 
 import { MarsTextarea } from '../src/MarsTextarea.js';
-import '../mars-textarea.js';
+import '../src/mars-textarea.js';
 
 describe('MarsTextarea', () => {
   it('has a default title "Hey there"', async () => {
