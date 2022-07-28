@@ -33,21 +33,8 @@ interface ArgTypes {
   variant?: string;
 }
 
-const Template: Story<ArgTypes> = ({
-  type = 'solid',
-  name = 'ad',
-  width = '36',
-  height = '',
-  variant = '',
-}: ArgTypes) => html`
-  <mars-icon
-    .type=${type}
-    .name=${name}
-    .width=${width}
-    .height=${height}
-    variant=${variant}
-  >
-  </mars-icon>
+const Template: Story<ArgTypes> = ({ name = 'search' }: ArgTypes) => html`
+  <mars-icon .name=${name}> </mars-icon>
 `;
 
 export const Regular = Template.bind({});

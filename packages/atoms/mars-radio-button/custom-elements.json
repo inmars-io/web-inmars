@@ -34,6 +34,57 @@
     },
     {
       "kind": "javascript-module",
+      "path": "dist/index.d.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "MarsRadioButton",
+          "declaration": {
+            "name": "MarsRadioButton",
+            "module": "./src/MarsRadioButton.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/index.js",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "MarsRadioButton",
+          "declaration": {
+            "name": "MarsRadioButton",
+            "module": "./src/MarsRadioButton.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/mars-radio-button.d.ts",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/mars-radio-button.js",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "mars-radio-button",
+          "declaration": {
+            "name": "MarsRadioButton",
+            "module": "/dist/src/MarsRadioButton.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
       "path": "stories/index.stories.ts",
       "declarations": [
         {
@@ -303,6 +354,407 @@
           }
         }
       ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/src/MarsRadioButton.d.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "# <mars-radio-button>\nWeb component that allows us to show an accessible and beautiful radio-button so that users can interact\n\n## Installation\n```bash\n npm i @web-inmars/mars-radio-button --save\n```\n\n## Usage\n```html\n<script type=\"module\">\n  import 'mars-radio-button/mars-radio-button.js';\n</script>\n\n<mars-radio-button id=\"myRadioButton\">\n    I am a radio button!\n</mars-radio-button>\n```",
+          "name": "MarsRadioButton",
+          "members": [
+            {
+              "kind": "field",
+              "name": "value",
+              "type": {
+                "text": "string"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "variant",
+              "type": {
+                "text": "string"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "id",
+              "type": {
+                "text": "string"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "name",
+              "type": {
+                "text": "string"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "label",
+              "type": {
+                "text": "string"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "caption",
+              "type": {
+                "text": "string"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "showCaption",
+              "type": {
+                "text": "boolean"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "checked",
+              "type": {
+                "text": "boolean"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "__change",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "event",
+                  "type": {
+                    "text": "any"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "__renderCaption",
+              "return": {
+                "type": {
+                  "text": "import(\"lit-html\").TemplateResult<1> | \"\""
+                }
+              }
+            }
+          ],
+          "superclass": {
+            "name": "MarsElement",
+            "package": "@web-inmars/mars-core"
+          },
+          "tagName": "mars-radio-button",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "MarsRadioButton",
+          "declaration": {
+            "name": "MarsRadioButton",
+            "module": "dist/src/MarsRadioButton.d.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/src/MarsRadioButton.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "# <mars-radio-button>\nWeb component that allows us to show an accessible and beautiful radio-button so that users can interact\n\n## Installation\n```bash\n npm i @web-inmars/mars-radio-button --save\n```\n\n## Usage\n```html\n<script type=\"module\">\n  import 'mars-radio-button/mars-radio-button.js';\n</script>\n\n<mars-radio-button id=\"myRadioButton\">\n    I am a radio button!\n</mars-radio-button>\n```",
+          "name": "MarsRadioButton",
+          "members": [
+            {
+              "kind": "method",
+              "name": "__change",
+              "parameters": [
+                {
+                  "name": "event"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "__renderCaption"
+            },
+            {
+              "kind": "field",
+              "name": "value",
+              "type": {
+                "text": "string"
+              },
+              "default": "''"
+            },
+            {
+              "kind": "field",
+              "name": "variant",
+              "type": {
+                "text": "string"
+              },
+              "default": "''"
+            },
+            {
+              "kind": "field",
+              "name": "id",
+              "type": {
+                "text": "string"
+              },
+              "default": "''"
+            },
+            {
+              "kind": "field",
+              "name": "name",
+              "type": {
+                "text": "string"
+              },
+              "default": "''"
+            },
+            {
+              "kind": "field",
+              "name": "label",
+              "type": {
+                "text": "string"
+              },
+              "default": "''"
+            },
+            {
+              "kind": "field",
+              "name": "caption",
+              "type": {
+                "text": "string"
+              },
+              "default": "''"
+            },
+            {
+              "kind": "field",
+              "name": "showCaption",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false"
+            },
+            {
+              "kind": "field",
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false"
+            },
+            {
+              "kind": "field",
+              "name": "checked",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false"
+            }
+          ],
+          "superclass": {
+            "name": "MarsElement",
+            "package": "@web-inmars/mars-core"
+          },
+          "tagName": "mars-radio-button",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "MarsRadioButton",
+          "declaration": {
+            "name": "MarsRadioButton",
+            "module": "dist/src/MarsRadioButton.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/src/MarsRadioButton.styles.d.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "styles",
+          "type": {
+            "text": "import(\"lit\").CSSResult"
+          }
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "styles",
+          "declaration": {
+            "name": "styles",
+            "module": "dist/src/MarsRadioButton.styles.d.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/src/MarsRadioButton.styles.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "styles",
+          "default": "css `\n  :host {\n    --radiobutton-color-bg: var(--color-gray-300);\n    --radiobutton-color-bg-checked: var(--color-primary-500);\n    --radiobutton-color-bg-disabled: var(--color-gray-200);\n    --radiobutton-color-icon: var(--color-gray-100);\n    --radiobutton-color-hover: var(--color-gray-500);\n    --radiobutton-color-active: var(--color-primary-400);\n    --radiobutton-color-focus: var(--color-primary-300);\n    --radiobutton-color-text: var(--color-gray-700);\n    --radiobutton-color-text-disabled: var(--color-gray-400);\n    --radiobutton-family-font: var(--font-family-primary);\n    --radiobutton-font-size: var(--font-size-mobile-sm);\n    font-family: var(--radiobutton-family-font);\n  }\n\n  :host([variant*='primary']) [part='radiobutton'] {\n    --radiobutton-color-bg-checked: var(--color-primary-500);\n    --radiobutton-color-focus: var(--color-primary-300);\n  }\n\n  :host([variant*='secondary']) [part='radiobutton'] {\n    --radiobutton-color-bg-checked: var(--color-secondary-500);\n    --radiobutton-color-focus: var(--color-secondary-300);\n  }\n\n  :host([variant*='tertiary']) [part='radiobutton'] {\n    --radiobutton-color-bg-checked: var(--color-tertiary-500);\n    --radiobutton-color-focus: var(--color-tertiary-300);\n  }\n\n  [part='radiobutton'] {\n    position: relative;\n  }\n\n  [part='label-box'] {\n    display: inline-flex;\n    align-items: baseline;\n  }\n\n  [part='label'] {\n    font-size: var(--radiobutton-font-size);\n    margin-left: 5px;\n    color: var(--radiobutton-color-text);\n    font-weight: 300;\n    -webkit-transition: all 0.275s;\n    transition: all 0.275s;\n  }\n\n  /* radiobutton aspect */\n  [part='radiobutton']:before {\n    content: '';\n    position: absolute;\n    top: -1px;\n    left: -1px;\n    width: 18px;\n    height: 18px;\n    background: var(--radiobutton-color-bg);\n    border-radius: 100%;\n    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 0 rgba(0, 0, 0, 0.2);\n    -webkit-transition: all 0.275s;\n    transition: all 0.275s;\n  }\n\n  [part='radiobutton']:hover:before {\n    background-color: var(--radiobutton-color-hover);\n    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.4), 0 0 0 rgba(0, 0, 0, 0.6);\n  }\n\n  [part='radiobutton']:checked:before {\n    background-color: var(--radiobutton-color-bg-checked);\n  }\n\n  /* checked mark aspect */\n  [part='radiobutton']:after {\n    content: '';\n    position: absolute;\n    width: 0;\n    height: 0;\n    border: 4px solid var(--radiobutton-color-icon);\n    top: 4px;\n    left: 4px;\n    border-radius: 100%;\n    -webkit-transition: all 0.2s;\n    transition: all 0.2s;\n  }\n\n  /* checked mark aspect changes */\n  [part='radiobutton']:not(:checked):after {\n    opacity: 0;\n    -webkit-transform: scale(0) rotate(45deg);\n    transform: scale(0) rotate(45deg);\n  }\n\n  /* Disabled radiobutton */\n  [part='radiobutton']:disabled:before {\n    box-shadow: none;\n    cursor: not-allowed;\n    background-color: var(--radiobutton-color-bg-disabled);\n  }\n\n  [part='radiobutton']:disabled:checked:after {\n    color: var(--radiobutton-color-text);\n  }\n\n  [part='radiobutton']:disabled + [part='label'] {\n    color: var(--radiobutton-color-text-disabled);\n  }\n\n  /* Accessibility */\n  [part='radiobutton']:focus-visible:not([disabled]):before,\n  [part='radiobutton']:active:not([disabled]):before {\n    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1),\n      0px 0px 0px 5px var(--radiobutton-color-focus);\n  }\n\n  [part='caption'] {\n    display: block;\n  }\n`"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "styles",
+          "declaration": {
+            "name": "styles",
+            "module": "dist/src/MarsRadioButton.styles.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/stories/index.stories.d.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "_default",
+          "type": {
+            "text": "{\n    title: string;\n    component: string;\n    argTypes: {\n        onChage: {\n            action: string;\n        };\n        value: {\n            control: string;\n        };\n        name: {\n            control: string;\n        };\n        checked: {\n            control: string;\n        };\n        disabled: {\n            control: string;\n        };\n        showCaption: {\n            control: string;\n        };\n        caption: {\n            control: string;\n        };\n        label: {\n            control: string;\n        };\n        id: {\n            control: string;\n        };\n        variant: {\n            control: {\n                type: string;\n                options: string[];\n            };\n        };\n    };\n}"
+          }
+        },
+        {
+          "kind": "variable",
+          "name": "Regular",
+          "type": {
+            "text": "Story<ArgTypes>"
+          }
+        },
+        {
+          "kind": "variable",
+          "name": "CustomValue",
+          "type": {
+            "text": "Story<ArgTypes>"
+          }
+        },
+        {
+          "kind": "variable",
+          "name": "SlottedContent",
+          "type": {
+            "text": "Story<ArgTypes>"
+          }
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "_default",
+            "module": "dist/stories/index.stories.d.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Regular",
+          "declaration": {
+            "name": "Regular",
+            "module": "dist/stories/index.stories.d.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "CustomValue",
+          "declaration": {
+            "name": "CustomValue",
+            "module": "dist/stories/index.stories.d.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "SlottedContent",
+          "declaration": {
+            "name": "SlottedContent",
+            "module": "dist/stories/index.stories.d.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/stories/index.stories.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "Regular"
+        },
+        {
+          "kind": "variable",
+          "name": "CustomValue"
+        },
+        {
+          "kind": "variable",
+          "name": "SlottedContent"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "dist/stories/index.stories.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Regular",
+          "declaration": {
+            "name": "Regular",
+            "module": "dist/stories/index.stories.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "CustomValue",
+          "declaration": {
+            "name": "CustomValue",
+            "module": "dist/stories/index.stories.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "SlottedContent",
+          "declaration": {
+            "name": "SlottedContent",
+            "module": "dist/stories/index.stories.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "dist/test/mars-radio-button.test.d.ts",
+      "declarations": [],
+      "exports": []
     }
   ]
 }
