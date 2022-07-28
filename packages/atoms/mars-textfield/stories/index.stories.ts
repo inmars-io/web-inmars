@@ -5,7 +5,7 @@ export default {
   title: 'Atoms / MarsTextfield',
   component: 'mars-textfield',
   argTypes: {
-    onChage: { action: 'changed' },
+    onChange: { action: 'changed' },
     value: { control: 'text' },
     name: { control: 'text' },
     placeholder: { control: 'text' },
