@@ -84,8 +84,7 @@ export const styles = css`
   label {
     color: var(--input-color-label);
     grid-area: input;
-    width: inherit;
-    padding: 14px 0px 14px 19px;
+    margin: 14px 0px 14px 19px;
     font-size: var(--input-font-size-label);
     transition: all 0.5s ease;
     pointer-events: none;
