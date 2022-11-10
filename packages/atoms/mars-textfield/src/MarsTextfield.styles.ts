@@ -89,6 +89,7 @@ export const styles = css`
     font-size: var(--input-font-size-label);
     transition: all 0.5s ease;
     pointer-events: none;
+    box-sizing: border-box;
   }
 
   input:active:not([disabled]) ~ label,
