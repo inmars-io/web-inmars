@@ -85,7 +85,7 @@ export const styles = css`
     color: var(--input-color-label);
     grid-area: input;
     width: inherit;
-    margin: 14px 0px 14px 19px;
+    padding: 14px 0px 14px 19px;
     font-size: var(--input-font-size-label);
     transition: all 0.5s ease;
     pointer-events: none;
