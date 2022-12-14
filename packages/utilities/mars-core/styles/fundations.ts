@@ -1,10 +1,17 @@
-import TOKENS from './tokens.js';
+import {
+  COLOR_INDIGO,
+  COLOR_CRIMSON,
+  COLOR_CORAL,
+  COLOR_GRAY,
+  COLOR_PRIMARY,
+  COLOR_SECONDARY,
+  COLOR_TERTIARY,
+  COLOR_TEXT,
+  FONT_FAMILY,
+  FONT_SIZE_MOBILE,
+} from './tokens.js';
 
-const selectVariables = (
-  types: any[],
-  tokens: any,
-  name: string
-) => {
+const selectVariables = (types: any[], tokens: any, name: string) => {
   let styleTempl: any = '';
   types.forEach((type: any) => {
     if (tokens[type]) styleTempl += `--${name}-${type}: ${tokens[type]};`;
@@ -14,76 +21,35 @@ const selectVariables = (
 };
 
 export const colorIndigo = (types: any[]) =>
-  selectVariables(types, TOKENS.COLOR_INDIGO, 'color-indigo');
+  selectVariables(types, COLOR_INDIGO, 'color-indigo');
 
 export const colorCrimson = (types: any[]) =>
-  selectVariables(types, TOKENS.COLOR_CRIMSON, 'color-crimson');
+  selectVariables(types, COLOR_CRIMSON, 'color-crimson');
 
 export const colorCoral = (types: any[]) =>
-  selectVariables(types, TOKENS.COLOR_CORAL, 'color-coral');
-
-export const colorOrcher = (types: any[]) =>
-  selectVariables(types, TOKENS.COLOR_ORCHER, 'color-orcher');
-
-export const colorYellow = (types: any[]) =>
-  selectVariables(types, TOKENS.COLOR_YELLOW, 'color-yellow');
-
-export const colorCobalt = (types: any[]) =>
-  selectVariables(types, TOKENS.COLOR_COBALT, 'color-cobalt');
-
-export const colorFucshia = (types: any[]) =>
-  selectVariables(types, TOKENS.COLOR_FUCSHIA, 'color-fucshia');
+  selectVariables(types, COLOR_CORAL, 'color-coral');
 
 export const colorGray = (types: any[]) =>
-  selectVariables(types, TOKENS.COLOR_GRAY, 'color-gray');
+  selectVariables(types, COLOR_GRAY, 'color-gray');
 
 export const colorPrimary = (types: any[]) =>
-  selectVariables(types, TOKENS.COLOR_PRIMARY, 'color-primary');
+  selectVariables(types, COLOR_PRIMARY, 'color-primary');
 
 export const colorSecondary = (types: any[]) =>
-  selectVariables(types, TOKENS.COLOR_SECONDARY, 'color-secondary');
+  selectVariables(types, COLOR_SECONDARY, 'color-secondary');
 
 export const colorTertiary = (types: any[]) =>
-  selectVariables(types, TOKENS.COLOR_TERTIARY, 'color-tertiary');
+  selectVariables(types, COLOR_TERTIARY, 'color-tertiary');
 
 export const colorText = (types: any[]) =>
-  selectVariables(types, TOKENS.COLOR_TEXT, 'color-text');
+  selectVariables(types, COLOR_TEXT, 'color-text');
 
 export const fontFamily = (types: any[]) =>
-  selectVariables(types, TOKENS.FONT_FAMILY, 'font-family');
-
-export const fontFamilyTitle = (types: any[]) =>
-  selectVariables(types, TOKENS.FONT_FAMILY_TITLE, 'font-family-title');
+  selectVariables(types, FONT_FAMILY, 'font-family');
 
 export const fontSizeMobile = (types: any[]) =>
-  selectVariables(types, TOKENS.FONT_SIZE_MOBILE, 'font-size-mobile');
+  selectVariables(types, FONT_SIZE_MOBILE, 'font-size-mobile');
 
-export const fontSizeDesktop = (types: any[]) =>
-  selectVariables(types, TOKENS.FONT_SIZE_DESKTOP, 'font-size-desktop');
-
-export const fontWeight = (types: any[]) =>
-  selectVariables(types, TOKENS.FONT_WEIGHT, 'font-weight');
-
-export const fontSpacing = (types: any[]) =>
-  selectVariables(types, TOKENS.FONT_SPACING, 'font-spacing');
-
-export const fontLineheight = (types: any[]) =>
-  selectVariables(types, TOKENS.FONT_LINEHEIGHT, 'font-lineheight');
-
-export const gridBreackpoints = (types: any[]) =>
-  selectVariables(types, TOKENS.GRID_BREACKPOINTS, 'grid-breackpoints');
-
-export const gridContainerWidth = (types: any[]) =>
-  selectVariables(types, TOKENS.GRID_CONTAINER_WIDTH, 'container-width');
-
-export const gridColumns = (types: any[]) =>
-  selectVariables(types, TOKENS.GRID_COLUMS, 'grid-cols');
-
-export const gridGutter = (types: any[]) =>
-  selectVariables(types, TOKENS.GRID_GUTTER, 'grid-gutter');
-
-export const gridSpacer = (types: any[]) =>
-  selectVariables(types, TOKENS.GRID_SPACER, 'grid-spacer');
 export const colorMarsBase = (types: any[]) => `${colorIndigo(types)}
   ${colorCrimson(types)}
   ${colorCoral(types)}`;
