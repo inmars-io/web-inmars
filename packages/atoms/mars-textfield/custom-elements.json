@@ -38,8 +38,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "value"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -47,8 +46,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "name"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -56,8 +54,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "for"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -65,8 +62,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "variant"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -74,8 +70,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "'text'",
-              "attribute": "type"
+              "default": "'text'"
             },
             {
               "kind": "field",
@@ -83,8 +78,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "placeholder"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -92,8 +86,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "caption"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -101,8 +94,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "label"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -110,8 +102,7 @@
               "type": {
                 "text": "boolean"
               },
-              "default": "false",
-              "attribute": "disabled"
+              "default": "false"
             },
             {
               "kind": "field",
@@ -119,8 +110,7 @@
               "type": {
                 "text": "boolean"
               },
-              "default": "false",
-              "attribute": "show-caption"
+              "default": "false"
             },
             {
               "kind": "method",
@@ -141,88 +131,6 @@
             {
               "kind": "method",
               "name": "__renderCaption"
-            }
-          ],
-          "attributes": [
-            {
-              "name": "value",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "value"
-            },
-            {
-              "name": "name",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "name"
-            },
-            {
-              "name": "for",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "for"
-            },
-            {
-              "name": "variant",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "variant"
-            },
-            {
-              "name": "type",
-              "type": {
-                "text": "string"
-              },
-              "default": "'text'",
-              "fieldName": "type"
-            },
-            {
-              "name": "placeholder",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "placeholder"
-            },
-            {
-              "name": "caption",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "caption"
-            },
-            {
-              "name": "label",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "label"
-            },
-            {
-              "name": "disabled",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "fieldName": "disabled"
-            },
-            {
-              "name": "show-caption",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "fieldName": "showCaption"
             }
           ],
           "superclass": {

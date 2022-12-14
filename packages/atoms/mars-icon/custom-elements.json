@@ -38,18 +38,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "name"
-            }
-          ],
-          "attributes": [
-            {
-              "name": "name",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "name"
+              "default": "''"
             }
           ],
           "superclass": {

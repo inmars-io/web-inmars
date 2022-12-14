@@ -38,8 +38,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "value"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -47,8 +46,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "variant"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -56,8 +54,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "href"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -65,8 +62,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "target"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -74,8 +70,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "rel"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -83,8 +78,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "type"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -92,66 +86,7 @@
               "type": {
                 "text": "boolean"
               },
-              "default": "false",
-              "attribute": "disabled"
-            }
-          ],
-          "attributes": [
-            {
-              "name": "value",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "value"
-            },
-            {
-              "name": "variant",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "variant"
-            },
-            {
-              "name": "href",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "href"
-            },
-            {
-              "name": "target",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "target"
-            },
-            {
-              "name": "rel",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "rel"
-            },
-            {
-              "name": "type",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "type"
-            },
-            {
-              "name": "disabled",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "fieldName": "disabled"
+              "default": "false"
             }
           ],
           "superclass": {

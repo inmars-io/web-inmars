@@ -38,8 +38,7 @@
               "type": {
                 "text": "boolean"
               },
-              "default": "false",
-              "attribute": "inline"
+              "default": "false"
             },
             {
               "kind": "field",
@@ -47,8 +46,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "grid-template"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -56,8 +54,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "gap"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -65,8 +62,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "grid"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -74,8 +70,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "justify-items"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -83,8 +78,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "align-items"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -92,8 +86,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "place-items"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -101,8 +94,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "justify-content"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -110,8 +102,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "align-content"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -119,8 +110,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "place-content"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -128,8 +118,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "grid-auto-flow"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -137,8 +126,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "container-size"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -174,104 +162,6 @@
             {
               "kind": "method",
               "name": "_getChildren"
-            }
-          ],
-          "attributes": [
-            {
-              "name": "inline",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "fieldName": "inline"
-            },
-            {
-              "name": "grid-template",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "gridTemplate"
-            },
-            {
-              "name": "gap",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "gap"
-            },
-            {
-              "name": "grid",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "grid"
-            },
-            {
-              "name": "justify-items",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "justifyItems"
-            },
-            {
-              "name": "align-items",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "alignItems"
-            },
-            {
-              "name": "place-items",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "placeItems"
-            },
-            {
-              "name": "justify-content",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "justifyContent"
-            },
-            {
-              "name": "align-content",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "alignContent"
-            },
-            {
-              "name": "place-content",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "placeContent"
-            },
-            {
-              "name": "grid-auto-flow",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "gridAutoFlow"
-            },
-            {
-              "name": "container-size",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "containerSize"
             }
           ],
           "superclass": {

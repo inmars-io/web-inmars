@@ -4,57 +4,6 @@
   "modules": [
     {
       "kind": "javascript-module",
-      "path": "stories/index.stories.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "Regular"
-        },
-        {
-          "kind": "variable",
-          "name": "CustomValue"
-        },
-        {
-          "kind": "variable",
-          "name": "SlottedContent"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "stories/index.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Regular",
-          "declaration": {
-            "name": "Regular",
-            "module": "stories/index.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "CustomValue",
-          "declaration": {
-            "name": "CustomValue",
-            "module": "stories/index.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "SlottedContent",
-          "declaration": {
-            "name": "SlottedContent",
-            "module": "stories/index.stories.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
       "path": "src/MarsSwitch.styles.ts",
       "declarations": [
         {
@@ -89,8 +38,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "value"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -98,8 +46,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "variant"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -107,8 +54,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "id"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -116,8 +62,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "name"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -125,8 +70,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "label"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -134,8 +78,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "caption"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -143,8 +86,7 @@
               "type": {
                 "text": "boolean"
               },
-              "default": "false",
-              "attribute": "show-caption"
+              "default": "false"
             },
             {
               "kind": "field",
@@ -152,8 +94,7 @@
               "type": {
                 "text": "boolean"
               },
-              "default": "false",
-              "attribute": "disabled"
+              "default": "false"
             },
             {
               "kind": "field",
@@ -161,8 +102,7 @@
               "type": {
                 "text": "boolean"
               },
-              "default": "false",
-              "attribute": "checked"
+              "default": "false"
             },
             {
               "kind": "method",
@@ -179,80 +119,6 @@
             {
               "kind": "method",
               "name": "__renderCaption"
-            }
-          ],
-          "attributes": [
-            {
-              "name": "value",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "value"
-            },
-            {
-              "name": "variant",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "variant"
-            },
-            {
-              "name": "id",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "id"
-            },
-            {
-              "name": "name",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "name"
-            },
-            {
-              "name": "label",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "label"
-            },
-            {
-              "name": "caption",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "caption"
-            },
-            {
-              "name": "show-caption",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "fieldName": "showCaption"
-            },
-            {
-              "name": "disabled",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "fieldName": "disabled"
-            },
-            {
-              "name": "checked",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "fieldName": "checked"
             }
           ],
           "superclass": {
@@ -300,6 +166,57 @@
           "declaration": {
             "name": "MarsSwitch",
             "module": "/src/MarsSwitch.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "stories/index.stories.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "Regular"
+        },
+        {
+          "kind": "variable",
+          "name": "CustomValue"
+        },
+        {
+          "kind": "variable",
+          "name": "SlottedContent"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "stories/index.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Regular",
+          "declaration": {
+            "name": "Regular",
+            "module": "stories/index.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "CustomValue",
+          "declaration": {
+            "name": "CustomValue",
+            "module": "stories/index.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "SlottedContent",
+          "declaration": {
+            "name": "SlottedContent",
+            "module": "stories/index.stories.ts"
           }
         }
       ]

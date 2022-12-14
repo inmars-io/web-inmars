@@ -4,57 +4,6 @@
   "modules": [
     {
       "kind": "javascript-module",
-      "path": "stories/index.stories.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "Regular"
-        },
-        {
-          "kind": "variable",
-          "name": "CustomValue"
-        },
-        {
-          "kind": "variable",
-          "name": "SlottedContent"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "stories/index.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Regular",
-          "declaration": {
-            "name": "Regular",
-            "module": "stories/index.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "CustomValue",
-          "declaration": {
-            "name": "CustomValue",
-            "module": "stories/index.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "SlottedContent",
-          "declaration": {
-            "name": "SlottedContent",
-            "module": "stories/index.stories.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
       "path": "src/MarsButton.styles.ts",
       "declarations": [
         {
@@ -89,8 +38,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "value"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -98,8 +46,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "variant"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -107,8 +54,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "'button'",
-              "attribute": "type"
+              "default": "'button'"
             },
             {
               "kind": "field",
@@ -116,8 +62,7 @@
               "type": {
                 "text": "boolean"
               },
-              "default": "false",
-              "attribute": "disabled"
+              "default": "false"
             },
             {
               "kind": "method",
@@ -130,40 +75,6 @@
                   }
                 }
               ]
-            }
-          ],
-          "attributes": [
-            {
-              "name": "value",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "value"
-            },
-            {
-              "name": "variant",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "variant"
-            },
-            {
-              "name": "type",
-              "type": {
-                "text": "string"
-              },
-              "default": "'button'",
-              "fieldName": "type"
-            },
-            {
-              "name": "disabled",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "fieldName": "disabled"
             }
           ],
           "superclass": {
@@ -211,6 +122,57 @@
           "declaration": {
             "name": "MarsButton",
             "module": "/src/MarsButton.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "stories/index.stories.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "Regular"
+        },
+        {
+          "kind": "variable",
+          "name": "CustomValue"
+        },
+        {
+          "kind": "variable",
+          "name": "SlottedContent"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "stories/index.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Regular",
+          "declaration": {
+            "name": "Regular",
+            "module": "stories/index.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "CustomValue",
+          "declaration": {
+            "name": "CustomValue",
+            "module": "stories/index.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "SlottedContent",
+          "declaration": {
+            "name": "SlottedContent",
+            "module": "stories/index.stories.ts"
           }
         }
       ]

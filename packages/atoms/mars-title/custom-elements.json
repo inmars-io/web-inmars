@@ -89,8 +89,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "value"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -98,8 +97,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "variant"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -107,8 +105,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "heading"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -116,42 +113,7 @@
               "type": {
                 "text": "boolean"
               },
-              "default": "false",
-              "attribute": "disabled"
-            }
-          ],
-          "attributes": [
-            {
-              "name": "value",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "value"
-            },
-            {
-              "name": "variant",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "variant"
-            },
-            {
-              "name": "heading",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "heading"
-            },
-            {
-              "name": "disabled",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "fieldName": "disabled"
+              "default": "false"
             }
           ],
           "superclass": {

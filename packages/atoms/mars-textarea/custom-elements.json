@@ -4,33 +4,6 @@
   "modules": [
     {
       "kind": "javascript-module",
-      "path": "stories/index.stories.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "Regular"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "stories/index.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Regular",
-          "declaration": {
-            "name": "Regular",
-            "module": "stories/index.stories.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
       "path": "src/MarsTextarea.styles.ts",
       "declarations": [
         {
@@ -65,8 +38,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "value"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -74,8 +46,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "name"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -83,8 +54,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "for"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -92,8 +62,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "variant"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -101,8 +70,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "caption"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -110,8 +78,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "label"
+              "default": "''"
             },
             {
               "kind": "field",
@@ -119,8 +86,7 @@
               "type": {
                 "text": "boolean"
               },
-              "default": "false",
-              "attribute": "disabled"
+              "default": "false"
             },
             {
               "kind": "field",
@@ -128,8 +94,7 @@
               "type": {
                 "text": "boolean"
               },
-              "default": "false",
-              "attribute": "show-caption"
+              "default": "false"
             },
             {
               "kind": "method",
@@ -150,72 +115,6 @@
             {
               "kind": "method",
               "name": "__renderCaption"
-            }
-          ],
-          "attributes": [
-            {
-              "name": "value",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "value"
-            },
-            {
-              "name": "name",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "name"
-            },
-            {
-              "name": "for",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "for"
-            },
-            {
-              "name": "variant",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "variant"
-            },
-            {
-              "name": "caption",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "caption"
-            },
-            {
-              "name": "label",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "label"
-            },
-            {
-              "name": "disabled",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "fieldName": "disabled"
-            },
-            {
-              "name": "show-caption",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "fieldName": "showCaption"
             }
           ],
           "superclass": {
@@ -263,6 +162,33 @@
           "declaration": {
             "name": "MarsTextarea",
             "module": "/src/MarsTextarea.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "stories/index.stories.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "Regular"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "stories/index.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Regular",
+          "declaration": {
+            "name": "Regular",
+            "module": "stories/index.stories.ts"
           }
         }
       ]
