@@ -3,7 +3,7 @@
   "description": "Webcomponent mars-progress",
   "license": "MIT",
   "author": "Mars Gotta <me@marsgotta.com> (http://www.marsgotta.com)",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "dist/src/index.js",
   "module": "dist/src/index.js",
   "exports": {
