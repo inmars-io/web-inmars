@@ -4,6 +4,11 @@ export { classMap } from 'lit/directives/class-map.js';
 export { styleMap } from 'lit/directives/style-map.js';
 export { unsafeHTML } from 'lit/directives/unsafe-html.js';
 export { ifDefined } from 'lit/directives/if-defined.js';
-export * from './styles/fundations.js';
+export {
+  colorGray,
+  colorMarsBase,
+  colorFundations,
+  fontFundations,
+} from './styles/fundations.js';
 export { tagsFont } from './styles/tags.js';
-export * from './base/MarsElement.js';
+export { MarsElement } from './base/MarsElement.js';
