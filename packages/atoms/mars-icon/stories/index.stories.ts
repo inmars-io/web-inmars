@@ -2,7 +2,7 @@ import { html, TemplateResult } from '@web-inmars/mars-core';
 import '../src/mars-icon.js';
 
 export default {
-  title: 'Atoms / MarsIcon',
+  title: 'Atoms / Icon',
   component: 'mars-icon',
   argTypes: {
     name: { control: 'text' },

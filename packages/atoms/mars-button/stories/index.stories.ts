@@ -7,7 +7,7 @@ import {
 import '../src/mars-button.js';
 
 export default {
-  title: 'Atoms / MarsButton',
+  title: 'Atoms / Button',
   component: 'mars-button',
   argTypes: {
     onClick: { action: 'clicked' },
@@ -60,7 +60,6 @@ const Template: Story<ArgTypes> = ({
 export const Regular = Template.bind({});
 
 export const CustomValue = Template.bind({});
-
 CustomValue.args = {
   value: 'My value',
 };
@@ -69,7 +68,6 @@ export const SlottedContent = Template.bind({});
 SlottedContent.args = {
   slot: html`<span>Slotted content</span>`,
 };
-
 SlottedContent.argTypes = {
   slot: { table: { disable: true } },
 };

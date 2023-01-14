@@ -8,7 +8,7 @@ import {
 import '../src/mars-link.js';
 
 export default {
-  title: 'Atoms / MarsLink',
+  title: 'Atoms / Link',
   component: 'mars-link',
   argTypes: {
     value: { control: 'text' },
@@ -77,20 +77,8 @@ const Template: Story<ArgTypes> = ({
 `;
 
 export const Regular = Template.bind({});
-
-export const CustomValue = Template.bind({});
-
-CustomValue.args = {
+Regular.args = {
   value: 'My value',
   href: 'https://marsgotta.com',
   target: '_blank',
-};
-
-export const SlottedContent = Template.bind({});
-SlottedContent.args = {
-  slot: html`<span>Slotted content</span>`,
-};
-
-SlottedContent.argTypes = {
-  slot: { table: { disable: true } },
 };

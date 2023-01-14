@@ -2,7 +2,7 @@ import { html, TemplateResult } from '@web-inmars/mars-core';
 import '../src/mars-switch.js';
 
 export default {
-  title: 'Atoms / MarsSwitch',
+  title: 'Atoms / Switch',
   component: 'mars-switch',
   argTypes: {
     onChage: { action: 'changed' },
@@ -75,7 +75,6 @@ const Template: Story<ArgTypes> = ({
 export const Regular = Template.bind({});
 
 export const CustomValue = Template.bind({});
-
 CustomValue.args = {
   label: 'My value',
 };
@@ -84,7 +83,6 @@ export const SlottedContent = Template.bind({});
 SlottedContent.args = {
   slot: html`<span slot="label">Content slotted</span>`,
 };
-
 SlottedContent.argTypes = {
   slot: { table: { disable: true } },
 };

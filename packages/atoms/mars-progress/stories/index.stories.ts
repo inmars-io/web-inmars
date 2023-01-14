@@ -2,7 +2,7 @@ import { html, TemplateResult } from '@web-inmars/mars-core';
 import '../src/mars-progress.js';
 
 export default {
-  title: 'Atoms / MarsProgress',
+  title: 'Atoms / Progress',
   component: 'mars-progress',
   argTypes: {
     title: { control: 'text' },

@@ -8,7 +8,7 @@ import {
 import '../src/mars-title.js';
 
 export default {
-  title: 'Atoms / MarsTitle',
+  title: 'Atoms / Title',
   component: 'mars-title',
   argTypes: {
     value: { control: 'text' },
@@ -67,7 +67,6 @@ const Template: Story<ArgTypes> = ({
 export const Regular = Template.bind({});
 
 export const CustomValue = Template.bind({});
-
 CustomValue.args = {
   value: 'My value',
 };
@@ -76,7 +75,6 @@ export const SlottedContent = Template.bind({});
 SlottedContent.args = {
   slot: html`<span>Slotted content</span>`,
 };
-
 SlottedContent.argTypes = {
   slot: { table: { disable: true } },
 };

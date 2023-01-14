@@ -2,7 +2,7 @@ import { html, TemplateResult } from '@web-inmars/mars-core';
 import '../src/mars-spinner.js';
 
 export default {
-  title: 'Atoms / MarsSpinner',
+  title: 'Atoms / Spinner',
   component: 'mars-spinner',
   argTypes: {
     title: { control: 'text' },

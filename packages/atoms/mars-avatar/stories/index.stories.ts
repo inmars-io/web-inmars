@@ -2,7 +2,7 @@ import { html, TemplateResult } from '@web-inmars/mars-core';
 import '../src/mars-avatar.js';
 
 export default {
-  title: 'Atoms / MarsAvatar',
+  title: 'Atoms / Avatar',
   component: 'mars-avatar',
   argTypes: {
     name: { control: 'text' },

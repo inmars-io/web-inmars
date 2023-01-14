@@ -8,7 +8,7 @@ import {
 import '../src/mars-text.js';
 
 export default {
-  title: 'Atoms / MarsText',
+  title: 'Atoms / Text',
   component: 'mars-text',
   argTypes: {
     value: { control: 'text' },
@@ -67,7 +67,6 @@ const Template: Story<ArgTypes> = ({
 export const Regular = Template.bind({});
 
 export const CustomValue = Template.bind({});
-
 CustomValue.args = {
   value: 'My value',
 };

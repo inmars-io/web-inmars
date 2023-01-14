@@ -8,7 +8,7 @@ import {
 import '../src/mars-img.js';
 
 export default {
-  title: 'Atoms / MarsImg',
+  title: 'Atoms / Img',
   component: 'mars-img',
   argTypes: {
     src: { control: 'text' },
@@ -65,18 +65,6 @@ const Template: Story<ArgTypes> = ({
 `;
 
 export const Regular = Template.bind({});
-
-export const CustomValue = Template.bind({});
-
-CustomValue.args = {
+Regular.args = {
   src: 'https://picsum.photos/200',
-};
-
-export const SlottedContent = Template.bind({});
-SlottedContent.args = {
-  slot: html`<span>Slotted content</span>`,
-};
-
-SlottedContent.argTypes = {
-  slot: { table: { disable: true } },
 };
