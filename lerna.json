@@ -1,10 +1,7 @@
 {
-  "packages": [
-    "packages/atoms/*",
-    "packages/utilities/mars-core"
-  ],
+  "packages": ["packages/atoms/*", "packages/utilities/mars-core"],
   "npmClient": "yarn",
-  "version": "independent",
+  "version": "0.3.0.alpha",
   "useWorkspaces": true,
   "command": {
     "version": {
@@ -13,10 +10,5 @@
       "message": "chore: publish"
     }
   },
-  "ignoreChanges": [
-    "**/stories/**",
-    "**/demo/**",
-    "**/test/**",
-    "**/*.md"
-  ]
+  "ignoreChanges": ["**/stories/**", "**/demo/**", "**/test/**", "**/*.md"]
 }

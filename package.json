@@ -1,11 +1,8 @@
 {
-  "name": "web-inmars",
-  "version": "0.0.1",
-  "description": "UI Webcomponents Library",
+  "name": "inmars-web-components",
   "author": "Mars Gotta <me@marsgotta.com> (http://www.marsgotta.com)",
   "license": "MIT",
-  "main": "index.js",
-  "repository": "https://github.com/MarsGotta/web-inmars.git",
+  "repository": "https://github.com/inmars-io/web-inmars.git",
   "private": true,
   "workspaces": [
     "packages/**/*"
