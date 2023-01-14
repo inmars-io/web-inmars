@@ -2,7 +2,7 @@ import { html, TemplateResult } from '@web-inmars/mars-core';
 import '../src/mars-badge.js';
 
 export default {
-  title: 'Atoms / MarsBadge',
+  title: 'Atoms / Badge',
   component: 'mars-badge',
   argTypes: {
     title: { control: 'text' },
@@ -55,6 +55,7 @@ export const SlottedContent = Template.bind({});
 SlottedContent.args = {
   slot: html`<p>Slotted content</p>`,
 };
+
 SlottedContent.argTypes = {
   slot: { table: { disable: true } },
 };

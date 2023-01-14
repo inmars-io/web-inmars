@@ -2,7 +2,7 @@ import { html, TemplateResult } from '@web-inmars/mars-core';
 import '../src/mars-range.js';
 
 export default {
-  title: 'Atoms / MarsRange',
+  title: 'Atoms / Range',
   component: 'mars-range',
   parameters: {
     actions: {

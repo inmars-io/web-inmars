@@ -2,7 +2,7 @@ import { html, TemplateResult } from '@web-inmars/mars-core';
 import '../src/mars-radio-button.js';
 
 export default {
-  title: 'Atoms / MarsRadioButton',
+  title: 'Atoms / Radio Button',
   component: 'mars-radio-button',
   argTypes: {
     onChage: { action: 'changed' },
@@ -73,8 +73,8 @@ const Template: Story<ArgTypes> = ({
 `;
 
 export const Regular = Template.bind({});
-export const CustomValue = Template.bind({});
 
+export const CustomValue = Template.bind({});
 CustomValue.args = {
   label: 'My value',
 };
@@ -83,7 +83,6 @@ export const SlottedContent = Template.bind({});
 SlottedContent.args = {
   slot: html`<span>Slotted content</span>`,
 };
-
 SlottedContent.argTypes = {
   slot: { table: { disable: true } },
 };

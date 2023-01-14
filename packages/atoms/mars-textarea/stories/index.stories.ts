@@ -2,7 +2,7 @@ import { html, TemplateResult } from '@web-inmars/mars-core';
 import '../src/mars-textarea.js';
 
 export default {
-  title: 'Atoms / MarsTextarea',
+  title: 'Atoms / Textarea',
   component: 'mars-textarea',
   argTypes: {
     onChage: { action: 'changed' },

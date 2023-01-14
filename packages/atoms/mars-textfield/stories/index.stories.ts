@@ -2,7 +2,7 @@ import { html, TemplateResult } from '@web-inmars/mars-core';
 import '../src/mars-textfield.js';
 
 export default {
-  title: 'Atoms / MarsTextfield',
+  title: 'Atoms / Textfield',
   component: 'mars-textfield',
   argTypes: {
     onChange: { action: 'changed' },

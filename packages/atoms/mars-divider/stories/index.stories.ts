@@ -2,7 +2,7 @@ import { html, TemplateResult } from '@web-inmars/mars-core';
 import '../src/mars-divider.js';
 
 export default {
-  title: 'Atoms / MarsDivider',
+  title: 'Atoms / Divider',
   component: 'mars-divider',
   argTypes: {
     title: { control: 'text' },

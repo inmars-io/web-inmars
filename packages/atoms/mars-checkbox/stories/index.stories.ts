@@ -2,7 +2,7 @@ import { html, TemplateResult } from '@web-inmars/mars-core';
 import '../src/mars-checkbox.js';
 
 export default {
-  title: 'Atoms / MarsCheckbox',
+  title: 'Atoms / Checkbox',
   component: 'mars-checkbox',
   argTypes: {
     onChage: { action: 'changed' },
@@ -75,7 +75,6 @@ const Template: Story<ArgTypes> = ({
 export const Regular = Template.bind({});
 
 export const CustomValue = Template.bind({});
-
 CustomValue.args = {
   label: 'My value',
 };
@@ -84,7 +83,6 @@ export const SlottedContent = Template.bind({});
 SlottedContent.args = {
   slot: html`<span>Slotted content</span>`,
 };
-
 SlottedContent.argTypes = {
   slot: { table: { disable: true } },
 };

@@ -2,7 +2,7 @@ import { html, TemplateResult } from '@web-inmars/mars-core';
 import '../src/mars-tag.js';
 
 export default {
-  title: 'Atoms / MarsTag',
+  title: 'Atoms / Tag',
   component: 'mars-tag',
   argTypes: {
     title: { control: 'text' },

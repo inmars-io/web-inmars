@@ -68,6 +68,8 @@ export class MarsAvatar extends MarsElement {
         .split(' ')
         .map(word => word[0])
         .join('');
+    } else {
+      abbr = this.abbr;
     }
 
     return html`

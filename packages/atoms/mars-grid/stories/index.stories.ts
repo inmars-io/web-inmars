@@ -2,7 +2,7 @@ import { html, TemplateResult, ifDefined } from '@web-inmars/mars-core';
 import '../src/mars-grid.js';
 
 export default {
-  title: 'Atoms / MarsGrid',
+  title: 'Atoms / Grid',
   component: 'mars-grid',
   argTypes: {
     inline: { control: 'boolean' },
