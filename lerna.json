@@ -7,7 +7,7 @@
     "version": {
       "conventionalCommits": true,
       "conventionalGraduate": true,
-      "message": "chore: publish"
+      "message": "chore: release v%s"
     }
   },
   "ignoreChanges": ["**/stories/**", "**/demo/**", "**/test/**", "**/*.md"]
