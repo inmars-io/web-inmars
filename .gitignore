@@ -23,17 +23,16 @@
 storybook-static
 
 ## Packages
-
-/packages/**/node_modules
-/packages/**/package-lock.json
-/packages/**/yarn.lock
-/packages/**/dist
-/packages/**/out-tsc
-/packages/**/coverage
-/packages/**/coverage-report
-/packages/**/storybook-static
-/packages/**/custom-elements.json
-/packages/**/.idea
-/packages/**/.vscode
-/packages/**/.temp
-/packages/**/npm-debug.log
+packages/**/node_modules
+packages/**/package-lock.json
+packages/**/yarn.lock
+packages/**/dist
+packages/**/out-tsc
+packages/**/coverage
+packages/**/coverage-report
+packages/**/storybook-static
+packages/**/.idea
+packages/**/.vscode
+packages/**/.temp
+packages/**/npm-debug.log
+packages/**/custom-elements.json
