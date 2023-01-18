@@ -1,4 +1,4 @@
-import { html, TemplateResult, ifDefined } from '@web-inmars/mars-core';
+import { html, TemplateResult, ifDefined } from '@web-inmars/core';
 import '../src/mars-grid.js';
 
 export default {

@@ -1,9 +1,4 @@
-import {
-  html,
-  unsafeHTML,
-  tagsFont,
-  TemplateResult,
-} from '@web-inmars/mars-core';
+import { html, unsafeHTML, tagsFont, TemplateResult } from '@web-inmars/core';
 
 import '../src/mars-link.js';
 

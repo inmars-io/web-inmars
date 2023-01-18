@@ -9,5 +9,5 @@
 To get started you need to install the component that you are going to use:
 
 ```sh
-npm install --save @web-inmars/mars-button
+npm install --save @web-inmars/button
 ```

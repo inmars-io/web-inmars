@@ -5,17 +5,17 @@ Web component that allows us to show an accessible and beautiful textfield so th
 
 ## Installation
 ```bash
-  npm i @web-inmars/mars-textfield --save
+ npm i @web-inmars/textfield --save
 ```
 
 ## Usage
 ```html
 <script type="module">
-   import 'mars-textfield/mars-textfield.js';
+  import '@web-inmars/textfield/mars-textfield.js';
 </script>
 
 <mars-textfield>
-     I am a textfield
+    Click me!
 </mars-textfield>
 ```
 

@@ -1,9 +1,4 @@
-import {
-  html,
-  tagsFont,
-  TemplateResult,
-  unsafeHTML,
-} from '@web-inmars/mars-core';
+import { html, tagsFont, TemplateResult, unsafeHTML } from '@web-inmars/core';
 
 import '../src/mars-img.js';
 

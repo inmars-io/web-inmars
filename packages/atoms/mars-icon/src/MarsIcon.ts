@@ -1,4 +1,4 @@
-import { property, MarsElement, html } from '@web-inmars/mars-core';
+import { property, MarsElement, html } from '@web-inmars/core';
 import { styles } from './MarsIcon.styles.js';
 
 /**
@@ -7,13 +7,13 @@ import { styles } from './MarsIcon.styles.js';
  *
  * ## Installation
  * ```bash
- *  npm i @web-inmars/mars-icon --save
+ *  npm i @web-inmars/icon --save
  * ```
  *
  * ## Usage
  * ```html
  * <script type="module">
- *   import 'mars-icon/mars-icon.js';
+ *   import '@web-inmars/icon/mars-icon.js';
  * </script>
  *
  * <mars-icon name="iconname"></mars-icon>

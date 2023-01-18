@@ -5,17 +5,17 @@ Web component that allows us to show an accessible and beautiful textarea so tha
 
 ## Installation
 ```bash
-  npm i @web-inmars/mars-textarea --save
+ npm i @web-inmars/textarea --save
 ```
 
 ## Usage
 ```html
 <script type="module">
-   import 'mars-textarea/mars-textarea.js';
+  import '@web-inmars/textarea/mars-textarea.js';
 </script>
 
 <mars-textarea>
-     I'm a textarea
+    Click me!
 </mars-textarea>
 ```
 

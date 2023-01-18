@@ -6,7 +6,7 @@ import {
   css,
   colorGray,
   fontFundations,
-} from '@web-inmars/mars-core';
+} from '@web-inmars/core';
 import { styles } from './MarsCheckbox.styles.js';
 
 /**
@@ -15,20 +15,20 @@ import { styles } from './MarsCheckbox.styles.js';
  *
  * ## Installation
  * ```bash
- *  npm i @web-inmars/mars-checkbox --save
+ *  npm i @web-inmars/checkbox --save
  * ```
  *
  * ## Usage
  * ```html
  * <script type="module">
- *   import 'mars-checkbox/mars-checkbox.js';
+ *   import '@web-inmars/checkbox/mars-checkbox.js';
  * </script>
  *
- * <mars-checkbox id="marsCheckbox">
- *     I'm a checkbox
+ * <mars-checkbox>
+ *     Click me!
  * </mars-checkbox>
  * ```
- * @element mars-checkbox
+ * @element mars-badge
  */
 
 export class MarsCheckbox extends MarsElement {
@@ -40,7 +40,7 @@ export class MarsCheckbox extends MarsElement {
         ${unsafeCSS(fontFundations(['xs']))};
       }
     `,
-    styles
+    styles,
   ];
 
   @property({ type: String }) value = '';

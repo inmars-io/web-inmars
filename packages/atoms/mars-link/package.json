@@ -31,7 +31,7 @@
     "analyze": "cem analyze --litelement"
   },
   "dependencies": {
-    "@web-inmars/mars-core": "^0.2.6"
+    "@web-inmars/core": "^0.2.6"
   },
   "devDependencies": {
     "@open-wc/testing": "next"

@@ -1,76 +1,27 @@
-# \<mars-tag>
+# mars-tag
 
-This webcomponent follows the [open-wc](https://github.com/open-wc/open-wc) recommendation.
+# <mars-tag>
+Web component that allows us to show an accessible and beautiful tag so that users can interact
 
 ## Installation
-
 ```bash
-npm i mars-tag
+ npm i @web-inmars/tag --save
 ```
 
 ## Usage
-
 ```html
 <script type="module">
-  import 'mars-tag/mars-tag.js';
+  import '@web-inmars/tag/mars-tag.js';
 </script>
 
-<mars-tag></mars-tag>
+<mars-tag>
+    Click me!
+</mars-tag>
 ```
 
-## Linting and formatting
+## Properties
 
-To scan the project for linting and formatting errors, run
-
-```bash
-npm run lint
-```
-
-To automatically fix linting and formatting errors, run
-
-```bash
-npm run format
-```
-
-## Testing with Web Test Runner
-
-To execute a single test run:
-
-```bash
-npm run test
-```
-
-To run the tests in interactive watch mode run:
-
-```bash
-npm run test:watch
-```
-
-## Demoing with Storybook
-
-To run a local instance of Storybook for your component, run
-
-```bash
-npm run storybook
-```
-
-To build a production version of Storybook, run
-
-```bash
-npm run storybook:build
-```
-
-
-## Tooling configs
-
-For most of the tools, the configuration is in the `package.json` to reduce the amount of files in your project.
-
-If you customize the configuration a lot, you can consider moving them to individual files.
-
-## Local Demo with `web-dev-server`
-
-```bash
-npm start
-```
-
-To run a local development server that serves the basic demo located in `demo/index.html`
+| Property  | Attribute | Type     | Default     |
+|-----------|-----------|----------|-------------|
+| `counter` | `counter` | `number` | 5           |
+| `title`   | `title`   | `string` | "Hey there" |

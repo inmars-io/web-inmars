@@ -1,76 +1,38 @@
-# \<mars-range>
+# mars-range
 
-This webcomponent follows the [open-wc](https://github.com/open-wc/open-wc) recommendation.
+# <mars-range>
+Web component that allows us to show an accessible and beautiful range so that users can interact
 
 ## Installation
-
 ```bash
-npm i mars-range
+ npm i @web-inmars/range --save
 ```
 
 ## Usage
-
 ```html
 <script type="module">
-  import 'mars-range/mars-range.js';
+  import '@web-inmars/range/mars-range.js';
 </script>
 
-<mars-range></mars-range>
+<mars-range>
+    Click me!
+</mars-range>
 ```
 
-## Linting and formatting
+## Properties
 
-To scan the project for linting and formatting errors, run
+| Property   | Attribute  | Type      | Default |
+|------------|------------|-----------|---------|
+| `disabled` | `disabled` | `boolean` | false   |
+| `label`    | `label`    | `string`  | ""      |
+| `max`      | `max`      | `string`  | "100"   |
+| `min`      | `min`      | `string`  | "1"     |
+| `step`     | `step`     | `string`  | ""      |
+| `value`    | `value`    | `string`  | ""      |
+| `variant`  | `variant`  | `string`  | ""      |
 
-```bash
-npm run lint
-```
+## Events
 
-To automatically fix linting and formatting errors, run
-
-```bash
-npm run format
-```
-
-## Testing with Web Test Runner
-
-To execute a single test run:
-
-```bash
-npm run test
-```
-
-To run the tests in interactive watch mode run:
-
-```bash
-npm run test:watch
-```
-
-## Demoing with Storybook
-
-To run a local instance of Storybook for your component, run
-
-```bash
-npm run storybook
-```
-
-To build a production version of Storybook, run
-
-```bash
-npm run storybook:build
-```
-
-
-## Tooling configs
-
-For most of the tools, the configuration is in the `package.json` to reduce the amount of files in your project.
-
-If you customize the configuration a lot, you can consider moving them to individual files.
-
-## Local Demo with `web-dev-server`
-
-```bash
-npm start
-```
-
-To run a local development server that serves the basic demo located in `demo/index.html`
+| Event         | Type                                          |
+|---------------|-----------------------------------------------|
+| `range-input` | `CustomEvent<{ event: any; value: string; }>` |

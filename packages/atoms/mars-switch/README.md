@@ -5,17 +5,17 @@ Web component that allows us to show an accessible and beautiful switch so that 
 
 ## Installation
 ```bash
-  npm i @web-inmars/mars-switch --save
+ npm i @web-inmars/switch --save
 ```
 
 ## Usage
 ```html
 <script type="module">
-   import 'mars-switch/mars-switch.js';
+  import 'mars-switch/mars-switch.js';
 </script>
 
 <mars-switch id="mars-switch">
-     I am a switch
+    I am a switch
 </mars-switch>
 ```
 

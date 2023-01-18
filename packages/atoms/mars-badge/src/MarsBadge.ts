@@ -1,6 +1,27 @@
-import { html, property, MarsElement } from '@web-inmars/mars-core';
+import { html, property, MarsElement } from '@web-inmars/core';
 import { styles } from './MarsBadge.styles.js';
 
+/**
+ * # <mars-badge>
+ * Web component that allows us to show an accessible and beautiful badge so that users can interact
+ *
+ * ## Installation
+ * ```bash
+ *  npm i @web-inmars/badge --save
+ * ```
+ *
+ * ## Usage
+ * ```html
+ * <script type="module">
+ *   import '@web-inmars/badge/mars-badge.js';
+ * </script>
+ *
+ * <mars-badge>
+ *     Click me!
+ * </mars-badge>
+ * ```
+ * @element mars-badge
+ */
 export class MarsBadge extends MarsElement {
   static styles: any = [MarsElement.styles, styles];
 

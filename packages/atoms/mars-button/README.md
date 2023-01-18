@@ -5,17 +5,17 @@ Web component that allows us to show an accessible and beautiful button so that 
 
 ## Installation
 ```bash
-  npm i @web-inmars/mars-button --save
+ npm i @web-inmars/button --save
 ```
 
 ## Usage
 ```html
 <script type="module">
-   import 'mars-button/mars-button.js';
+  import '@web-inmars/button/mars-button.js';
 </script>
 
 <mars-button>
-     Click me!
+    Click me!
 </mars-button>
 ```
 

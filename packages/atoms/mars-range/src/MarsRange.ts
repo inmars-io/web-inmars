@@ -6,8 +6,30 @@ import {
   css,
   colorGray,
   fontFundations,
-} from '@web-inmars/mars-core';
+} from '@web-inmars/core';
 import { styles } from './MarsRange.styles.js';
+
+/**
+ * # <mars-range>
+ * Web component that allows us to show an accessible and beautiful range so that users can interact
+ *
+ * ## Installation
+ * ```bash
+ *  npm i @web-inmars/range --save
+ * ```
+ *
+ * ## Usage
+ * ```html
+ * <script type="module">
+ *   import '@web-inmars/range/mars-range.js';
+ * </script>
+ *
+ * <mars-range>
+ *     Click me!
+ * </mars-range>
+ * ```
+ * @element mars-range
+ */
 
 export class MarsRange extends MarsElement {
   static styles: any = [

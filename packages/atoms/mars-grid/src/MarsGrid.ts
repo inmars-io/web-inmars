@@ -1,26 +1,26 @@
-import { html, styleMap, MarsElement, property } from '@web-inmars/mars-core';
+import { html, styleMap, MarsElement, property } from '@web-inmars/core';
 import { styles } from './MarsGrid.styles.js';
 
 /**
  * # <mars-grid>
- * Web component that allows us to show an accessible and beautiful grid so that users can see the content of the page.
+ * Web component that allows us to show an accessible and beautiful grid so that users can interact
  *
  * ## Installation
  * ```bash
- *  npm i @web-inmars/mars-grid --save
+ *  npm i @web-inmars/grid --save
  * ```
  *
  * ## Usage
  * ```html
  * <script type="module">
- *   import 'mars-grid/mars-grid.js';
+ *   import '@web-inmars/grid/mars-grid.js';
  * </script>
  *
  * <mars-grid>
- *     I'm a container for the items
+ *     Click me!
  * </mars-grid>
  * ```
- * @element mars-grid
+ * @element mars-badge
  */
 
 export class MarsGrid extends MarsElement {
