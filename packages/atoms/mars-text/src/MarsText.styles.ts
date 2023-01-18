@@ -1,4 +1,4 @@
-import { css } from '@web-inmars/mars-core';
+import { css } from '@web-inmars/core';
 
 export const styles = css`
   :host {

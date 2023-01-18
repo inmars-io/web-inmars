@@ -6,7 +6,7 @@ import {
   css,
   colorGray,
   fontFundations,
-} from '@web-inmars/mars-core';
+} from '@web-inmars/core';
 import { styles } from './MarsTextarea.styles.js';
 
 /**
@@ -15,17 +15,17 @@ import { styles } from './MarsTextarea.styles.js';
  *
  * ## Installation
  * ```bash
- *  npm i @web-inmars/mars-textarea --save
+ *  npm i @web-inmars/textarea --save
  * ```
  *
  * ## Usage
  * ```html
  * <script type="module">
- *   import 'mars-textarea/mars-textarea.js';
+ *   import '@web-inmars/textarea/mars-textarea.js';
  * </script>
  *
  * <mars-textarea>
- *     I'm a textarea
+ *     Click me!
  * </mars-textarea>
  * ```
  * @element mars-textarea

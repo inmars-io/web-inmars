@@ -1,21 +1,21 @@
 # mars-text
 
 # <mars-text>
-Web component that allows us to show an accessible and beautiful text.
+Web component that allows us to show an accessible and beautiful text so that users can interact
 
 ## Installation
 ```bash
-  npm i @web-inmars/mars-text --save
+ npm i @web-inmars/text --save
 ```
 
 ## Usage
 ```html
 <script type="module">
-   import 'mars-text/mars-text.js';
+  import '@web-inmars/text/mars-text.js';
 </script>
 
-<mars-text tag="p">
-     I'm a paragraph.
+<mars-text>
+    Click me!
 </mars-text>
 ```
 

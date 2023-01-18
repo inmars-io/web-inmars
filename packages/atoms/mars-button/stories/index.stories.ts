@@ -1,9 +1,4 @@
-import {
-  html,
-  TemplateResult,
-  tagsFont,
-  unsafeHTML,
-} from '@web-inmars/mars-core';
+import { html, TemplateResult, tagsFont, unsafeHTML } from '@web-inmars/core';
 import '../src/mars-button.js';
 
 export default {

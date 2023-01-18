@@ -5,17 +5,17 @@ Web component that allows us to show an accessible and beautiful checkbox so tha
 
 ## Installation
 ```bash
-  npm i @web-inmars/mars-checkbox --save
+ npm i @web-inmars/checkbox --save
 ```
 
 ## Usage
 ```html
 <script type="module">
-   import 'mars-checkbox/mars-checkbox.js';
+  import '@web-inmars/checkbox/mars-checkbox.js';
 </script>
 
-<mars-checkbox id="marsCheckbox">
-     I'm a checkbox
+<mars-checkbox>
+    Click me!
 </mars-checkbox>
 ```
 

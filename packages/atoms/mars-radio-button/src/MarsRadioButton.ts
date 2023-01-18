@@ -6,7 +6,7 @@ import {
   css,
   colorGray,
   fontFundations,
-} from '@web-inmars/mars-core';
+} from '@web-inmars/core';
 import { styles } from './MarsRadioButton.styles.js';
 
 /**
@@ -15,17 +15,17 @@ import { styles } from './MarsRadioButton.styles.js';
  *
  * ## Installation
  * ```bash
- *  npm i @web-inmars/mars-radio-button --save
+ *  npm i @web-inmars/radio-button --save
  * ```
  *
  * ## Usage
  * ```html
  * <script type="module">
- *   import 'mars-radio-button/mars-radio-button.js';
+ *   import '@web-inmars/radio-button/mars-radio-button.js';
  * </script>
  *
- * <mars-radio-button id="myRadioButton">
- *     I am a radio button!
+ * <mars-radio-button>
+ *     Click me!
  * </mars-radio-button>
  * ```
  * @element mars-radio-button

@@ -5,17 +5,17 @@ Web component that allows us to show an accessible and beautiful radio-button so
 
 ## Installation
 ```bash
-  npm i @web-inmars/mars-radio-button --save
+ npm i @web-inmars/radio-button --save
 ```
 
 ## Usage
 ```html
 <script type="module">
-   import 'mars-radio-button/mars-radio-button.js';
+  import '@web-inmars/radio-button/mars-radio-button.js';
 </script>
 
-<mars-radio-button id="myRadioButton">
-     I am a radio button!
+<mars-radio-button>
+    Click me!
 </mars-radio-button>
 ```
 

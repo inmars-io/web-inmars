@@ -1,22 +1,24 @@
-import { html, property, MarsElement } from '@web-inmars/mars-core';
+import { html, property, MarsElement } from '@web-inmars/core';
 import { styles } from './MarsImg.styles.js';
 
 /**
  * # <mars-img>
- * Web component that allows us to show an accessible and beautiful img.
+ * Web component that allows us to show an accessible and beautiful img so that users can interact
  *
  * ## Installation
  * ```bash
- *  npm i @web-inmars/mars-img --save
+ *  npm i @web-inmars/img --save
  * ```
  *
  * ## Usage
  * ```html
  * <script type="module">
- *   import 'mars-img/mars-img.js';
+ *   import '@web-inmars/img/mars-img.js';
  * </script>
  *
- * <mars-img src="url/from/images" alt="Alt from image"></mars-img>
+ * <mars-img>
+ *     Click me!
+ * </mars-img>
  * ```
  * @element mars-img
  */

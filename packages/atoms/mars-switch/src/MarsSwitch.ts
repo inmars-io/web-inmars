@@ -6,7 +6,7 @@ import {
   css,
   colorGray,
   fontFundations,
-} from '@web-inmars/mars-core';
+} from '@web-inmars/core';
 import { styles } from './MarsSwitch.styles.js';
 
 /**
@@ -15,7 +15,29 @@ import { styles } from './MarsSwitch.styles.js';
  *
  * ## Installation
  * ```bash
- *  npm i @web-inmars/mars-switch --save
+ *  npm i @web-inmars/switch --save
+ * ```
+ *
+ * ## Usage
+ * ```html
+ * <script type="module">
+ *   import '@web-inmars/switch/mars-switch.js';
+ * </script>
+ *
+ * <mars-switch>
+ *     Click me!
+ * </mars-switch>
+ * ```
+ * @element mars-switch
+ */
+
+/**
+ * # <mars-switch>
+ * Web component that allows us to show an accessible and beautiful switch so that users can interact
+ *
+ * ## Installation
+ * ```bash
+ *  npm i @web-inmars/switch --save
  * ```
  *
  * ## Usage

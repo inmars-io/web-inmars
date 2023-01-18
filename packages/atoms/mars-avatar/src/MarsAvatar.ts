@@ -6,7 +6,7 @@ import {
   css,
   colorGray,
   fontFundations,
-} from '@web-inmars/mars-core';
+} from '@web-inmars/core';
 import { styles } from './MarsAvatar.styles.js';
 
 function __renderDefault() {
@@ -26,6 +26,28 @@ function __renderDefault() {
     </svg>
   `;
 }
+
+/**
+ * # <mars-avatar>
+ * Web component that allows us to show an accessible and beautiful avatar so that users can interact
+ *
+ * ## Installation
+ * ```bash
+ *  npm i @web-inmars/avatar --save
+ * ```
+ *
+ * ## Usage
+ * ```html
+ * <script type="module">
+ *   import '@web-inmars/avatar/mars-avatar.js';
+ * </script>
+ *
+ * <mars-avatar>
+ *     Click me!
+ * </mars-avatar>
+ * ```
+ * @element mars-avatar
+ */
 
 export class MarsAvatar extends MarsElement {
   static styles: any = [

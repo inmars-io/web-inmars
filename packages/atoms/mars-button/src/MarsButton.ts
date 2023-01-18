@@ -1,4 +1,4 @@
-import { html, property, MarsElement } from '@web-inmars/mars-core';
+import { html, property, MarsElement } from '@web-inmars/core';
 import { styles } from './MarsButton.styles.js';
 
 /**
@@ -7,13 +7,13 @@ import { styles } from './MarsButton.styles.js';
  *
  * ## Installation
  * ```bash
- *  npm i @web-inmars/mars-button --save
+ *  npm i @web-inmars/button --save
  * ```
  *
  * ## Usage
  * ```html
  * <script type="module">
- *   import 'mars-button/mars-button.js';
+ *   import '@web-inmars/button/mars-button.js';
  * </script>
  *
  * <mars-button>
@@ -24,7 +24,7 @@ import { styles } from './MarsButton.styles.js';
  */
 
 export class MarsButton extends MarsElement {
-  static styles: any = [ MarsElement.styles, styles ];
+  static styles: any = [MarsElement.styles, styles];
 
   @property({ type: String }) value = '';
 

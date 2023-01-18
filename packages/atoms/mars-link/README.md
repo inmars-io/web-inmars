@@ -5,17 +5,17 @@ Web component that allows us to show an accessible and beautiful link so that us
 
 ## Installation
 ```bash
-  npm i @web-inmars/mars-link --save
+ npm i @web-inmars/link --save
 ```
 
 ## Usage
 ```html
 <script type="module">
-   import 'mars-link/mars-link.js';
+  import '@web-inmars/link/mars-link.js';
 </script>
 
-<mars-link href="#">
-     I'm a link!
+<mars-link>
+    Click me!
 </mars-link>
 ```
 

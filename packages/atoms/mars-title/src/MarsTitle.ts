@@ -1,23 +1,23 @@
-import { html, unsafeHTML, property, MarsElement } from '@web-inmars/mars-core';
+import { html, unsafeHTML, property, MarsElement } from '@web-inmars/core';
 import { styles } from './MarsTitle.styles.js';
 
 /**
  * # <mars-title>
- * Web component that allows us to show an accessible and beautiful title.
+ * Web component that allows us to show an accessible and beautiful title so that users can interact
  *
  * ## Installation
  * ```bash
- *  npm i @web-inmars/mars-title --save
+ *  npm i @web-inmars/title --save
  * ```
  *
  * ## Usage
  * ```html
  * <script type="module">
- *   import 'mars-title/mars-title.js';
+ *   import '@web-inmars/title/mars-title.js';
  * </script>
  *
  * <mars-title>
- *     I am a title
+ *     Click me!
  * </mars-title>
  * ```
  * @element mars-title

@@ -1,4 +1,4 @@
-import { html, TemplateResult } from '@web-inmars/mars-core';
+import { html, TemplateResult } from '@web-inmars/core';
 import '../src/mars-icon.js';
 
 export default {
