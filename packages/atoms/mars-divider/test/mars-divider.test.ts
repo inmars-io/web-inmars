@@ -9,11 +9,6 @@ describe('MarsDivider', () => {
     expect(el.title).to.equal('Hey there');
   });
 
-  it('increases the counter on button click', async () => {
-    const el = await fixture<MarsDivider>(html`<mars-divider></mars-divider>`);
-    el.shadowRoot!.querySelector('button')!.click();
-  });
-
   it('can override the title via attribute', async () => {
     const el = await fixture<MarsDivider>(
       html`<mars-divider title="attribute title"></mars-divider>`

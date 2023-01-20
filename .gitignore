@@ -19,6 +19,14 @@
 /_site/
 /dist/
 /out-tsc/
+/build/
+/coverage/
+packages/*/dist
+packages/**/*.js
+packages/**/*.d.ts
+packages/**/*.map
+packages/**/test/**.css
+packages/**/package-lock.json
 
 storybook-static
 

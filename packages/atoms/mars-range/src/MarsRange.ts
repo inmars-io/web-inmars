@@ -32,7 +32,7 @@ import { styles } from './MarsRange.styles.js';
  */
 
 export class MarsRange extends MarsElement {
-  static styles: any = [
+  static styles = [
     MarsElement.styles,
     css`
       :host {
@@ -57,7 +57,7 @@ export class MarsRange extends MarsElement {
 
   @property({ type: Boolean }) disabled = false;
 
-  __input(event: any) {
+  __input(event: Event & { target: HTMLInputElement }) {
     if (this.disabled) {
       event.preventDefault();
       event.stopPropagation();

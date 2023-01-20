@@ -24,9 +24,9 @@ import { styles } from './MarsSpinner.styles.js';
  */
 
 export class MarsSpinner extends MarsElement {
-  static styles: any = [MarsElement.styles, styles];
+  static styles = [MarsElement.styles, styles];
 
-  @property({ type: String }) title = 'Hey there';
+  @property({ type: String }) text = 'Hey there';
 
   @property({ type: Number }) counter = 5;
 
@@ -36,7 +36,7 @@ export class MarsSpinner extends MarsElement {
 
   render() {
     return html`
-      <h2>${this.title} Nr. ${this.counter}!</h2>
+      <h2>${this.text} Nr. ${this.counter}!</h2>
       <button @click=${this.__increment}>increment</button>
     `;
   }

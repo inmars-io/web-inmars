@@ -2,10 +2,10 @@ import { html, TemplateResult } from '@web-inmars/core';
 import '../src/mars-tag.js';
 
 export default {
-  title: 'Atoms / Tag',
+  text: 'Atoms / Tag',
   component: 'mars-tag',
   argTypes: {
-    title: { control: 'text' },
+    text: { control: 'text' },
     counter: { control: 'number' },
     textColor: { control: 'color' },
   },
@@ -18,21 +18,21 @@ interface Story<T> {
 }
 
 interface ArgTypes {
-  title?: string;
+  text?: string;
   counter?: number;
   textColor?: string;
   slot?: TemplateResult;
 }
 
 const Template: Story<ArgTypes> = ({
-  title = 'Hello world',
+  text = 'Hello world',
   counter = 5,
   textColor,
   slot,
 }: ArgTypes) => html`
   <mars-tag
     style="--mars-tag-text-color: ${textColor || 'black'}"
-    .title=${title}
+    .text=${text}
     .counter=${counter}
   >
     ${slot}
@@ -43,7 +43,7 @@ export const Regular = Template.bind({});
 
 export const CustomTitle = Template.bind({});
 CustomTitle.args = {
-  title: 'My title',
+  text: 'My title',
 };
 
 export const CustomCounter = Template.bind({});

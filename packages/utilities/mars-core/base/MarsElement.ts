@@ -1,4 +1,4 @@
-import { LitElement, css, unsafeCSS } from 'lit';
+import { LitElement, css, unsafeCSS, CSSResultGroup } from 'lit';
 import {
   colorGray,
   colorFundations,
@@ -7,7 +7,7 @@ import {
 } from '../styles/fundations.js';
 
 export class MarsElement extends LitElement {
-  static styles = [
+  static styles: CSSResultGroup = [
     css`
       :host {
         ${unsafeCSS(colorGray([100]))};

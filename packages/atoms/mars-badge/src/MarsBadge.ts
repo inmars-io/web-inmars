@@ -23,9 +23,9 @@ import { styles } from './MarsBadge.styles.js';
  * @element mars-badge
  */
 export class MarsBadge extends MarsElement {
-  static styles: any = [MarsElement.styles, styles];
+  static styles = [MarsElement.styles, styles];
 
-  @property({ type: String }) title = 'Hey there';
+  @property({ type: String }) text = 'Hey there';
 
   @property({ type: Number }) counter = 5;
 
@@ -35,7 +35,7 @@ export class MarsBadge extends MarsElement {
 
   render() {
     return html`
-      <h2>${this.title} Nr. ${this.counter}!</h2>
+      <h2>${this.text} Nr. ${this.counter}!</h2>
       <button @click=${this.__increment}>increment</button>
     `;
   }

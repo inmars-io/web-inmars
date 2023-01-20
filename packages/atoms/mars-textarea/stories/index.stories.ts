@@ -33,7 +33,7 @@ interface ArgTypes {
   placeholder?: string;
   value?: string;
   variant?: string;
-  onClick: any;
+  onClick: () => void;
   disabled?: boolean;
   showCaption?: boolean;
   type?: string;

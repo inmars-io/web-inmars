@@ -1,9 +1,5 @@
 module.exports = {
-  plugins: [
-    '@typescript-eslint/eslint-plugin',
-    'eslint-plugin-tsdoc',
-    '@typescript-eslint',
-  ],
+  plugins: ['@typescript-eslint/eslint-plugin', '@typescript-eslint'],
   extends: [
     'plugin:@typescript-eslint/recommended',
     '@open-wc/eslint-config',
@@ -17,7 +13,6 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
-    'tsdoc/syntax': 'warn',
     '@typescript-eslint/no-unused-vars': ['error'],
     'import/no-unresolved': 'off',
     'import/extensions': [

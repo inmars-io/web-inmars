@@ -24,8 +24,8 @@ import { styles } from './MarsLink.styles.js';
  */
 
 export class MarsLink extends MarsElement {
-  static get styles(): any {
-    return [...super.styles, styles];
+  static get styles() {
+    return [MarsElement.styles, styles];
   }
 
   @property({ type: String }) value = '';

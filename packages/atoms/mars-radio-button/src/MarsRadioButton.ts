@@ -32,9 +32,9 @@ import { styles } from './MarsRadioButton.styles.js';
  */
 
 export class MarsRadioButton extends MarsElement {
-  static get styles(): any {
+  static get styles() {
     return [
-      ...super.styles,
+      MarsElement.styles,
       css`
         :host {
           ${unsafeCSS(colorGray([200, 300, 400, 500, 600, 700, 800]))};
@@ -49,8 +49,6 @@ export class MarsRadioButton extends MarsElement {
 
   @property({ type: String }) variant = '';
 
-  @property({ type: String }) id = '';
-
   @property({ type: String }) name = '';
 
   @property({ type: String }) label = '';
@@ -63,7 +61,7 @@ export class MarsRadioButton extends MarsElement {
 
   @property({ type: Boolean }) checked = false;
 
-  __change(event: any) {
+  __change(event: Event & { target: HTMLInputElement }) {
     if (this.disabled) {
       event.preventDefault();
       event.stopPropagation();
@@ -89,12 +87,11 @@ export class MarsRadioButton extends MarsElement {
   }
 
   render() {
-    const { children, name, checked, value, label, disabled, id, __change } =
-      this;
+    const { children, name, checked, value, label, disabled, __change } = this;
     return html`
-      <label for=${id} part="label-box">
+      <label for=${name} part="label-box">
         <input
-          id=${id}
+          id=${name}
           part="radiobutton"
           type="radio"
           name=${name}

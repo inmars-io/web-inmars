@@ -50,7 +50,7 @@ function __renderDefault() {
  */
 
 export class MarsAvatar extends MarsElement {
-  static styles: any = [
+  static styles = [
     MarsElement.styles,
     css`
       :host {
@@ -69,7 +69,7 @@ export class MarsAvatar extends MarsElement {
 
   @property({ type: String }) abbr = '';
 
-  updated(changedProps: any) {
+  updated(changedProps: Map<PropertyKey, unknown>) {
     if (changedProps.has('color')) {
       this.__updateColorBg();
     }

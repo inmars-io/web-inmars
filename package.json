@@ -38,7 +38,6 @@
     "deepmerge": "^4.0.0",
     "eslint": "^8.0.0",
     "eslint-config-prettier": "^8.0.0",
-    "eslint-plugin-tsdoc": "^0.2.0",
     "husky": "^8.0.0",
     "lerna": "^6.0.0",
     "lint-staged": "^13.0.0",

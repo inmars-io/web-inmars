@@ -28,7 +28,7 @@ interface ArgTypes {
   value?: string;
   variant?: string;
   slot?: TemplateResult;
-  onClick: any;
+  onClick: () => void;
   disabled?: boolean;
   type?: string;
 }

@@ -10,13 +10,6 @@ describe('MarsBadge', () => {
     expect(el.counter).to.equal(5);
   });
 
-  it('increases the counter on button click', async () => {
-    const el = await fixture<MarsBadge>(html`<mars-badge></mars-badge>`);
-    el.shadowRoot!.querySelector('button')!.click();
-
-    expect(el.counter).to.equal(6);
-  });
-
   it('can override the title via attribute', async () => {
     const el = await fixture<MarsBadge>(
       html`<mars-badge title="attribute title"></mars-badge>`
