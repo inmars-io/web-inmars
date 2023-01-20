@@ -31,32 +31,10 @@ import { styles } from './MarsSwitch.styles.js';
  * @element mars-switch
  */
 
-/**
- * # <mars-switch>
- * Web component that allows us to show an accessible and beautiful switch so that users can interact
- *
- * ## Installation
- * ```bash
- *  npm i @web-inmars/switch --save
- * ```
- *
- * ## Usage
- * ```html
- * <script type="module">
- *   import 'mars-switch/mars-switch.js';
- * </script>
- *
- * <mars-switch id="mars-switch">
- *     I am a switch
- * </mars-switch>
- * ```
- * @element mars-switch
- */
-
 export class MarsSwitch extends MarsElement {
-  static get styles(): any {
+  static get styles() {
     return [
-      ...super.styles,
+      MarsElement.styles,
       css`
         :host {
           ${unsafeCSS(colorGray([200, 300, 400, 500, 600, 700, 800]))};
@@ -71,8 +49,6 @@ export class MarsSwitch extends MarsElement {
 
   @property({ type: String }) variant = '';
 
-  @property({ type: String }) id = '';
-
   @property({ type: String }) name = '';
 
   @property({ type: String }) label = '';
@@ -85,7 +61,7 @@ export class MarsSwitch extends MarsElement {
 
   @property({ type: Boolean }) checked = false;
 
-  __change(event: any) {
+  __change(event: Event & { target: HTMLInputElement }) {
     if (this.disabled) {
       event.preventDefault();
       event.stopPropagation();
@@ -111,11 +87,11 @@ export class MarsSwitch extends MarsElement {
   }
 
   render() {
-    const { name, checked, value, label, disabled, id, __change } = this;
+    const { name, checked, value, label, disabled, __change } = this;
     return html`
-      <label for=${id} part="switch-box">
+      <label for=${name} part="switch-box">
         <input
-          id=${id}
+          id=${name}
           part="switch"
           type="checkbox"
           name=${name}

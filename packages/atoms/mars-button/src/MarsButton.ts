@@ -24,7 +24,7 @@ import { styles } from './MarsButton.styles.js';
  */
 
 export class MarsButton extends MarsElement {
-  static styles: any = [MarsElement.styles, styles];
+  static styles = [MarsElement.styles, styles];
 
   @property({ type: String }) value = '';
 
@@ -34,7 +34,7 @@ export class MarsButton extends MarsElement {
 
   @property({ type: Boolean }) disabled = false;
 
-  __click(event: any) {
+  __click(event: Event & { target: HTMLInputElement }) {
     if (this.disabled) {
       event.preventDefault();
       event.stopPropagation();

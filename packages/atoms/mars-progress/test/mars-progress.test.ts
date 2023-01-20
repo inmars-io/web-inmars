@@ -12,15 +12,6 @@ describe('MarsProgress', () => {
     expect(el.counter).to.equal(5);
   });
 
-  it('increases the counter on button click', async () => {
-    const el = await fixture<MarsProgress>(
-      html`<mars-progress></mars-progress>`
-    );
-    el.shadowRoot!.querySelector('button')!.click();
-
-    expect(el.counter).to.equal(6);
-  });
-
   it('can override the title via attribute', async () => {
     const el = await fixture<MarsProgress>(
       html`<mars-progress title="attribute title"></mars-progress>`

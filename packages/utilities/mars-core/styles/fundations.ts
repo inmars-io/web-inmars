@@ -11,55 +11,67 @@ import {
   FONT_SIZE_MOBILE,
 } from './tokens.js';
 
-const selectVariables = (types: any[], tokens: any, name: string) => {
-  let styleTempl: any = '';
-  types.forEach((type: any) => {
+const selectVariables = (
+  types: (string | number)[],
+  tokens: any,
+  name: string
+) => {
+  let styleTempl = '';
+  types.forEach((type: string | number) => {
     if (tokens[type]) styleTempl += `--${name}-${type}: ${tokens[type]};`;
   });
 
   return styleTempl;
 };
 
-export const colorIndigo = (types: any[]) =>
+export const colorIndigo = (types: (string | number)[]) =>
   selectVariables(types, COLOR_INDIGO, 'color-indigo');
 
-export const colorCrimson = (types: any[]) =>
+export const colorCrimson = (types: (string | number)[]) =>
   selectVariables(types, COLOR_CRIMSON, 'color-crimson');
 
-export const colorCoral = (types: any[]) =>
+export const colorCoral = (types: (string | number)[]) =>
   selectVariables(types, COLOR_CORAL, 'color-coral');
 
-export const colorGray = (types: any[]) =>
+export const colorGray = (types: (string | number)[]) =>
   selectVariables(types, COLOR_GRAY, 'color-gray');
 
-export const colorPrimary = (types: any[]) =>
+export const colorPrimary = (types: (string | number)[]) =>
   selectVariables(types, COLOR_PRIMARY, 'color-primary');
 
-export const colorSecondary = (types: any[]) =>
+export const colorSecondary = (types: (string | number)[]) =>
   selectVariables(types, COLOR_SECONDARY, 'color-secondary');
 
-export const colorTertiary = (types: any[]) =>
+export const colorTertiary = (types: (string | number)[]) =>
   selectVariables(types, COLOR_TERTIARY, 'color-tertiary');
 
-export const colorText = (types: any[]) =>
+export const colorText = (types: (string | number)[]) =>
   selectVariables(types, COLOR_TEXT, 'color-text');
 
-export const fontFamily = (types: any[]) =>
+export const fontFamily = (types: (string | number)[]) =>
   selectVariables(types, FONT_FAMILY, 'font-family');
 
-export const fontSizeMobile = (types: any[]) =>
+export const fontSizeMobile = (types: (string | number)[]) =>
   selectVariables(types, FONT_SIZE_MOBILE, 'font-size-mobile');
 
-export const colorMarsBase = (types: any[]) => `${colorIndigo(types)}
+export const colorMarsBase = (types: (string | number)[]) => `${colorIndigo(
+  types
+)}
   ${colorCrimson(types)}
   ${colorCoral(types)}`;
 
-export const colorPrimaries = (types: any[]) => `${colorPrimary(types)}
+export const colorPrimaries = (types: (string | number)[]) => `${colorPrimary(
+  types
+)}
   ${colorSecondary(types)}
   ${colorTertiary(types)}`;
 
-export const colorFundations = (types: any[]) => `${colorPrimaries(types)}
+export const colorFundations = (
+  types: (string | number)[]
+) => `${colorPrimaries(types)}
   ${colorText(types)}`;
 
-export const fontFundations = (types: any[]) => `${fontFamily(types)}
+export const fontFundations = (types: (string | number)[]) => `${fontFamily(
+  types
+)}
   ${fontSizeMobile(types)}`;

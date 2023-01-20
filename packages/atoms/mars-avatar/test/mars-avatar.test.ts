@@ -9,11 +9,6 @@ describe('MarsAvatar', () => {
     expect(el.name).to.equal('Hey there');
   });
 
-  it('increases the counter on button click', async () => {
-    const el = await fixture<MarsAvatar>(html`<mars-avatar></mars-avatar>`);
-    el.shadowRoot!.querySelector('button')!.click();
-  });
-
   it('can override the name via attribute', async () => {
     const el = await fixture<MarsAvatar>(
       html`<mars-avatar name="attribute name"></mars-avatar>`

@@ -32,9 +32,9 @@ import { styles } from './MarsTextarea.styles.js';
  */
 
 export class MarsTextarea extends MarsElement {
-  static get styles(): any {
+  static get styles() {
     return [
-      ...super.styles,
+      MarsElement.styles,
       css`
         :host {
           ${unsafeCSS(colorGray([200, 300, 400, 600, 700, 800]))};
@@ -61,7 +61,7 @@ export class MarsTextarea extends MarsElement {
 
   @property({ type: Boolean, attribute: 'show-caption' }) showCaption = false;
 
-  __input(event: any) {
+  __input(event: Event & { target: HTMLInputElement }) {
     if (this.disabled) {
       event.preventDefault();
       event.stopPropagation();

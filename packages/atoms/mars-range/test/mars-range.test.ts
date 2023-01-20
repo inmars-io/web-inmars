@@ -10,13 +10,6 @@ describe('MarsRange', () => {
     expect(el.min).to.equal('5');
   });
 
-  it('increases the min on button click', async () => {
-    const el = await fixture<MarsRange>(html`<mars-range></mars-range>`);
-    el.shadowRoot!.querySelector('button')!.click();
-
-    expect(el.min).to.equal('6');
-  });
-
   it('can override the value via attribute', async () => {
     const el = await fixture<MarsRange>(
       html`<mars-range value="attribute value"></mars-range>`

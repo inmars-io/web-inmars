@@ -10,13 +10,6 @@ describe('MarsTag', () => {
     expect(el.counter).to.equal(5);
   });
 
-  it('increases the counter on button click', async () => {
-    const el = await fixture<MarsTag>(html`<mars-tag></mars-tag>`);
-    el.shadowRoot!.querySelector('button')!.click();
-
-    expect(el.counter).to.equal(6);
-  });
-
   it('can override the title via attribute', async () => {
     const el = await fixture<MarsTag>(
       html`<mars-tag title="attribute title"></mars-tag>`

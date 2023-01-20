@@ -2,10 +2,10 @@ import { html, TemplateResult } from '@web-inmars/core';
 import '../src/mars-divider.js';
 
 export default {
-  title: 'Atoms / Divider',
+  text: 'Atoms / Divider',
   component: 'mars-divider',
   argTypes: {
-    title: { control: 'text' },
+    text: { control: 'text' },
     counter: { control: 'number' },
     textColor: { control: 'color' },
   },
@@ -18,21 +18,21 @@ interface Story<T> {
 }
 
 interface ArgTypes {
-  title?: string;
+  text?: string;
   counter?: number;
   textColor?: string;
   slot?: TemplateResult;
 }
 
 const Template: Story<ArgTypes> = ({
-  title = 'Hello world',
+  text = 'Hello world',
   counter = 5,
   textColor,
   slot,
 }: ArgTypes) => html`
   <mars-divider
     style="--mars-divider-text-color: ${textColor || 'black'}"
-    .title=${title}
+    .text=${text}
     .counter=${counter}
   >
     ${slot}

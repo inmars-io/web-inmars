@@ -1,4 +1,4 @@
-export { svg, html, css, TemplateResult, unsafeCSS, render } from 'lit';
+export { svg, html, css, unsafeCSS, render, TemplateResult } from 'lit';
 export { property } from 'lit/decorators.js';
 export { classMap } from 'lit/directives/class-map.js';
 export { styleMap } from 'lit/directives/style-map.js';

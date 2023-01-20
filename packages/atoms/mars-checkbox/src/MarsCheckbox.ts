@@ -32,7 +32,7 @@ import { styles } from './MarsCheckbox.styles.js';
  */
 
 export class MarsCheckbox extends MarsElement {
-  static styles: any = [
+  static styles = [
     MarsElement.styles,
     css`
       :host {
@@ -47,8 +47,6 @@ export class MarsCheckbox extends MarsElement {
 
   @property({ type: String }) variant = '';
 
-  @property({ type: String }) id = '';
-
   @property({ type: String }) name = '';
 
   @property({ type: String }) label = '';
@@ -61,7 +59,7 @@ export class MarsCheckbox extends MarsElement {
 
   @property({ type: Boolean }) checked = false;
 
-  __change(event: any) {
+  __change(event: Event & { target: HTMLInputElement }) {
     if (this.disabled) {
       event.preventDefault();
       event.stopPropagation();
@@ -87,12 +85,11 @@ export class MarsCheckbox extends MarsElement {
   }
 
   render() {
-    const { children, name, checked, value, label, disabled, id, __change } =
-      this;
+    const { children, name, checked, value, label, disabled, __change } = this;
     return html`
-      <label for=${id}>
+      <label for=${name}>
         <input
-          id=${id}
+          id=${name}
           part="checkbox"
           type="checkbox"
           name=${name}

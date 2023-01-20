@@ -13,7 +13,6 @@ export default {
     showCaption: { control: 'boolean' },
     caption: { control: 'text' },
     label: { control: 'text' },
-    id: { control: 'text' },
     variant: {
       control: {
         type: 'select',
@@ -34,25 +33,23 @@ interface ArgTypes {
   checked?: boolean;
   value?: string;
   variant?: string;
-  onClick: any;
+  onClick: () => void;
   disabled?: boolean;
   showCaption?: boolean;
   caption?: string;
   label?: string;
-  id?: string;
   slot?: TemplateResult;
 }
 
 const Template: Story<ArgTypes> = ({
   slot,
   value = '',
-  name = '',
+  name = 'regularLabel',
   checked = false,
   variant = '',
   onClick,
   disabled,
   caption = '',
-  id = 'regularLabel',
   label = 'This is a label',
   showCaption = false,
 }: ArgTypes) => html`
@@ -62,7 +59,6 @@ const Template: Story<ArgTypes> = ({
     .checked=${checked}
     .caption=${caption}
     .label=${label}
-    .id=${id}
     variant=${variant}
     @on-change=${onClick}
     ?disabled=${disabled}
