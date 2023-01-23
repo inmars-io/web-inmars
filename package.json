@@ -8,7 +8,8 @@
     "packages/**/*"
   ],
   "scripts": {
-    "bootstrap": "yarn install && lerna bootstrap",
+    "bootstrap": "lerna bootstrap",
+    "postinstall": "yarn bootstrap",
     "analyze": "lerna run analyze",
     "lint": "eslint --ext .ts,.html . --ignore-path .gitignore && prettier \"**/*.ts\" --check --ignore-path .gitignore",
     "format": "eslint --ext .ts,.html . --fix --ignore-path .gitignore && prettier \"**/*.ts\" --write --ignore-path .gitignore",
