@@ -26,7 +26,6 @@ Web component that allows us to show an accessible and beautiful checkbox so tha
 | `caption`     | `caption`      | `string`  | ""      |
 | `checked`     | `checked`      | `boolean` | false   |
 | `disabled`    | `disabled`     | `boolean` | false   |
-| `id`          | `id`           | `string`  | ""      |
 | `label`       | `label`        | `string`  | ""      |
 | `name`        | `name`         | `string`  | ""      |
 | `showCaption` | `show-caption` | `boolean` | false   |
@@ -35,6 +34,6 @@ Web component that allows us to show an accessible and beautiful checkbox so tha
 
 ## Events
 
-| Event       | Type                           |
-|-------------|--------------------------------|
-| `on-change` | `CustomEvent<{ event: any; }>` |
+| Event       | Type                                             |
+|-------------|--------------------------------------------------|
+| `on-change` | `CustomEvent<{ event: Event & { target: HTMLInputElement; }; }>` |

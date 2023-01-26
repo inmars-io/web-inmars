@@ -24,4 +24,4 @@ Web component that allows us to show an accessible and beautiful progress so tha
 | Property  | Attribute | Type     | Default     |
 |-----------|-----------|----------|-------------|
 | `counter` | `counter` | `number` | 5           |
-| `title`   | `title`   | `string` | "Hey there" |
+| `text`    | `text`    | `string` | "Hey there" |
