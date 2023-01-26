@@ -34,6 +34,6 @@ Web component that allows us to show an accessible and beautiful textarea so tha
 
 ## Events
 
-| Event      | Type                                          |
-|------------|-----------------------------------------------|
-| `on-input` | `CustomEvent<{ event: any; value: string; }>` |
+| Event      | Type                                             |
+|------------|--------------------------------------------------|
+| `on-input` | `CustomEvent<{ event: Event & { target: HTMLInputElement; }; value: string; }>` |

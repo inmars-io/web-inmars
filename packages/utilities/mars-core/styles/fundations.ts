@@ -9,6 +9,8 @@ import {
   COLOR_TEXT,
   FONT_FAMILY,
   FONT_SIZE_MOBILE,
+  COLOR_LIGHT,
+  COLOR_DARK,
 } from './tokens.js';
 
 const selectVariables = (
@@ -53,6 +55,12 @@ export const fontFamily = (types: (string | number)[]) =>
 
 export const fontSizeMobile = (types: (string | number)[]) =>
   selectVariables(types, FONT_SIZE_MOBILE, 'font-size-mobile');
+
+export const colorLight = (types: (string | number)[]) =>
+  selectVariables(types, COLOR_LIGHT, 'color-light');
+
+export const colorDark = (types: (string | number)[]) =>
+  selectVariables(types, COLOR_DARK, 'color-dark');
 
 export const colorMarsBase = (types: (string | number)[]) => `${colorIndigo(
   types

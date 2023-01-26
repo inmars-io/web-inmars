@@ -33,6 +33,6 @@ Web component that allows us to show an accessible and beautiful range so that u
 
 ## Events
 
-| Event         | Type                                          |
-|---------------|-----------------------------------------------|
-| `range-input` | `CustomEvent<{ event: any; value: string; }>` |
+| Event         | Type                                             |
+|---------------|--------------------------------------------------|
+| `range-input` | `CustomEvent<{ event: Event & { target: HTMLInputElement; }; value: string; }>` |

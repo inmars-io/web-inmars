@@ -145,14 +145,14 @@ export const COLOR_TEXT = {
 };
 
 export const FONT_FAMILY = {
-  primary: css`var(--theme-font-family-primary, 'Quicksand', sans-serif)`,
+  primary: css`var(--theme-font-family-primary, 'Open Sans', sans-serif)`,
   secondary: css`var(--theme-font-family-secondary, 'Montserrat', sans-serif)`,
   mono: css`var(--theme-font-family-mono, 'Roboto Mono', monospace)`,
 };
 
 export const FONT_FAMILY_TITLE = {
   primary: css`var(--theme-font-family-title-primary, 'Montserrat', sans-serif)`,
-  secondary: css`var(--theme-font-family-title-secondary, 'Quicksand', sans-serif)`,
+  secondary: css`var(--theme-font-family-title-secondary, 'Open Sans', sans-serif)`,
   mono: css`var(--theme-font-family-title-mono, 'Roboto Mono', monospace)`,
 };
 
@@ -192,6 +192,26 @@ export const FONT_SIZE_DESKTOP = {
   xl7: css`var(--theme-font-size-desktop-xl7, ${calcRemMixin(52)})`,
 };
 
+export const COLOR_LIGHT = {
+  primary: css`var(--theme-color-primary, #5F3993)`,
+  'on-primary': css`var(--theme-color-on-primary, #FFFFFF)`,
+  outline: css`var(--theme-color-outline, #79747E)`,
+  surface1: css`var(--theme-color-surface1, #F0F0F8)`,
+  'secondary-container': css`var(--theme-color-secondary-container, #E8DEF6)`,
+  'on-secondary-container': css`var(--theme-color-on-secondary-container, #160E20)`,
+  'on-surface': css`var(--theme-color-on-surface, #191A1A)`,
+};
+
+export const COLOR_DARK = {
+  primary: css`var(--theme-color-primary, #B09DCB)`,
+  'on-primary': css`var(--theme-color-on-primary, #472B6E)`,
+  outline: css`var(--theme-color-outline, #938F99)`,
+  surface1: css`var(--theme-color-surface1, #2a2a2d)`,
+  'secondary-container': css`var(--theme-color-secondary-container, #544C60)`,
+  'on-secondary-container': css`var(--theme-color-on-secondary-container, #F4EAFF)`,
+  'on-surface': css`var(--theme-color-on-surface, #EDEFF1)`,
+};
+
 export default {
   COLOR_INDIGO,
   COLOR_CRIMSON,
@@ -205,4 +225,6 @@ export default {
   FONT_FAMILY_TITLE,
   FONT_SIZE_MOBILE,
   FONT_SIZE_DESKTOP,
+  COLOR_LIGHT,
+  COLOR_DARK,
 };
