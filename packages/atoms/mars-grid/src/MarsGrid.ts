@@ -20,7 +20,7 @@ import { styles } from './MarsGrid.styles.js';
  *     Click me!
  * </mars-grid>
  * ```
- * @element mars-badge
+ * @element mars-grid
  */
 
 export class MarsGrid extends MarsElement {

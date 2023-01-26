@@ -10,7 +10,7 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "postinstall": "yarn bootstrap",
-    "analyze": "lerna run analyze",
+    "analyze": "wca analyze \"packages/**/src/Mars*.ts\" --outFiles {dir}/../custom-elements.json",
     "lint": "eslint --ext .ts,.html . --ignore-path .gitignore && prettier \"**/*.ts\" --check --ignore-path .gitignore",
     "format": "eslint --ext .ts,.html . --fix --ignore-path .gitignore && prettier \"**/*.ts\" --write --ignore-path .gitignore",
     "test": "tsc && wtr --coverage",
@@ -23,7 +23,7 @@
     "clean": "rimraf node_modules && rimraf yarn.lock && lerna clean",
     "build:svg": "node ./scripts/svg-to-object/index.js -s \" assets/svg/**/**.svg \"",
     "prepare": "husky install",
-    "docs": "wca analyze \"packages/**/src/mars-*.ts\" --outFiles {dir}/../README.md"
+    "docs": "wca analyze \"packages/**/src/Mars*.ts\" --outFiles {dir}/../README.md"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
