@@ -28,7 +28,7 @@ import { styles } from './MarsCheckbox.styles.js';
  *     Click me!
  * </mars-checkbox>
  * ```
- * @element mars-badge
+ * @element mars-checkbox
  */
 
 export class MarsCheckbox extends MarsElement {

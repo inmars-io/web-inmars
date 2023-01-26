@@ -17,19 +17,18 @@ Web component that allows us to show an accessible and beautiful button so that 
 <mars-button>
     Click me!
 </mars-button>
+
+<mars-button value="Click me!"></mars-button>
 ```
+
+**Mixins:** BasicEventMixin
 
 ## Properties
 
 | Property   | Attribute  | Type      | Default  |
 |------------|------------|-----------|----------|
 | `disabled` | `disabled` | `boolean` | false    |
+| `mode`     | `mode`     | `string`  | ""       |
 | `type`     | `type`     | `string`  | "button" |
 | `value`    | `value`    | `string`  | ""       |
 | `variant`  | `variant`  | `string`  | ""       |
-
-## Events
-
-| Event      | Type                           |
-|------------|--------------------------------|
-| `on-click` | `CustomEvent<{ event: any; }>` |
