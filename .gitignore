@@ -44,3 +44,4 @@ packages/**/.vscode
 packages/**/.temp
 packages/**/npm-debug.log
 packages/**/custom-elements.json
+custom-elements.json
