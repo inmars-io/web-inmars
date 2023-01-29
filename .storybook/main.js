@@ -6,4 +6,7 @@ module.exports = {
     'storybook-dark-mode',
   ],
   framework: '@storybook/web-components',
+  features: {
+    buildStoriesJson: true,
+  },
 };

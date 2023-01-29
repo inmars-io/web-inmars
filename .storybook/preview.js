@@ -3,7 +3,10 @@ import {
   MINIMAL_VIEWPORTS,
 } from '@storybook/addon-viewport';
 
-import { useDarkMode } from 'storybook-dark-mode';
+import { setCustomElementsManifest } from '@storybook/web-components';
+import customElementsManifest from '../custom-elements.json';
+
+setCustomElementsManifest(customElementsManifest);
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
