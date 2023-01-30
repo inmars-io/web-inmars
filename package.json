@@ -12,7 +12,7 @@
     "postinstall": "yarn bootstrap",
     "analyze": "func() { wca analyze \"packages/*/${1}/src/Mars*.ts\" --outFiles {dir}/../custom-elements.json; }; func",
     "analyze:root": "wca analyze \"packages/**/src/Mars*.ts\" --outFile custom-elements.json",
-    "analyze:all": "wca analyze \"packages/**/src/Mars*.ts\" --outFiles {dir}/../custom-elements.json",
+    "analyze:all": "wca analyze \"packages/**/src/Mars*.ts\" --litelement --outFiles {dir}/../custom-elements.json",
     "lint": "eslint --ext .ts,.html . --ignore-path .gitignore && prettier \"**/*.ts\" --check --ignore-path .gitignore",
     "format": "eslint --ext .ts,.html . --fix --ignore-path .gitignore && prettier \"**/*.ts\" --write --ignore-path .gitignore",
     "test": "tsc && wtr --coverage",

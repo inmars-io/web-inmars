@@ -1,4 +1,4 @@
-import { LitElement, css, unsafeCSS, CSSResultGroup } from 'lit';
+import { LitElement, css, unsafeCSS, CSSResultGroup, property } from '..';
 import {
   colorGray,
   colorFundations,
@@ -11,6 +11,7 @@ import {
 import { lightMode, darkMode } from '../styles/modes.js';
 
 export class MarsElement extends LitElement {
+  /** @private */
   static styles: CSSResultGroup = [
     css`
       :host {
@@ -47,4 +48,6 @@ export class MarsElement extends LitElement {
     lightMode,
     darkMode,
   ];
+
+  @property({ type: String }) mode = 'light';
 }

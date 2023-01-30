@@ -26,19 +26,19 @@ import { styles } from './MarsButton.styles.js';
  */
 
 export class MarsButton extends BasicEventMixin(MarsElement) {
+  /** @private */
   static is = 'mars-button';
 
+  /** @private */
   static styles = [MarsElement.styles, styles];
 
   @property({ type: String }) value = '';
 
-  @property({ type: String }) variant = '';
+  @property({ type: String }) variant = 'filled';
 
   @property({ type: String }) type = 'button';
 
   @property({ type: Boolean }) disabled = false;
-
-  @property({ type: Boolean }) mode = '';
 
   render() {
     const detail = { value: this.value };
