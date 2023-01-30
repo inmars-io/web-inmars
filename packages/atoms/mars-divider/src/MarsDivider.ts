@@ -37,6 +37,6 @@ export class MarsDivider extends MarsElement {
   @property({ type: String }) variant = 'inset';
 
   render() {
-    return html` <hr part="hr" /> `;
+    return html`<hr part="hr" />`;
   }
 }

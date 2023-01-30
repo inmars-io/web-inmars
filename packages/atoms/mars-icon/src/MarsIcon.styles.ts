@@ -2,16 +2,15 @@ import { css } from '@web-inmars/core';
 
 export const styles = css`
   :host {
-    --mars-icon-font: var(--icon-font, 'Material Icons');
-    --mars-icon-size: var(--icon-size, 24px);
-    --mars-icon-color: var(--icon-color, var(--color-primary-500));
+    --_icon-font: var(--mars-icon-font, 'Material Icons');
+    --_icon-size: var(--mars-icon-size, 24px);
+    --_icon-color: var(--mars-icon-color, var(--mars-mode-on-surface));
 
-    font-size: var(--mars-icon-size);
-    font-family: var(--mars-icon-font);
-
+    font-size: var(--_icon-size);
+    font-family: var(--_icon-font);
     font-weight: normal;
     font-style: normal;
-    color: inherit;
+    color: var(--_icon-color);
     line-height: 1;
     letter-spacing: normal;
     text-transform: none;
@@ -20,22 +19,5 @@ export const styles = css`
     word-wrap: normal;
     direction: ltr;
     -webkit-font-smoothing: antialiased;
-  }
-
-  svg {
-    fill: var(--mars-icon-color);
-    transition: all 0.5s ease;
-  }
-
-  :host([variant*='primary']) svg {
-    --mars-icon-color: var(--color-primary-500);
-  }
-
-  :host([variant*='secondary']) svg {
-    --mars-icon-color: var(--color-secondary-500);
-  }
-
-  :host([variant*='tertiary']) svg {
-    --mars-icon-color: var(--color-tertiary-500);
   }
 `;
