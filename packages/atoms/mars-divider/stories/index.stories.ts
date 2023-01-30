@@ -1,14 +1,9 @@
-import { html, TemplateResult } from '@web-inmars/core';
+import { html, TemplateResult, ifDefined } from '@web-inmars/core';
 import '../src/mars-divider.js';
 
 export default {
-  text: 'Atoms / Divider',
+  title: 'Atoms / Divider',
   component: 'mars-divider',
-  argTypes: {
-    text: { control: 'text' },
-    counter: { control: 'number' },
-    textColor: { control: 'color' },
-  },
 };
 
 interface Story<T> {
@@ -18,25 +13,20 @@ interface Story<T> {
 }
 
 interface ArgTypes {
-  text?: string;
-  counter?: number;
-  textColor?: string;
-  slot?: TemplateResult;
+  variant?: string;
 }
 
-const Template: Story<ArgTypes> = ({
-  text = 'Hello world',
-  counter = 5,
-  textColor,
-  slot,
-}: ArgTypes) => html`
-  <mars-divider
-    style="--mars-divider-text-color: ${textColor || 'black'}"
-    .text=${text}
-    .counter=${counter}
-  >
-    ${slot}
-  </mars-divider>
+const Template: Story<ArgTypes> = ({ variant = '' }: ArgTypes) => html`
+  <div style="padding: 32px; background: #F0F0F8">
+    <h2 class="light">Light Mode</h2>
+    <p class="light">Lorem ipsum dolor sit amet</p>
+    <mars-divider variant=${ifDefined(variant)}> </mars-divider>
+  </div>
+  <div style="padding: 32px; background: #212123">
+    <h2 class="dark">Dark Mode</h2>
+    <p class="dark">Lorem ipsum dolor sit amet</p>
+    <mars-divider variant=${ifDefined(variant)} mode="dark"></mars-divider>
+  </div>
 `;
 
-export const Regular = Template.bind({});
+export const Example = Template.bind({});

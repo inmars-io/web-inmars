@@ -1,4 +1,4 @@
-import { html, MarsElement } from '@web-inmars/core';
+import { html, MarsElement, property } from '@web-inmars/core';
 import { styles } from './MarsDivider.styles.js';
 
 /**
@@ -24,7 +24,17 @@ import { styles } from './MarsDivider.styles.js';
  */
 
 export class MarsDivider extends MarsElement {
+  /** @private */
+  static is = 'mars-divider';
+
+  /** @private */
   static styles = [MarsElement.styles, styles];
+
+  /**
+   * @type {"inset" | "full-width" | "vertical"}
+   * @private
+   */
+  @property({ type: String }) variant = 'inset';
 
   render() {
     return html` <hr part="hr" /> `;
