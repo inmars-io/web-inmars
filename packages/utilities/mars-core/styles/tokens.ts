@@ -200,6 +200,9 @@ export const COLOR_LIGHT = {
   'secondary-container': css`var(--theme-color-secondary-container, #E8DEF6)`,
   'on-secondary-container': css`var(--theme-color-on-secondary-container, #160E20)`,
   'on-surface': css`var(--theme-color-on-surface, #191A1A)`,
+  'surface-variant': css`var(--theme-color-surface-variant, #E7E0EC)`,
+  'on-surface-variant': css`var(--theme-color-on-surface-variant, #191A1A)`,
+  'surface-layer': css`var(--theme-color-surface-layer, #D7D0DC)`,
 };
 
 export const COLOR_DARK = {
@@ -210,6 +213,9 @@ export const COLOR_DARK = {
   'secondary-container': css`var(--theme-color-secondary-container, #544C60)`,
   'on-secondary-container': css`var(--theme-color-on-secondary-container, #F4EAFF)`,
   'on-surface': css`var(--theme-color-on-surface, #EDEFF1)`,
+  'surface-variant': css`var(--theme-color-surface-variant, #49454F)`,
+  'on-surface-variant': css`var(--theme-color-on-surface-variant, #CAC4D0)`,
+  'surface-layer': css`var(--theme-color-surface-layer, #56535C)`,
 };
 
 export default {

@@ -26,6 +26,9 @@ export class MarsElement extends LitElement {
             'secondary-container',
             'on-secondary-container',
             'on-surface',
+            'surface-variant',
+            'on-surface-variant',
+            'surface-layer',
           ])
         )};
         ${unsafeCSS(
@@ -37,6 +40,9 @@ export class MarsElement extends LitElement {
             'secondary-container',
             'on-secondary-container',
             'on-surface',
+            'surface-variant',
+            'on-surface-variant',
+            'surface-layer',
           ])
         )};
         ${unsafeCSS(

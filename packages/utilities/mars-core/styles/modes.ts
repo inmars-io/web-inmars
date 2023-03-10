@@ -14,6 +14,9 @@ export const lightMode = css`
     --mars-mode-surface1: var(--color-light-surface1);
     --mars-mode-on-surface: var(--color-light-on-surface);
     --mars-mode-outline: var(--color-light-outline);
+    --mars-mode-surface-variant: var(--color-light-surface-variant);
+    --mars-mode-on-surface-variant: var(--color-light-on-surface-variant);
+    --mars-mode-surface-layer: var(--color-light-surface-layer);
   }
 `;
 
@@ -30,5 +33,8 @@ export const darkMode = css`
     --mars-mode-surface1: var(--color-dark-surface1);
     --mars-mode-on-surface: var(--color-dark-on-surface);
     --mars-mode-outline: var(--color-dark-outline);
+    --mars-mode-surface-variant: var(--color-dark-surface-variant);
+    --mars-mode-on-surface-variant: var(--color-dark-on-surface-variant);
+    --mars-mode-surface-layer: var(--color-dark-surface-layer);
   }
 `;

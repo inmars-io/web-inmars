@@ -92,8 +92,8 @@ export class MarsTextfield extends MarsElement {
   }
 
   render() {
-    return html` <input
-        part="marsinput"
+    return html`<input
+        part="textfield"
         .value=${this.value}
         .type=${this.type}
         .name=${this.name}

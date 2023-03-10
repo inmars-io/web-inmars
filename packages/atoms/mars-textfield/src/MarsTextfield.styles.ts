@@ -2,97 +2,108 @@ import { css } from '@web-inmars/core';
 
 export const styles = css`
   :host {
-    --input-color: var(--color-gray-200);
-    --input-color-border: var(--color-primary-500);
-    --input-color-hover: var(--color-gray-300);
-    --input-color-active: var(--color-primary-400);
-    --input-color-focus: var(--color-primary-300);
-    --input-color-text: var(--color-gray-700);
-    --input-color-label: var(--color-gray-600);
-    --input-color-placeholder: var(--color-gray-600);
-    --input-family-font: var(--font-family-primary);
-    --input-font-size: var(--font-size-mobile-sm);
-    --input-font-size-label: var(--font-size-mobile-sm);
-    font-family: var(--input-family-font);
+    --_input-color: var(--mars-input-color, var(--mars-mode-surface-variant));
+    --_input-color-border: var(
+      --mars-input-color-border,
+      var(--mars-mode-on-surface-variant)
+    );
+    --_input-color-hover: var(
+      --mars-input-color-hover,
+      var(--mars-mode-surface-layer)
+    );
+    --_input-color-active: var(--mars-input-width, var(--color-primary-400));
+    --_input-color-focus: var(--mars-input-width, var(--color-primary-300));
+    --_input-color-text: var(
+      --mars-input-color-text,
+      var(--mars-mode-on-surface)
+    );
+    --_input-color-label: var(
+      --mars-input-color-label,
+      var(--mars-mode-on-surface-variant)
+    );
+    --_input-color-disabled: var(
+      --mars-input-color-disabled,
+      var(--mars-mode-on-surface)
+    );
+    --_input-border: var(
+      --mars-input-border,
+      1px solid var(--_input-color-border)
+    );
+    --_input-family-font: var(
+      --mars-input-family-font,
+      var(--font-family-primary)
+    );
+    --_input-font-size: var(--mars-input-size, var(--font-size-mobile-sm));
+    --_input-font-size-label: var(
+      --mars-input-size-label,
+      var(--font-size-mobile-sm)
+    );
+    --_input-width: var(--mars-input-width, 13rem);
+    font-family: var(--_input-family-font);
     display: grid;
-    min-height: 46px;
-    min-width: 200px;
-    grid-template-areas: 'input';
+    grid-template: 'input';
+    width: var(--_input-width);
+    max-width: 100%;
     box-sizing: border-box;
     font-weight: 300;
   }
 
   input {
-    font-family: var(--input-family-font);
-    background-color: var(--input-color);
-    font-size: var(--input-font-size);
-    color: var(--input-color-text);
-    border: 2px solid transparent;
-    border-radius: 5px;
+    font-family: var(--_input-family-font);
+    background-color: var(--_input-color);
+    font-size: var(--_input-font-size);
+    color: var(--_input-color-text);
+    border: 0;
+    border-bottom: var(--_input-border);
+    border-radius: 5px 5px 0 0;
     cursor: pointer;
     transition: all 0.5s ease;
     grid-area: input;
     box-sizing: border-box;
     padding: 12px 18px 12px 18px;
     font-weight: 300;
+    min-height: 56px;
   }
 
   input::placeholder {
     visibility: hidden;
   }
 
-  :host([variant*='primary']) input {
-    --input-color-border: var(--color-primary-500);
-    --input-color-active: var(--color-primary-400);
-    --input-color-focus: var(--color-primary-300);
-    --input-color-text: var(--color-primary-500);
+  input:hover {
+    background-color: var(--_input-color-hover);
   }
 
-  :host([variant*='secondary']) input {
-    --input-color-border: var(--color-secondary-500);
-    --input-color-active: var(--color-secondary-400);
-    --input-color-focus: var(--color-secondary-300);
-    --input-color-text: var(--color-secondary-500);
-  }
-
-  :host([variant*='tertiary']) input {
-    --input-color-border: var(--color-tertiary-500);
-    --input-color-active: var(--color-tertiary-400);
-    --input-color-focus: var(--color-tertiary-300);
-    --input-color-text: var(--color-tertiary-500);
-  }
-
-  input:hover:not([disabled]) {
-    background-color: var(--input-color-hover);
-    color: var(--input-color-text);
-    transition: all 0.35s ease;
-  }
-
-  input:active:not([disabled]),
-  input:focus:not([disabled]),
+  input:active,
+  input:focus,
   input:not(:placeholder-shown) {
-    border: 2px solid var(--input-color-active);
+    --_input-border: 2px solid var(--_input-color-active);
     padding: 16px 18px 0px 18px;
     outline: none;
   }
 
+  :host([disabled]) {
+    pointer-events: none;
+    opacity: 0.38;
+  }
+
   input:disabled {
     cursor: not-allowed;
-    opacity: 0.5;
+    pointer-events: none;
+    background-color: rgba(var(--_input-color-disabled), 0.14);
   }
 
   label {
-    color: var(--input-color-label);
+    color: var(--_input-color-label);
     grid-area: input;
-    margin: 14px 0px 14px 19px;
-    font-size: var(--input-font-size-label);
+    margin: 17px 16px;
+    font-size: var(--_input-font-size-label);
     transition: all 0.5s ease;
     pointer-events: none;
     box-sizing: border-box;
   }
 
-  input:active:not([disabled]) ~ label,
-  input:focus:not([disabled]) ~ label,
+  input:active ~ label,
+  input:focus ~ label,
   input:not(:placeholder-shown) ~ label {
     margin: 6px 0px 14px 19px;
     font-size: 13px;
@@ -101,7 +112,7 @@ export const styles = css`
   }
 
   span {
-    margin-top: 5px;
+    padding: 0 16px;
     color: var(--color-gray-800);
     transition: all 0.5s ease;
   }
